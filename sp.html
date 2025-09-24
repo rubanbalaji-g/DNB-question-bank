@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Pediatrics Questions | DNB Pediatrics Question Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .sortable-header {
+            cursor: pointer;
+            position: relative;
+        }
+        .sortable-header:hover {
+            background-color: #f0f4f8;
+        }
+        .sort-asc::after, .sort-desc::after {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .sort-asc::after {
+            content: ' ▲';
+        }
+        .sort-desc::after {
+            content: ' ▼';
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-600">Social Pediatrics</h1>
+            <p class="text-lg text-gray-600 mt-2"><a href="index.html" class="text-blue-500 hover:underline">&larr; Back to Main Index</a></p>
+        </header>
+
+        <main class="bg-white p-6 md:p-8 rounded-2xl shadow-lg overflow-x-auto">
+            <table class="w-full divide-y divide-gray-200" id="questionsTable">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" style="width: 75%;" onclick="sortTable(0)">
+                            Question
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" onclick="sortTable(1)">
+                            Category
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" onclick="sortTable(2)">
+                            Year
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss briefly the major goals for child survival and development by 2000AD (DNB 1997/1)25</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>1997</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What measures can reduce Birth Rate in next 5 years (DNB 1998/2)10</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>1998</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Objectives and strategies of 'Maternal Child Survival And Safe Motherhood Programme' (DNB 1994/2)15</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>1994</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Child health care services provided through CSSM programme in India (DNB 1995/1)15</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>1995</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>CSSM Programme (DNB 1996/2)15</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>1996</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>National AIDS control Programme in preventing Childhood AIDS (DNB 2006/1)10</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>National Leprosy Eradication Programme (DNB 2007/1)15</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>National lodine Deficiency Disorder Control Programme (DNB 2007/2)10</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What is the Birth Weight specific mortality? Discuss the measures to reduce this mortality (DNB 2005/1)10</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2005</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate chief causes of neonatal mortality in India. Describe the current status in India and its status. Prepare a 5-year plan for reduction of neonatal mortality rate in your district (DNB 2008/1)10</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2008</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>List and Define the important public health indicators of mortality in children. Also discuss their current status in India (DNB 2009/1)7+3</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What are the major contributors to the high infant mortality in our country? What Specific areas of infant or/and newborn care can be strengthened to decrease infant mortality in India. Describe the salient features of the integrated management of neonatal and childhood illness strategy (DNB 2009/2)2+3+5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate the Millennium Development Goals. Describe briefly the National Health Programs to achieve Millennium Development Goals (MDG) in India. Write the status of India in relation to health indicators in NHFS 3 (DNB 2010/1)2+4+4</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define under - 5 mortality rate. Comment on its current status and etiology in India. Outline important strategies/programs undertaken by Govt. of India to improve Under 5 child survival (DNB 2010/2)2+2+2+4</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define various indicators of child health which are important in context of monitoring child health in a developing country. Outline the interventions to reduce them (DNB 2012/1)5+5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2012</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Write short notes on: (DNB 2013/2)5+5 a) Mid Day Meal programme b) Revised National Cancer Control programme.</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Write short notes on: (DNB 2013/2)5+5 a) ASHA b) MDG (millennium Development Goal) focused on children</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Iron plus initiative (DNB 2015/1)3</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2015</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Write short notes on: (DNB 2016/1)4+3 a) Millenium development goals b) Swachh Bharat Abhiyan</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>First Referral Unit - FRU (DNB 2016/2)2</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Child health screening and early intervention services in RBSK (DNB 2016/2)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Objectives and components of National lodine Deficiency Disorders Control Program (DNB 2016/2)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Major causes for neonatal mortality and morbidity in India (DNB 2017/2)4</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Infant mortality rate in India- current status (DNB 2017/2)5, (DNB 2018/2)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Rashtriya Bal Swasthya Karyakram (RBSK) (DNB 2017/2)6, (DNB 2019/1)5, (DNB 2021/2)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Mission Indradhanush (DNB 2015/1)3, (DNB 2018/1)5, (DNB 2016/2)3,(DNB 2021/2)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2015</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Components of NRC (Nutrition Rehabilitation Centre) (DNB 2018/2)5, (DNB 2023/1)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Infant Young and child feeding strategy (DNB 2019/1)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>National neonatal screening program (DNB 2019/1)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Home based newborn care (DNB 2019/2)4</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Components of facility based newborn care (DNB 2018/2)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss Anemia Mukt Bharat with specific reference to children and adolescents (DNB 2019/2)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>INAP (India Newborn Action Plan) (DNB 2019/2)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>District early intervention centre (DEIC) (DNB 2019/2)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Neonatal mortality rate- Current status in India (DNB 2019/2)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>List the major programmatic interventions to reduce the IMR (DNB 2020/2)4</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Briefly describe the indicators of child health (DNB 2020/2)6</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Quality Improvement Initiatives in healthcare (illustrate with an example) (DNB 2020/2)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Measles-Rubella campaign (DNB 2021/1)5, (DNB 2021/2)5, (DNB 2023/1)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enlist important components of POCSO act (DNB 2017/2)4, (DNB 2021/1)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Sustainable Development Goals relevant to children and their health (DNB 2018/1)4, (DNB 2021/1)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Components of nurturing care for early childhood development (DNB 2021/1)5, (DNB 2022/2)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>POCSO Act - Guidelines in management (DNB 2021/2)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Malaria surveillance (DNB 2022/1)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Janani Shishu Suraksha Karyakram (JSSK) (DNB 2022/1)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Mission NEEV (Neonatal Early Evaluation Vision) (DNB 2022/1)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Measles surveillance (DNB 2022/2)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate the components of facility based newborn care (DNB 2023/1)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Suman Health Program (DNB 2023/1)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Infant mortality rate (IMR) and causes of infant mortality (DNB 2023/2)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Properties of Robust Quality Measures (DNB 2023/2)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Sustainable Development Goals (SDGs) (DNB 2023/2)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Mission Indradhanush and its impact on Under 5 Mortality Rate (DCH 2023/2)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>POCSO act (DCH 2023/2)5, (DCH 2024/1)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Under 5 Mortality Rate and it's causes (DCH 2023/2)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Mother and Child Protection Card and its role in child health (DNB 2024/1)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Measles Rubella campaign - strategies and implementation (DNB 2024/1)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Government schemes for prevention of infant mortality (DCH 2024/1)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Anaemia Mukt Bharat (DNB 2024/2)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Use of Road to Health Charts in MCH clinics (DNB 1995/2)10</td><td class='px-6 py-4'>RCH</td><td class='px-6 py-4 whitespace-nowrap'>1995</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>RCH programme (DNB 1998/2)15</td><td class='px-6 py-4'>RCH</td><td class='px-6 py-4 whitespace-nowrap'>1998</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>National targets for MCH services (DNB 1999/1)15</td><td class='px-6 py-4'>RCH</td><td class='px-6 py-4 whitespace-nowrap'>1999</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pediatric components of RCH programme (DNB 1999/2)15</td><td class='px-6 py-4'>RCH</td><td class='px-6 py-4 whitespace-nowrap'>1999</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>RCH Programme-aims and strategies (DNB 2002/1)15</td><td class='px-6 py-4'>RCH</td><td class='px-6 py-4 whitespace-nowrap'>2002</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Community management of Diarrhea and LRTI with indications for referral (DNB 2002/1)15</td><td class='px-6 py-4'>RCH</td><td class='px-6 py-4 whitespace-nowrap'>2002</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>RCH Programme in India (DNB 2006/1)10</td><td class='px-6 py-4'>RCH</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>LAQSHYA program (DNB 2024/2)5</td><td class='px-6 py-4'>RCH</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>ICDS scheme (DNB 1997/2)15</td><td class='px-6 py-4'>ICDS</td><td class='px-6 py-4 whitespace-nowrap'>1997</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the components of ICDS programme. Briefly discuss its impact on child health in India and also causes for its failure (DNB 2004/2)3+4+4</td><td class='px-6 py-4'>ICDS</td><td class='px-6 py-4 whitespace-nowrap'>2004</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>IMNCI (DNB 2003/2)15</td><td class='px-6 py-4'>IMNCI</td><td class='px-6 py-4 whitespace-nowrap'>2003</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>IMNCI- what is the strategy. Discuss the factors in successful implementation of this strategy (DNB 2005/1)5+5</td><td class='px-6 py-4'>IMNCI</td><td class='px-6 py-4 whitespace-nowrap'>2005</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What is IMNCI? What are the various criteria and limitations of this Programme? Elaborate signs, symptoms and diseases covered under this programme (DNB 2006/1)10</td><td class='px-6 py-4'>IMNCI</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>How do you classify the severity of acute respiratory infections using the IMNCI protocol? (DNB 2006/2)10</td><td class='px-6 py-4'>IMNCI</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe briefly the principles of integrated management of neonatal and childhood illness (IMNCI). Outline the broad steps of case management process (DNB 2008/1)10</td><td class='px-6 py-4'>IMNCI</td><td class='px-6 py-4 whitespace-nowrap'>2008</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the essential components and principles of IMNCI strategy. Highlight the cardinal features of case management process of young infants (<2 months) (DNB 2009/1)4+6</td><td class='px-6 py-4'>IMNCI</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the justification for the addition of neonatal component to WHO generic IMNCI programme for making IMNCI strategy. What are the key features of this strategy? (DNB 2011/2)5+5</td><td class='px-6 py-4'>IMNCI</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate the five high impact activities under RMNCH+ A programme (DNB 2016/1)2x5</td><td class='px-6 py-4'>IMNCI</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Classification of cough or difficult breathing in a child age 2 months up to 5 years as per IMNCI (DNB 2023/2)5</td><td class='px-6 py-4'>IMNCI</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>IMNCI in a child less than 2 months (DNB 2024/1)5</td><td class='px-6 py-4'>IMNCI</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pulse Polio Immunization (DNB 1996/1)15</td><td class='px-6 py-4'>Polio Eradication</td><td class='px-6 py-4 whitespace-nowrap'>1996</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>a) Define polio eradication b) Polio eradication in India c) Immunisation issues following polio eradication (DNB 2015/1)1+2+3</td><td class='px-6 py-4'>Polio Eradication</td><td class='px-6 py-4 whitespace-nowrap'>2015</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Current WHO guidelines of AFP surveillance (DNB 2019/1)5</td><td class='px-6 py-4'>Polio Eradication</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Failure in control of Tuberculosis (DNB 1993/1)15</td><td class='px-6 py-4'>RNTCP/NTEP</td><td class='px-6 py-4 whitespace-nowrap'>1993</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>DOTS chemotherapeutic management of Tuberculosis in National TB Control Programme (DNB 2000/1)15</td><td class='px-6 py-4'>RNTCP/NTEP</td><td class='px-6 py-4 whitespace-nowrap'>2000</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>DOTS regimen and the problems involved in the implementation in childhood TB (DNB 2006/1)10</td><td class='px-6 py-4'>RNTCP/NTEP</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What were the problems encountered in NTCP. Write the goals, strategies and essential components of RNTPC. Also discuss in brief categorization of patients and treatment protocols under RNTCP (DNB 2006/1)10</td><td class='px-6 py-4'>RNTCP/NTEP</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>a) Describe the category based treatment in childhood TB (DNB 2009/2)3 b) Describe the pros and cons of intermittent therapy for tuberculosis (DNB 2009/2)3+3 c) What are the components of DOTS strategy as Defined by WHO? (DNB 2009/2)4</td><td class='px-6 py-4'>RNTCP/NTEP</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe the ow chart for diagnosis of childhood tuberculosis under RNTCP. Write briefly on DOT PLUS program (DNB 2012/1)6+4</td><td class='px-6 py-4'>RNTCP/NTEP</td><td class='px-6 py-4 whitespace-nowrap'>2012</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>a) Define DOTS, DOTS agents and DOTS plus b) List at least 4 important components Of DOTS c) Give the categorization of treatment strategy in DOTS (DNB 2015/1)3+2+5</td><td class='px-6 py-4'>RNTCP/NTEP</td><td class='px-6 py-4 whitespace-nowrap'>2015</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss salient features of management of children with tuberculosis as per National Tuberculosis Elimination Programme (NTEP) (DNB 2020/2)10</td><td class='px-6 py-4'>RNTCP/NTEP</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Current guidelines for treating childhood TB under RNTCP (DCH 2024/1)5</td><td class='px-6 py-4'>RNTCP/NTEP</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Write a short note on National Rural Health Mission (DNB 2007/1)10, (DNB 2009/2)10</td><td class='px-6 py-4'>NRHM/NHM</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Expand the acronym 'ASHA'. Outline the functions and remuneration of ASHA. Discuss the potential impact of ASHA in improving the health status and wellbeing of a community (DNB 2011/1)1+4+5</td><td class='px-6 py-4'>NRHM/NHM</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>ASHA (DNB 2016/1)4</td><td class='px-6 py-4'>NRHM/NHM</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>ASHA - Roles and Responsibilities in brief (DNB 2018/2)5</td><td class='px-6 py-4'>NRHM/NHM</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Baby Friendly Hospital Initiative (DNB 1995/2)15</td><td class='px-6 py-4'>BFHI</td><td class='px-6 py-4 whitespace-nowrap'>1995</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Briefly describe "baby friendly hospital initiative" and list ten steps to successful breast feeding. (DNB 2008/1)10</td><td class='px-6 py-4'>BFHI</td><td class='px-6 py-4 whitespace-nowrap'>2008</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What is BFHI (Baby Friendly Hospital Initiative)? Mention its aims and objectives, steps, benefits and assessments of baby friendly hospitals (DNB 2011/2)2+2+2+2+2</td><td class='px-6 py-4'>BFHI</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the goals of baby Friendly Hospital Initiative (BFHI). Enumerate ten steps to successful breast feeding. Mention contraindications to breast feeding (DNB 2013/1)2+5+3</td><td class='px-6 py-4'>BFHI</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>BFHI steps (DNB 2021/2)5</td><td class='px-6 py-4'>BFHI</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>10-steps of Baby Friendly Hospital Initiative (BFHI) (DNB 2022/2)5</td><td class='px-6 py-4'>BFHI</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Hospital Waste Management (DNB 2006/1)10</td><td class='px-6 py-4'>Biomedical Waste Management</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss safe injection practices at a level three health care facility. Outline the management of a needle stick injury to a health care provider 10 minutes back (DNB 2008/2)10</td><td class='px-6 py-4'>Biomedical Waste Management</td><td class='px-6 py-4 whitespace-nowrap'>2008</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define 'biomedical waste'. Briefly categorize them. Enumerate their health hazards. List 4 important methods for disposal of biomedical wastes (DNB 2008/1)10</td><td class='px-6 py-4'>Biomedical Waste Management</td><td class='px-6 py-4 whitespace-nowrap'>2008</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define biomedical waste. Describe its hazards. Outline modes of disposal of biomedical waste generated in a hospital setting (DNB 2012/1)2+3+5</td><td class='px-6 py-4'>Biomedical Waste Management</td><td class='px-6 py-4 whitespace-nowrap'>2012</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Safe injection practices at level III care with respect to burden / deficiencies, risks, technique, handling and disposal (DNB 2015/2)2+2+2+2+2</td><td class='px-6 py-4'>Biomedical Waste Management</td><td class='px-6 py-4 whitespace-nowrap'>2015</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Safe injection practices (DNB 2018/2)5</td><td class='px-6 py-4'>Biomedical Waste Management</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What are the safe injection practices (DNB 2019/1)5</td><td class='px-6 py-4'>Biomedical Waste Management</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                </tbody>
+            </table>
+        </main>
+        
+        <div class="mt-8 p-6 bg-gray-50 rounded-2xl shadow-lg">
+            <h3 class="text-xl font-semibold mb-4 text-gray-700">Category Key</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-600 sm:columns-2 md:columns-3">
+                <li><b>General</b></li>
+                <li><b>RCH</b></li>
+                <li><b>ICDS</b></li>
+                <li><b>IMNCI</b></li>
+                <li><b>Polio Eradication</b></li>
+                <li><b>RNTCP/NTEP</b></li>
+                <li><b>NRHM/NHM</b></li>
+                <li><b>BFHI</b></li>
+                <li><b>Biomedical Waste Management</b></li>
+            </ul>
+        </div>
+
+        <footer class="text-center mt-10 text-gray-500 text-sm">
+            <p>Made by Dr. Rubanbalaji | Updated till Oct 2024</p>
+        </footer>
+    </div>
+    <script>
+        function sortTable(columnIndex) {
+            const table = document.getElementById("questionsTable");
+            const tbody = table.tBodies[0];
+            const rows = Array.from(tbody.rows);
+            const header = table.tHead.rows[0].cells[columnIndex];
+            const isAsc = !header.classList.contains('sort-asc');
+
+            table.tHead.querySelectorAll('.sortable-header').forEach(th => {
+                th.classList.remove('sort-asc', 'sort-desc');
+            });
+
+            header.classList.add(isAsc ? 'sort-asc' : 'sort-desc');
+
+            rows.sort((a, b) => {
+                const aText = a.cells[columnIndex].textContent.trim();
+                const bText = b.cells[columnIndex].textContent.trim();
+
+                if (columnIndex === 2) { // Year column
+                    return isAsc ? aText.localeCompare(bText) : bText.localeCompare(aText);
+                }
+                
+                return isAsc ? aText.localeCompare(bText) : bText.localeCompare(aText);
+
+            });
+
+            tbody.innerHTML = "";
+            rows.forEach(row => tbody.appendChild(row));
+        }
+    </script>
+</body>
+</html>
