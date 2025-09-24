@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part XVIII - The Cardiovascular System | DNB Pediatrics Question Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .sortable-header {
+            cursor: pointer;
+            position: relative;
+        }
+        .sortable-header:hover {
+            background-color: #f0f4f8;
+        }
+        .sort-asc::after, .sort-desc::after {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .sort-asc::after {
+            content: ' ▲';
+        }
+        .sort-desc::after {
+            content: ' ▼';
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-600">Part XVIII - The Cardiovascular System</h1>
+            <p class="text-lg text-gray-600 mt-2"><a href="index.html" class="text-blue-500 hover:underline">&larr; Back to Main Index</a></p>
+        </header>
+
+        <main class="bg-white p-6 md:p-8 rounded-2xl shadow-lg overflow-x-auto">
+            <table class="w-full divide-y divide-gray-200" id="questionsTable">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" style="width: 75%;" onclick="sortTable(0)">
+                            Question
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" onclick="sortTable(1)">
+                            Chapter
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" onclick="sortTable(2)">
+                            Year
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Embryology of heart development (DNB 2016/2)5</td><td class='px-6 py-4'>469</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe embryonic development of heart (DNB 2023/1)5</td><td class='px-6 py-4'>469</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Fetal Circulation and cardiovascular adjustments after birth (DNB 2006/1)10</td><td class='px-6 py-4'>470</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline Fetal Circulation (DNB 2007/2)10</td><td class='px-6 py-4'>470</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Draw a labeled diagram of fetal circulation. Indicate partial pressure of oxygen (PaO2) and oxygen saturation (SaO2) values at key points in this circulation (DNB 2008/1)10</td><td class='px-6 py-4'>470</td><td class='px-6 py-4 whitespace-nowrap'>2008</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Fetal circulation and changes after birth (DNB 2010/1)5+5</td><td class='px-6 py-4'>470</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Depict diagrammatically fetal circulation. Highlight its unique features differentiating it from neonatal circulation. Outline important changes occurring at birth (DNB 2011/1)4+3+3</td><td class='px-6 py-4'>470</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Fetal circulation and changes after birth (DNB 2015/1)4+3</td><td class='px-6 py-4'>470</td><td class='px-6 py-4 whitespace-nowrap'>2015</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Fetal circulation and changes at birth (DNB 2018/1)5</td><td class='px-6 py-4'>470</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Fetal circulation and changes at birth (DNB 2020/1)5</td><td class='px-6 py-4'>470</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Fetal circulation with diagrammatic illustration and changes after birth (DNB 2020/2)5</td><td class='px-6 py-4'>470</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Ductus dependent congenital heart diseases (DNB 2020/2)5</td><td class='px-6 py-4'>470</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe / Diagramatic presentation of fetal circulation (DNB 2022/1)5</td><td class='px-6 py-4'>470</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate various duct dependent congenital heart diseases that can present as neonatal emergencies (DNB 2023/1)5</td><td class='px-6 py-4'>470</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Fetal, transistional and neonatal circulation (DNB 2023/2)5</td><td class='px-6 py-4'>470</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Fetal circulation (DCH 2023/2)5</td><td class='px-6 py-4'>470</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Significance of S2 in clinical practice (DNB 1998/1)15</td><td class='px-6 py-4'>471</td><td class='px-6 py-4 whitespace-nowrap'>1998</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate the conditions where you can get a) Loud S2 b) Wide splitting S2 Explain the pathophysiology of fixed splitting of S2 (DNB 2005/1)10</td><td class='px-6 py-4'>471</td><td class='px-6 py-4 whitespace-nowrap'>2005</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>A one-year-old child is referred for an asymptomatic cardiac murmur. Outline the likely causes. How will you differentiate an innocent murmur from that of a congenital heart disease, on clinical grounds? (DNB 2009/1)3+7</td><td class='px-6 py-4'>471</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>How will you differentiate an innocent murmur from an organic cardiac murmur? (DNB 2023/1)5</td><td class='px-6 py-4'>471</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnostic Cardiac Catheterisation (DNB 2019/2)5</td><td class='px-6 py-4'>472</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Normal and abnormal QRS complexes in ECG (DNB 2023/2)5</td><td class='px-6 py-4'>472</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pulse oximetry screening for critical congenital heart disease (DNB 2022/1)5</td><td class='px-6 py-4'>474</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe the development of ventricular septum. Discuss the clinical features and management of VSD, and enumerate the indications for surgical intervention (DNB 2014/1)3+3+2+2</td><td class='px-6 py-4'>475</td><td class='px-6 py-4 whitespace-nowrap'>2014</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Medical management of PDA (DNB 2018/2)5</td><td class='px-6 py-4'>475</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Indications of closure of ventricular septal defects in children (DNB 2020/2)5</td><td class='px-6 py-4'>475</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the medical management of Patent Ductus Arteriosus (PDA) (DNB 2023/1)5</td><td class='px-6 py-4'>475</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Treatment of ventricular septal defect (DNB 2023/2)5</td><td class='px-6 py-4'>475</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Timing and indications for surgical closure of a ventricular septal defect (DNB 2024/1)5</td><td class='px-6 py-4'>475</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Hyperoxia test (DNB 2020/2)5</td><td class='px-6 py-4'>478</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of a sick newborn with suspected cyanotic heart disease (DNB 2021/1)5</td><td class='px-6 py-4'>478</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Approach to manage a neonate with cyanotic congenital heart disease (DNB 2022/1)5</td><td class='px-6 py-4'>478</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Cyanotic Spell (DNB 1994/2)15</td><td class='px-6 py-4'>479</td><td class='px-6 py-4 whitespace-nowrap'>1994</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>How do you classify congenital cyanotic heart disease? Discuss their investigations (DNB 1997/2)15</td><td class='px-6 py-4'>479</td><td class='px-6 py-4 whitespace-nowrap'>1997</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Complications of Fallot's Tetralogy and their management (DNB 1999/2)10</td><td class='px-6 py-4'>479</td><td class='px-6 py-4 whitespace-nowrap'>1999</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of Paroxysmal Hypercyanotic spell (DNB 1999/2)15</td><td class='px-6 py-4'>479</td><td class='px-6 py-4 whitespace-nowrap'>1999</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pathophysiology of Cyanotic spells (DNB 2002/1)15</td><td class='px-6 py-4'>479</td><td class='px-6 py-4 whitespace-nowrap'>2002</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What are the congenital heart diseases associated with cyanotic spells. Write clinical presentation and management of cyanotic spell (DNB 2004/2)2+3+5</td><td class='px-6 py-4'>479</td><td class='px-6 py-4 whitespace-nowrap'>2004</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>How will you manage a child in cyanotic spell (DNB 2006/1)5</td><td class='px-6 py-4'>479</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pathophysiology, diagnosis and treatment of Eisenmenger Syndrome (DNB 2007/1)10</td><td class='px-6 py-4'>479</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the hemodynamics and pathophysiology of Tetralogy of Fallot. Outline management of cyanotic spell in a 2-year-old child (DNB 2012/1)4+3+3</td><td class='px-6 py-4'>479</td><td class='px-6 py-4 whitespace-nowrap'>2012</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe the hemodynamics and clinical features of tricuspid atresia in a neonate. Outline the expected findings on ECG and chest X-ray (DNB 2013/1)3+3+2+2</td><td class='px-6 py-4'>479</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Causes of blue spells in neonates (DNB 2017/2)6</td><td class='px-6 py-4'>479</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Complications of TOF (DNB 2017/2)5</td><td class='px-6 py-4'>479</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pathophysiology and treatment of cyanotic spells (DNB 2018/1)5</td><td class='px-6 py-4'>479</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pathophysiology and treatment of cyanotic spells (DNB 2019/1)5</td><td class='px-6 py-4'>479</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Illustrate the pathophysiology of R-L shunt (DNB 2020/2)5</td><td class='px-6 py-4'>479</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of cyanotic spell (DNB 2021/2)4</td><td class='px-6 py-4'>479</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of cyanotic spell (DNB 2023/1)5</td><td class='px-6 py-4'>479</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Cyanotic spells management (DCH 2023/2)5</td><td class='px-6 py-4'>479</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Clinical features and management of cyanotic spells in a 3-year-old child (DCH 2024/1)5</td><td class='px-6 py-4'>479</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of cyanotic spell in a 7 month old child with 5 Kg weight (DNB 2024/2)5</td><td class='px-6 py-4'>479</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Clinical features and management of Hypoplastic left heart syndrome (DNB 2016/2)5</td><td class='px-6 py-4'>480</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pathophysiology of Eisenmenger syndrome (DNB 2018/2)5</td><td class='px-6 py-4'>482</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the various minimally surgical invasive devices and procedures available for the management of common congenital heart diseases in children (DNB 2007/1)10</td><td class='px-6 py-4'>483</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Classification of cardiac arrythmias and management of WPW Syndrome (DNB 1993/1)15</td><td class='px-6 py-4'>484</td><td class='px-6 py-4 whitespace-nowrap'>1993</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Arrythmias- pathogenesis, diagnosis and management of different types (DNB 2003/2)15</td><td class='px-6 py-4'>484</td><td class='px-6 py-4 whitespace-nowrap'>2003</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe the etiopathogenesis of supraventricular tachycardia in children. Discuss the diagnosis and management of a child with supraventricular tachycardia (DNB 2004/2)3+3+4</td><td class='px-6 py-4'>484</td><td class='px-6 py-4 whitespace-nowrap'>2004</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What are the causes, manifestations and management of a young child with SVT (DNB 2006/1)10</td><td class='px-6 py-4'>484</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Classify stable and unstable arrythmias. Discuss the types of SVT (Supraventricular Tachycardia) with their ECG changes. Outline the approach to manage unstable arrhythmias (DNB 2008/2)10</td><td class='px-6 py-4'>484</td><td class='px-6 py-4 whitespace-nowrap'>2008</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Classify anti arrhythmic drugs used in children. Describe the mechanism of action and uses of Amiodarone (DNB 2010/1)5+5</td><td class='px-6 py-4'>484</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate the causes and outline the characteristics and treatment of Supraventricular Tachycardia (SVT) in an infant (DNB 2010/2)3+3+4</td><td class='px-6 py-4'>484</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate life threatening tachyarrhythmias in childhood. How would you diagnose them? Briefly outline their emergency interventions (DNB 2012/1)2+4+4</td><td class='px-6 py-4'>484</td><td class='px-6 py-4 whitespace-nowrap'>2012</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>AVNRT (AV Nodal Re-Entrant tachycardia) (DNB 2016/1)4</td><td class='px-6 py-4'>484</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate difference between sinus tachycardia and SVT in a tabular format (DNB 2017/2)4</td><td class='px-6 py-4'>484</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of SVT (DNB 2019/1)5</td><td class='px-6 py-4'>484</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Approach to arrhythmia in children (DNB 2019/2)5</td><td class='px-6 py-4'>484</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Types of supraventricular tachycardia and management of SVT with circulatory failure (DNB 2020/2)5</td><td class='px-6 py-4'>484</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Tabulate differences in ECG findings in different tachyarrythmias in children (DNB 2021/1)5</td><td class='px-6 py-4'>484</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Arrhythmias in children: Diagnosis and their immediate management in emergency room (DNB 2022/1)5</td><td class='px-6 py-4'>484</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of ventricular tachycardia (DNB 2022/2)5</td><td class='px-6 py-4'>484</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnosis and treatment of supraventricular tachycardia (DNB 2023/2)5</td><td class='px-6 py-4'>484</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>ECG findings and treatment of paroxysmal supraventricular tachycardia in a child (DNB 2024/1)5</td><td class='px-6 py-4'>484</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Long QT syndrome (DNB 2024/1)5</td><td class='px-6 py-4'>484</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pathogens, clinical features and management of infective endocarditis (DNB 2010/1)2+4+4</td><td class='px-6 py-4'>486</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate common pathogens of infective endocarditis. List conditions/ interventions which require prophylaxis for infective endocarditis in a child with underlying heart disease. Outline antibiotic therapy for a child with RHD and infective endocarditis (DNB 2011/1)2+3+5</td><td class='px-6 py-4'>486</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline Duke criteria for diagnosis of bacterial endocarditis. Discuss its application in clinical setting (DNB 2013/1)6+4</td><td class='px-6 py-4'>486</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Infective endocarditis prophylaxis in heart disease (DNB 2018/2)5</td><td class='px-6 py-4'>486</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Infective Endocarditis - Management and Preventive Prophylaxis (DNB 2021/2)6</td><td class='px-6 py-4'>486</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Treatment of Acute Rheumatic carditis (DNB 1997/1)15</td><td class='px-6 py-4'>487</td><td class='px-6 py-4 whitespace-nowrap'>1997</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of a child with acute rheumatic fever with carditis (DNB 2021/1)5</td><td class='px-6 py-4'>487</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>All possible radiologic and echocardiographic findings of Rheumatic Heart Disease (DNB 2021/2)5</td><td class='px-6 py-4'>487</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Cardiomyopathy (DNB 1995/1)15</td><td class='px-6 py-4'>488</td><td class='px-6 py-4 whitespace-nowrap'>1995</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnosis of Cardiomyopathy (DNB 1996/2)12</td><td class='px-6 py-4'>488</td><td class='px-6 py-4 whitespace-nowrap'>1996</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss in brief the etiopathogenesis, clinical features and management of dilated cardiomyopathy (DNB 2012/1)3+3+4</td><td class='px-6 py-4'>488</td><td class='px-6 py-4 whitespace-nowrap'>2012</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Causes of cardiomyopathy in children (DNB 2017/1)5</td><td class='px-6 py-4'>488</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of acute myocarditis (DNB 2018/2)5</td><td class='px-6 py-4'>488</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Differential diagnosis and treatment modality of Dilated Cardiomyopathy (DNB 2019/1)5</td><td class='px-6 py-4'>488</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Myocarditis: a) Clinical manifestations b) Management (DCH 2024/2)5+5</td><td class='px-6 py-4'>488</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnosis and management of Constrictive Pericarditis (DNB 1999/2)10</td><td class='px-6 py-4'>489</td><td class='px-6 py-4 whitespace-nowrap'>1999</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Newer approaches in management of CCF (DNB 1993/1)15</td><td class='px-6 py-4'>491</td><td class='px-6 py-4 whitespace-nowrap'>1993</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Treatment of Intractable CCF (DNB 1993/2)10</td><td class='px-6 py-4'>491</td><td class='px-6 py-4 whitespace-nowrap'>1993</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe Briefly the Pathophysiology of CCF and management of Refractory Failure (DNB 1998/2)25</td><td class='px-6 py-4'>491</td><td class='px-6 py-4 whitespace-nowrap'>1998</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Intractable congestive heart failure- management approach (DNB 2002/1)15</td><td class='px-6 py-4'>491</td><td class='px-6 py-4 whitespace-nowrap'>2002</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>ACE inhibitors in CCF with congenital heart disease (DNB 2003/1)15</td><td class='px-6 py-4'>491</td><td class='px-6 py-4 whitespace-nowrap'>2003</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>CCF- Pathophysiology and management (DNB 2003/2)25</td><td class='px-6 py-4'>491</td><td class='px-6 py-4 whitespace-nowrap'>2003</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>How will you manage a child in Refractory CCF (DNB 2006/1)5</td><td class='px-6 py-4'>491</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the pathogenesis of Congestive Heart failure and the role of vasodilators in its management (DNB 2006/1)10</td><td class='px-6 py-4'>491</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>A 13-year-old male is brought with an H/o progressive Dyspnea on exertion. He has past H/o recurrent joint pain. What is the most likely diagnosis? How will you investigate and manage the child? Add a note on Refractory CCF in a child (DNB 2005/1)5+5</td><td class='px-6 py-4'>491</td><td class='px-6 py-4 whitespace-nowrap'>2005</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Refractory congestive heart failure- causes and management (DNB 2007/2)10</td><td class='px-6 py-4'>491</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>List the causes of congestive heart failure in a 2 years old child. Describe different types of VSD according to position and size. Write indicators for surgical intervention/ device closure (DNB 2008/1)10</td><td class='px-6 py-4'>491</td><td class='px-6 py-4 whitespace-nowrap'>2008</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the role of vasodilator therapy in congestive heart failure. Enumerate various vasodilator agents used in CHF and their respective mechanisms of action (DNB 2008/1)10</td><td class='px-6 py-4'>491</td><td class='px-6 py-4 whitespace-nowrap'>2008</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>A 3-year-old child having fever for 2 days suddenly develops breathlessness, tachycardia and sweating. Describe the differential diagnosis of this case and its treatment (DNB 2009/2)5+5</td><td class='px-6 py-4'>491</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>A 2-month old baby presents with history of failure to gain weight, tachypnea, tachycardia, difficulty in taking feed and excessive perspiration. On examination -no cyanosis, hepatomegaly and systolic murmur is noted. Discuss differential diagnosis, investigations and management (DNB 2010/1)3+3+4</td><td class='px-6 py-4'>491</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the role of vasodilator therapy in congestive heart failure. Enumerate various vasodilator agents used in CHF and their respective mechanisms of action (DNB 2015/2)4+3+3</td><td class='px-6 py-4'>491</td><td class='px-6 py-4 whitespace-nowrap'>2015</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of congestive heart failure (DNB 2017/2)5</td><td class='px-6 py-4'>491</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Fluid therapy in congestive cardiac failure (DNB 2023/1)5</td><td class='px-6 py-4'>491</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Reasons for CHF in 6 month old (DCH 2023/2)5</td><td class='px-6 py-4'>491</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Treatment of refractory congestive cardiac failure (DNB 2024/1)5</td><td class='px-6 py-4'>491</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Sudden onset of breathlessness in a 3-year-old child: a) Causes b) Management (DCH 2024/2)5+5</td><td class='px-6 py-4'>491</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnosis of Essential Hypertension in children (DNB 1993/1)10</td><td class='px-6 py-4'>494</td><td class='px-6 py-4 whitespace-nowrap'>1993</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Investigations in a child with Hypertension (DNB 1995/1)10</td><td class='px-6 py-4'>494</td><td class='px-6 py-4 whitespace-nowrap'>1995</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Treatment of Hypertension (DNB 1997/2)12</td><td class='px-6 py-4'>494</td><td class='px-6 py-4 whitespace-nowrap'>1997</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss etiology, diagnosis and management of Childhood Hypertension (DNB 2000/1)25</td><td class='px-6 py-4'>494</td><td class='px-6 py-4 whitespace-nowrap'>2000</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Severe Hypertension in infancy (DNB 2000/1)15</td><td class='px-6 py-4'>494</td><td class='px-6 py-4 whitespace-nowrap'>2000</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the causes of Hypertension in a 7-year-old child. Approach of investigation and management of such a case (DNB 2002/1)25</td><td class='px-6 py-4'>494</td><td class='px-6 py-4 whitespace-nowrap'>2002</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>A 8 year old child is brought with a history of convulsions and altered sensorium. On examination her BP was 180/110 mm Hg. Discuss the differential diagnosis and laboratory investigations in this child. Discuss the management of Hypertensive Encephalopathy in this child. Add a note on fundus changes in hypertension (DNB 2006/1)10</td><td class='px-6 py-4'>494</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Recent advances in management of Hypertension (DNB 2006/1)10</td><td class='px-6 py-4'>494</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Essential Hypertension in children (DNB 2007/1)10</td><td class='px-6 py-4'>494</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the treatment of Hypertension in children. Classify the drugs used to treat hypertension and Briefly mention their mechanism of action (DNB 2007/2)10</td><td class='px-6 py-4'>494</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>A 10 year old boy is brought with a history of convulsions and altered sensorium. On examination, his BP was 180/110 mm of Hg. Describe differential diagnosis, laboratory investigations and treatment of this case (DNB 2009/2)3+4+3</td><td class='px-6 py-4'>494</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe the causes and pathogenesis or renal and renovascular hypertension. Outline principles of management (DNB 2012/1)3+3+4</td><td class='px-6 py-4'>494</td><td class='px-6 py-4 whitespace-nowrap'>2012</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define Hypertension in children. Enumerate the causes and discuss the management of an 8 years old boy presenting with a blood pressure of 210/160 mm Hg with seizures (DNB 2014/1)2+3+5</td><td class='px-6 py-4'>494</td><td class='px-6 py-4 whitespace-nowrap'>2014</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>An 8-year-old child is brought with a history of convulsions and altered sensorium. His BP is 180/110 mm Hg. Discuss the D/D and laboratory investigations and management of this patient (DNB 2016/1)3+3+4</td><td class='px-6 py-4'>494</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Treatment of hypertensive emergency (DNB 2018/1)5</td><td class='px-6 py-4'>494</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Recent advances in the diagnosis and management of high blood pressure in children (DNB 2020/1)5</td><td class='px-6 py-4'>494</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Updated definition of Elevated Blood Pressure, Stage 1 and Stage 2 Hypertension in children (DNB 2022/1)5</td><td class='px-6 py-4'>494</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the evaluation of a child with BP >95th centile +12mmHg recorded twice during OPD visits (DNB 2022/1)5</td><td class='px-6 py-4'>494</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Causes of renovascular hypertension (DNB 2022/2)5</td><td class='px-6 py-4'>494</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of a child with acute severe hypertension (DNB 2022/2)5</td><td class='px-6 py-4'>494</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of hypertensive emergency in a six-year-old child (DNB 2024/2)5</td><td class='px-6 py-4'>494</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Hypertensive crisis in children: a) Etiopathogenesis b) Outline of management c) Outcome in relation to etiology (DCH 2024/2)3+3+4</td><td class='px-6 py-4'>494</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Hypertension in children: a) Definition b) Aetiology c) Investigation d) Management (DCH 2024/2)2+2+2+4</td><td class='px-6 py-4'>494</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                </tbody>
+            </table>
+        </main>
+        
+        <div class="mt-8 p-6 bg-gray-50 rounded-2xl shadow-lg">
+            <h3 class="text-xl font-semibold mb-4 text-gray-700">Chapter Key</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-600 sm:columns-2 md:columns-3">
+                <li><b>469:</b> Cardiac Development</li>
+                <li><b>470:</b> The Fetal to Neonatal Circulatory Transition</li>
+                <li><b>471:</b> History and Physical Examination in Cardiac Evaluation</li>
+                <li><b>472:</b> Laboratory Cardiac Evaluation</li>
+                <li><b>474:</b> Evaluation and Screening of the Infant or Child with Congenital Heart Disease</li>
+                <li><b>475:</b> Acyanotic Congenital Heart Disease: Left-to-Right Shunt Lesions</li>
+                <li><b>478:</b> Cyanotic Congenital Heart Disease: Evaluation of the Critically ill Neonate With Cyanosis and Respiratory Distress</li>
+                <li><b>479:</b> Cyanotic Congenital Heart Disease: Lesions Associated with Decreased Pulmonary Blood Flow</li>
+                <li><b>480:</b> Cyanotic Congenital Heart Disease: Lesions Associated with Increased Pulmonary Blood Flow</li>
+                <li><b>482:</b> Pulmonary Hypertension</li>
+                <li><b>483:</b> General Principles of Treatment of Congenital Heart Disease</li>
+                <li><b>484:</b> Disturbances of Rate and Rhythm of the Heart</li>
+                <li><b>486:</b> Infective Endocarditis</li>
+                <li><b>487:</b> Rheumatic Heart Disease</li>
+                <li><b>488:</b> Diseases of the Myocardium</li>
+                <li><b>489:</b> Diseases of the Pericardium</li>
+                <li><b>491:</b> Heart Failure</li>
+                <li><b>494:</b> Systemic Hypertension</li>
+            </ul>
+        </div>
+
+        <footer class="text-center mt-10 text-gray-500 text-sm">
+            <p>Made by Dr. Rubanbalaji | Updated till Oct 2024</p>
+        </footer>
+    </div>
+    <script>
+        function sortTable(columnIndex) {
+            const table = document.getElementById("questionsTable");
+            const tbody = table.tBodies[0];
+            const rows = Array.from(tbody.rows);
+            const header = table.tHead.rows[0].cells[columnIndex];
+            const isAsc = !header.classList.contains('sort-asc');
+
+            table.tHead.querySelectorAll('.sortable-header').forEach(th => {
+                th.classList.remove('sort-asc', 'sort-desc');
+            });
+
+            header.classList.add(isAsc ? 'sort-asc' : 'sort-desc');
+
+            rows.sort((a, b) => {
+                const aText = a.cells[columnIndex].textContent.trim();
+                const bText = b.cells[columnIndex].textContent.trim();
+
+                let aVal = aText;
+                let bVal = bText;
+
+                // For Chapter and Year columns, parse as numbers
+                if (columnIndex === 1 || columnIndex === 2) {
+                    aVal = parseInt(aText, 10);
+                    bVal = parseInt(bText, 10);
+                }
+
+                if (aVal < bVal) {
+                    return isAsc ? -1 : 1;
+                }
+                if (aVal > bVal) {
+                    return isAsc ? 1 : -1;
+                }
+                return 0;
+            });
+
+            tbody.innerHTML = "";
+            rows.forEach(row => tbody.appendChild(row));
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part II - Growth, Development and Behavior | DNB Pediatrics Question Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .sortable-header {
+            cursor: pointer;
+        }
+        .sortable-header:hover {
+            background-color: #f0f4f8;
+        }
+        .sort-asc::after {
+            content: ' ▲';
+        }
+        .sort-desc::after {
+            content: ' ▼';
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-600">Part II - Growth, Development and Behavior</h1>
+            <p class="text-lg text-gray-600 mt-2"><a href="index.html" class="text-blue-500 hover:underline">&larr; Back to Main Index</a></p>
+        </header>
+
+        <main class="bg-white p-6 md:p-8 rounded-2xl shadow-lg overflow-x-auto">
+            <table class="w-full table-fixed divide-y divide-gray-200" id="questionsTable">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header w-9/12" onclick="sortTable(0)">
+                            Question
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header w-2/12" onclick="sortTable(1)">
+                            Chapter
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header w-1/12" onclick="sortTable(2)">
+                            Year
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Factors affecting Development of children (DNB 1992/1)15</td><td class='px-6 py-4'>19</td><td class='px-6 py-4 whitespace-nowrap'>1992</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Growth Factors (DNB 1999/1)15</td><td class='px-6 py-4'>19</td><td class='px-6 py-4 whitespace-nowrap'>1999</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Principles of Growth and Development (DNB 2000/1)15</td><td class='px-6 py-4'>19</td><td class='px-6 py-4 whitespace-nowrap'>2000</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Write the height velocity curves of girls and boys from birth to adolescence, describe the principles and factors governing the growth and development in children (DNB 2006/1)10</td><td class='px-6 py-4'>19</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe: Factors affecting child development Developmental screening tests available and suitable for use in Indian children (DNB 2009/2)5+5</td><td class='px-6 py-4'>19</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>"Red Flags" in developmental screening and surveillance (DNB 2023/2)5</td><td class='px-6 py-4'>19</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Components of early intervention in childhood development (DNB 2024/1)5</td><td class='px-6 py-4'>19</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Developmental milestones in first two years of life (DNB 2010/1)10</td><td class='px-6 py-4'>23</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the fine motor milestones along with their normal age of achievement in sequence attained between birth and 5 years of age (DNB 2010/2)10</td><td class='px-6 py-4'>23</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe in detail the physical growth and development in all domains from birth till completion of first year (DNB 2011/2)5+5</td><td class='px-6 py-4'>23</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Growth and development in second year of life in children (DNB 2007/1)10</td><td class='px-6 py-4'>24</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What are the developmental disorders in preschool years? Discuss the management (DNB 1997/1)15</td><td class='px-6 py-4'>25</td><td class='px-6 py-4 whitespace-nowrap'>1997</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Approach to a child with Delayed Speech (DNB 2002/1)15</td><td class='px-6 py-4'>25</td><td class='px-6 py-4 whitespace-nowrap'>2002</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the causes and approach to a Preschool child with Developmental Regression (DNB 2002/1)15</td><td class='px-6 py-4'>25</td><td class='px-6 py-4 whitespace-nowrap'>2002</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Developmental milestones achieved by a three years old child (DNB 2024/2)5</td><td class='px-6 py-4'>25</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define Growth, Development, and Velocity of growth mean, median, percentiles. Enumerate causes of retarded growth. Briefly outline a schedule for investigation of such a case (DNB 1992/2)15</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>1992</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the basis for use of Growth Standards. What should be taken as a reasonable approach for India (DNB 1994/2)15</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>1994</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Velocity and cross-sectional standards as applied to Human Growth (DNB 1995/2)15</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>1995</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Growth Monitoring (DNB 1998/1)15</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>1998</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Bone age assessment and its usefulness (DNB 2007/2)10</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the evolution and characteristics of WHO growth charts. Discuss their implications on the magnitude of malnutrition in Indian setting (DNB 2011/1)3+4+3</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate the available methods and indications for determination of bone age in children and adolescents. Outline the differential diagnosis of a child with short stature on the basis of bone age (DNB 2011/1)3+3+4</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define growth velocity. Draw a typical height velocity curve from birth to puberty for boys and girls. Discuss the utility of determining growth velocity (DNB 2012/1)2+4+4</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>2012</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Bone age assessment and physical growth in children (DNB 2020/2)5</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>WHO growth charts (DNB 2022/1)5</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Growth charts in paediatric practice (DCH 2024/1)5</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Types of Growth charts and their use (DNB 2024/2)5</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Approach to a child with Failure to Thrive (DNB 1996/1)14</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>1996</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Causes of Failure to Thrive in infancy (DNB 1996/2)15</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>1996</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define failure to thrive. Outline a diagnostic approach for a child with failure to thrive (DNB 2004/2)2+8</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>2004</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Non organic failure to thrive (DNB 2007/1)10</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define failure to thrive. Give its aetiology, classification, clinical features and management. (NB 2009/2)1+2+2+2+3</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define failure to thrive and tabulate its causes. Outline the approach to manage a child with failure to thrive (DNB 2010/2)2+3+5</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Failure to thrive (DNB 2015/1)6</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>2015</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Definition and causes of Failure to Thrive (DNB 2017/2)6</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Causes of FTT and schematic evaluation of FTT (DNB 2016/2)5</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>FTT and its causes (DCH 2023/2)5</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of FTT (DCH 2023/2)5</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define Short Stature. Discuss the approach to a child with short stature and the role of GH in Short Stature (DNB 2005/1)2+5+3</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>2005</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Approach to a child with short stature (DNB 2006/1)10, (DNB 2007/2)10</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Short stature - definition, differential diagnosis and management approach (DNB 2010/1)2+3+5</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define short stature. Outline the approach to clinical evaluation and management of a child with short stature (DNB 2013/1)2+8</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What is short stature. What are the common causes of short stature? Algorithmic approach to manage a 5-year-old child with short stature (DNB 2015/1)1+3+6</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>2015</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>A 12-year-old female child presents with short stature and delayed puberty. Enumerate various possible causes. Approach to diagnosis and their management (DNB 2016/1)2+8</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Approach to a child with short stature (DNB 2019/1)5, (DCH 2024/1)5</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the endocrine causes and its evaluation of short stature (DNB 2020/2)5</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enlist causes of short stature. Describe approach to a child whose parents report concern about their 9 year old male child being short (DNB 2021/1)4+6</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Approach to a 6 years old boy with short stature (DNB 2022/1)5, (DNB 2024/2)5</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Mid-parental height formula and its role in management of short stature (DNB 2024/1)5</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Short stature: a) Definition b) Types c) Management (DCH 2024/2)3+3+4</td><td class='px-6 py-4'>27</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Gessel Developmental schedule (DNB 1993/1)15</td><td class='px-6 py-4'>28</td><td class='px-6 py-4 whitespace-nowrap'>1993</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Various physical features that are likely to be associated with specific syndromes of mental retardation (DNB 1995/2)10</td><td class='px-6 py-4'>28</td><td class='px-6 py-4 whitespace-nowrap'>1995</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Preventable and treatable causes of Mental retardation (DNB 1996/2)10</td><td class='px-6 py-4'>28</td><td class='px-6 py-4 whitespace-nowrap'>1996</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate the causes of mental retardation in children. Give an outline of management of a child with mental retardation (DNB 2010/1)4+6</td><td class='px-6 py-4'>28</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate the criteria for diagnosis of mental retardation (MR). Classify MR and describe its evaluation (DNB 2014/1)2+2+6</td><td class='px-6 py-4'>28</td><td class='px-6 py-4 whitespace-nowrap'>2014</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What is developmental screening? Enumerate common developmental screening test. What issues they identify in a child? (DNB 2012/1)2+4+4</td><td class='px-6 py-4'>28</td><td class='px-6 py-4 whitespace-nowrap'>2012</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What is developmental delay? Describe different tools used for screening of developmental delay. (DNB 2011/2)3+7</td><td class='px-6 py-4'>28</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define developmental delay and developmental dissociation. Outline the screening and definitive tests for diagnosis of developmental delay (DNB 2013/1)5+5</td><td class='px-6 py-4'>28</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What is global developmental delay? What are the common causes of global developmental delay? Discuss the algorithmic approach to evaluate a child with global developmental delay (DNB 2013/2)2+3+5</td><td class='px-6 py-4'>28</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What is developmental delay? Describe different tools used for screening and for diagnosis of developmental delay (DNB 2015/2)2+4+4</td><td class='px-6 py-4'>28</td><td class='px-6 py-4 whitespace-nowrap'>2015</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Tools used for developmental screening (DNB 2017/1)5</td><td class='px-6 py-4'>28</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define and enumerate the causes of Global Developmental Delay (DNB 2017/1)5</td><td class='px-6 py-4'>28</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the investigative approach of Global Developmental Delay (DNB 2017/1)5, (DNB 2019/1)5</td><td class='px-6 py-4'>28</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define global developmental delay (DNB 2023/1)4</td><td class='px-6 py-4'>28</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What are the screening tools for development delay? (DNB 2023/1)6</td><td class='px-6 py-4'>28</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Important treatable causes for developmental delay (DCH 2024/1)5</td><td class='px-6 py-4'>28</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Sleep Disorders in children (DNB 1999/2)10</td><td class='px-6 py-4'>31</td><td class='px-6 py-4 whitespace-nowrap'>1999</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Obstructive sleep apnea: Diagnosis and management (DNB 2001/1)15</td><td class='px-6 py-4'>31</td><td class='px-6 py-4 whitespace-nowrap'>2001</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pathophysiology of Sleep Apnea (DNB 2003/1)15</td><td class='px-6 py-4'>31</td><td class='px-6 py-4 whitespace-nowrap'>2003</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the basic principles of sleep hygiene for children and adolescents (DNB 2009/1)10, (DNB 2012/1)5+5</td><td class='px-6 py-4'>31</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Principles of sleep hygiene in children (DNB 2013/1)5</td><td class='px-6 py-4'>31</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Evaluation of Obstructive Sleep Apnea (DNB 2014/2)5</td><td class='px-6 py-4'>31</td><td class='px-6 py-4 whitespace-nowrap'>2014</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>a) Mention anatomical and functional factors responsible for obstructive sleep apnea in children b) How do you diagnose and treat this condition (DNB 2015/2)5+2+3</td><td class='px-6 py-4'>31</td><td class='px-6 py-4 whitespace-nowrap'>2015</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Nightmares and nocturnal emission (DNB 2019/2)5</td><td class='px-6 py-4'>31</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the basic principles of sleep hygiene for children and adolescents (DNB 2020/1)5</td><td class='px-6 py-4'>31</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnosis and management of Obstructive Sleep Apnea Syndrome in children (DNB 2021/1)5</td><td class='px-6 py-4'>31</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Polysomnography and its role in children (DNB 2022/2)5</td><td class='px-6 py-4'>31</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of obstructive sleep apnea in a 10 year old child (DNB 2022/2)5</td><td class='px-6 py-4'>31</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Explain the anatomical and functional factors for obstructive sleep apnoea (OSA) (DNB 2023/1)5</td><td class='px-6 py-4'>31</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>How will you diagnose and treat OSA? (DNB 2023/1)5</td><td class='px-6 py-4'>31</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                </tbody>
+            </table>
+        </main>
+        <div class="mt-8 p-6 bg-gray-50 rounded-2xl shadow-lg">
+            <h3 class="text-xl font-semibold mb-4 text-gray-700">Chapter Key</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-600">
+                <li><b>19:</b> Developmental and Behavioral Theories</li>
+                <li><b>23:</b> The First Year</li>
+                <li><b>24:</b> The Second Year</li>
+                <li><b>25:</b> The Preschool Years</li>
+                <li><b>27:</b> Assessment of Growth</li>
+                <li><b>28:</b> Developmental and Behavioral Surveillance and Screening</li>
+                <li><b>31:</b> Sleep Medicine</li>
+            </ul>
+        </div>
+        <footer class="text-center mt-10 text-gray-500 text-sm">
+            <p>Made by Dr. Rubanbalaji | Updated till Oct 2024</p>
+        </footer>
+    </div>
+    <script>
+        function sortTable(columnIndex) {
+            const table = document.getElementById("questionsTable");
+            const tbody = table.tBodies[0];
+            const rows = Array.from(tbody.rows);
+            const header = table.tHead.rows[0].cells[columnIndex];
+            const isAsc = !header.classList.contains('sort-asc');
+
+            table.tHead.querySelectorAll('.sortable-header').forEach(th => {
+                th.classList.remove('sort-asc', 'sort-desc');
+            });
+
+            header.classList.toggle('sort-asc', isAsc);
+            header.classList.toggle('sort-desc', !isAsc);
+
+            rows.sort((a, b) => {
+                const aText = a.cells[columnIndex].textContent.trim();
+                const bText = b.cells[columnIndex].textContent.trim();
+
+                if (columnIndex === 1 || columnIndex === 2) {
+                    return isAsc ? (parseInt(aText) - parseInt(bText)) : (parseInt(bText) - parseInt(aText));
+                }
+
+                return isAsc ? aText.localeCompare(bText) : bText.localeCompare(aText);
+            });
+
+            tbody.innerHTML = "";
+            rows.forEach(row => tbody.appendChild(row));
+        }
+    </script>
+</body>
+</html>
+

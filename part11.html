@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part XI - Adolescent Medicine | DNB Pediatrics Question Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .sortable-header { cursor: pointer; }
+        .sortable-header:hover { background-color: #f0f4f8; }
+        .sort-asc::after { content: ' ▲'; }
+        .sort-desc::after { content: ' ▼'; }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-600">Part XI - Adolescent Medicine</h1>
+            <p class="text-lg text-gray-600 mt-2"><a href="index.html" class="text-blue-500 hover:underline">&larr; Back to Main Index</a></p>
+        </header>
+
+        <main class="bg-white p-6 md:p-8 rounded-2xl shadow-lg overflow-x-auto">
+            <table class="w-full table-auto divide-y divide-gray-200" id="questionsTable">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-9/12">Question</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header w-2/12" onclick="sortTable(1)">Chapter</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header w-1/12" onclick="sortTable(2)">Year</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    <!-- Chapter 150 -->
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe the events of sexual development in relation to physical growth. Name the most important regulatory factors (DNB 1994/1)25</td><td class='px-6 py-4'>150</td><td class='px-6 py-4 whitespace-nowrap'>1994</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Sexual Maturity Rating in female adolescents (DNB 1995/2)15</td><td class='px-6 py-4'>150</td><td class='px-6 py-4 whitespace-nowrap'>1995</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>SMR (DNB 2003/2)10</td><td class='px-6 py-4'>150</td><td class='px-6 py-4 whitespace-nowrap'>2003</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What is SMR? Discuss the secular trend in Children (DNB 2005/2)5+5</td><td class='px-6 py-4'>150</td><td class='px-6 py-4 whitespace-nowrap'>2005</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>How would you assess sexual maturity of a female adolescent (DNB 2006/1)10</td><td class='px-6 py-4'>150</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe Tanner's Sexual Maturity Rating (pubertal staging) in boys based on a) Genitalia and b) Pubic hair development (DNB 2011/2)5+5</td><td class='px-6 py-4'>150</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Biological changes during adolescence (DNB 2017/2)5</td><td class='px-6 py-4'>150</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Sexual Maturity Rating in girls (DNB 2023/1)5</td><td class='px-6 py-4'>150</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Sexual Maturity Rating (SMR) stages in males (DNB 2023/2)5</td><td class='px-6 py-4'>150</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <!-- Chapter 151 -->
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Approach to common psychological problems of adolescence (DNB 2017/1)5</td><td class='px-6 py-4'>151</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Adolescent friendly health services (DNB 2019/2)3</td><td class='px-6 py-4'>151</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Psychosocial screening in adolescents (DNB 2020/2)5</td><td class='px-6 py-4'>151</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <!-- Chapter 155 -->
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the special health problems of Adolescents (DNB 1998/1)25</td><td class='px-6 py-4'>155</td><td class='px-6 py-4 whitespace-nowrap'>1998</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Role of health education to Adolescents (DNB 1998/2)10</td><td class='px-6 py-4'>155</td><td class='px-6 py-4 whitespace-nowrap'>1998</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Health problems of adolescents (DNB 2003/2)15</td><td class='px-6 py-4'>155</td><td class='px-6 py-4 whitespace-nowrap'>2003</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What are the common problems in Adolescence (DNB 2005/1)5</td><td class='px-6 py-4'>155</td><td class='px-6 py-4 whitespace-nowrap'>2005</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Factors affecting Adolescent health and development (DNB 2006/1)10</td><td class='px-6 py-4'>155</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss Briefly Adolescent Health Problems (DNB 2007/2)10</td><td class='px-6 py-4'>155</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Preventive cardiology in adolescents (DNB 2007/2)10</td><td class='px-6 py-4'>155</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What advice will you give to a 35-year-old patient with coronary artery disease regarding its prevention in his adolescent son? (DNB 2006/1)10</td><td class='px-6 py-4'>155</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Adolescent health needs and health problems (DNB 2021/2)5</td><td class='px-6 py-4'>155</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <!-- Chapter 156 -->
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Adolescent Violence (DNB 2003/1)15</td><td class='px-6 py-4'>156</td><td class='px-6 py-4 whitespace-nowrap'>2003</td></tr>
+                    <!-- Chapter 157 -->
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Substance abuse in children (DNB 2019/1)5</td><td class='px-6 py-4'>157</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <!-- Chapter 159 -->
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of an adolescent girl with dysmenorrhoea (DNB 2022/2)5</td><td class='px-6 py-4'>159</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                </tbody>
+            </table>
+        </main>
+
+        <div class="mt-8 p-6 bg-gray-50 rounded-2xl shadow-lg">
+            <h3 class="text-xl font-semibold mb-4 text-gray-700">Chapter Key</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-600">
+                <li><b>150:</b> Adolescent Physical and Social Development</li>
+                <li><b>151:</b> Delivery of Healthcare to Adolescents</li>
+                <li><b>155:</b> The Epidemiology of Adolescent Health Problems</li>
+                <li><b>156:</b> Violent Behavior</li>
+                <li><b>157:</b> Substance Use Disorder</li>
+                <li><b>159:</b> Menstruation Related Disorders</li>
+            </ul>
+        </div>
+
+        <footer class="text-center mt-10 text-gray-500 text-sm">
+            <p>Made by Dr. Rubanbalaji | Updated till Oct 2024</p>
+        </footer>
+    </div>
+
+    <script>
+        function sortTable(columnIndex) {
+            const table = document.getElementById("questionsTable");
+            const tbody = table.tBodies[0];
+            const rows = Array.from(tbody.rows);
+            const header = table.tHead.rows[0].cells[columnIndex];
+            const isAsc = !header.classList.contains('sort-asc');
+
+            table.tHead.querySelectorAll('.sortable-header').forEach(th => {
+                th.classList.remove('sort-asc', 'sort-desc');
+            });
+
+            header.classList.toggle('sort-asc', isAsc);
+            header.classList.toggle('sort-desc', !isAsc);
+
+            rows.sort((a, b) => {
+                const aText = a.cells[columnIndex].textContent.trim();
+                const bText = b.cells[columnIndex].textContent.trim();
+
+                if (columnIndex === 1 || columnIndex === 2) { 
+                    const aNum = parseInt(aText);
+                    const bNum = parseInt(bText);
+                    if (isAsc) return aNum - bNum;
+                    return bNum - aNum;
+                }
+                return isAsc ? aText.localeCompare(bText) : bText.localeCompare(aText);
+            });
+
+            while (tbody.firstChild) {
+                tbody.removeChild(tbody.firstChild);
+            }
+
+            rows.forEach(row => tbody.appendChild(row));
+        }
+    </script>
+
+</body>
+</html>

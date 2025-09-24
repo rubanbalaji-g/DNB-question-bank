@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part XIX - Diseases of the Blood | DNB Pediatrics Question Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .sortable-header {
+            cursor: pointer;
+            position: relative;
+        }
+        .sortable-header:hover {
+            background-color: #f0f4f8;
+        }
+        .sort-asc::after, .sort-desc::after {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .sort-asc::after {
+            content: ' ▲';
+        }
+        .sort-desc::after {
+            content: ' ▼';
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-600">Part XIX - Diseases of the Blood</h1>
+            <p class="text-lg text-gray-600 mt-2"><a href="index.html" class="text-blue-500 hover:underline">&larr; Back to Main Index</a></p>
+        </header>
+
+        <main class="bg-white p-6 md:p-8 rounded-2xl shadow-lg overflow-x-auto">
+            <table class="w-full divide-y divide-gray-200" id="questionsTable">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" style="width: 75%;" onclick="sortTable(0)">
+                            Question
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" onclick="sortTable(1)">
+                            Chapter
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" onclick="sortTable(2)">
+                            Year
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Fetal Hematopoiesis (DNB 2019/2)4</td><td class='px-6 py-4'>495</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe the evolutionary development of the hemoglobin's from embryo to adult (DNB 2020/2)5</td><td class='px-6 py-4'>495</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe the relationship among the various hemoglobin's in first year of life and their implication in diagnosing hereditary hemoglobinopathies (DNB 2020/2)5</td><td class='px-6 py-4'>495</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the etiology and investigations in a case of Anemia (DNB 1994/1)25</td><td class='px-6 py-4'>496</td><td class='px-6 py-4 whitespace-nowrap'>1994</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe laboratory investigations in an infant with anemia and Briefly outline the interpretation of test results (DNB 1995/1)25</td><td class='px-6 py-4'>496</td><td class='px-6 py-4 whitespace-nowrap'>1995</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Severe anemia in the first year of life (DNB 2002/1)15</td><td class='px-6 py-4'>496</td><td class='px-6 py-4 whitespace-nowrap'>2002</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What is peripheral smear finding in (DNB 2005/1)2+2+2+2+2 a. Thalassemia Major b. Lead poisoning c. Megaloblastic anemia d. CRF e. Malaria</td><td class='px-6 py-4'>496</td><td class='px-6 py-4 whitespace-nowrap'>2005</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>List the causes of microcytic hypochromic anemia. How will you differentiate between iron deficiency anemia and thalassemia? Discuss Briefly the oral iron chelators (DNB 2008/1)10</td><td class='px-6 py-4'>496</td><td class='px-6 py-4 whitespace-nowrap'>2008</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Approach to anemia in a 2 year old child (DNB 2023/1)5</td><td class='px-6 py-4'>496</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Lab testing for diagnosis and classification of anemia (DNB 2023/2)5</td><td class='px-6 py-4'>496</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Peripheral Blood Smear in anemia (DCH 2023/2)5</td><td class='px-6 py-4'>496</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Characteristic hematological features, laboratory findings and treatment of congenital hypoplastic anemia (Diamond Blackfan Anemia) (DNB 2015/2)3+3+4</td><td class='px-6 py-4'>497</td><td class='px-6 py-4 whitespace-nowrap'>2015</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diamond Blackfan anemia-clinical features and treatment (DNB 2018/2)5</td><td class='px-6 py-4'>497</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Megaloblastic anemia (DNB 2003/2)15</td><td class='px-6 py-4'>503</td><td class='px-6 py-4 whitespace-nowrap'>2003</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>List the common causes of macrocytic anemia. Describe the laboratory diagnosis of megaloblastic anemia and treatment of juvenile pernicious anemia (DNB 2004/2)4+3+3</td><td class='px-6 py-4'>503</td><td class='px-6 py-4 whitespace-nowrap'>2004</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Clinico-hematological prole of Megaloblastic Anemia (DNB 2006/1)10</td><td class='px-6 py-4'>503</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss causes, clinical manifestations, laboratory findings and treatment of Folate deficiency anemia in children (DNB 2007/2)10</td><td class='px-6 py-4'>503</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enlist the common causes of macrocytic anemia. Describe the laboratory diagnosis and treatment of megaloblastic anemia (DNB 2009/2)2+3+5</td><td class='px-6 py-4'>503</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Write short note on: Peripheral smear findings in iron deficiency and B12 deficiency anemia (DNB 2010/2)2.5+2.5</td><td class='px-6 py-4'>503</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnostic and management of Megaloblastic anemia (DNB 2019/1)5</td><td class='px-6 py-4'>503</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Prevention of Iron Deficiency Anemia in children (DNB 1995/2)15</td><td class='px-6 py-4'>504</td><td class='px-6 py-4 whitespace-nowrap'>1995</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of Iron Deficiency anemia (DNB 1998/2)10</td><td class='px-6 py-4'>504</td><td class='px-6 py-4 whitespace-nowrap'>1998</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enlist the causes and outline the Differential Diagnosis and treatment of iron deficiency anemia (DNB 2005/1)3+3+4</td><td class='px-6 py-4'>504</td><td class='px-6 py-4 whitespace-nowrap'>2005</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the etiology of iron deficiency in children. Describe the clinical features and approach to diagnosis of a child suspected to be having nutritional anemia (DNB 2013/1)3+2+5</td><td class='px-6 py-4'>504</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe the sequential pathological changes seen with iron deficiency states. What laboratory studies can be used to differentiate common microcytic anemias? (DNB 2013/2)5+5</td><td class='px-6 py-4'>504</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Prevention of iron deficiency anaemia in children under 5 years of age (DNB 2018/1/5)</td><td class='px-6 py-4'>504</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe the iron metabolism in the human body (DNB 2022/1)5</td><td class='px-6 py-4'>504</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Differential diagnosis and laboratory evaluation of iron-refractory iron deficiency anemia (DNB 2022/2)5</td><td class='px-6 py-4'>504</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Treatment of iron deficiency anaemia in children (DNB 2023/1)5</td><td class='px-6 py-4'>504</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Role of red cell indices in diagnosis of iron deficiency anemia (DNB 2024/1)5</td><td class='px-6 py-4'>504</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Differential diagnosis of microcytic hypochromic anaemia (DNB 2018/2)5</td><td class='px-6 py-4'>505</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of hypochromic microcytic anemia in children (DNB 2022/1)5</td><td class='px-6 py-4'>505</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnosis and management of Congenital Hereditary Spherocytosis (DNB 1997/1)15</td><td class='px-6 py-4'>507</td><td class='px-6 py-4 whitespace-nowrap'>1997</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Hereditary Spherocytosis (DNB 2006/1)10</td><td class='px-6 py-4'>507</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Clinical features, diagnosis and management of hereditary spherocytosis (DNB 2024/2)5</td><td class='px-6 py-4'>507</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of acute sickle cell crisis (DNB 1999/1)15</td><td class='px-6 py-4'>511</td><td class='px-6 py-4 whitespace-nowrap'>1999</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Acute clinical complications of Sickle cell disease (DNB 2017/2)6</td><td class='px-6 py-4'>511</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Sickle cell crisis - Clinical presentation and management (DNB 2021/2)5</td><td class='px-6 py-4'>511</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pathophysiology of sickle cell disease (DNB 2023/2)5</td><td class='px-6 py-4'>511</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of acute chest syndrome (DNB 2023/2)5</td><td class='px-6 py-4'>511</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Clinical manifestations and treatment of sickle cell anemia (DNB 2024/1)4+2</td><td class='px-6 py-4'>511</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Sickle cell crisis (DNB 2024/2)5</td><td class='px-6 py-4'>511</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Methemoglobinemia- diagnosis and management (DNB 2017/2)4</td><td class='px-6 py-4'>511</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Recent concepts/advances for treatment/management of Thalassemia major in children (DNB 1995/2)10</td><td class='px-6 py-4'>511</td><td class='px-6 py-4 whitespace-nowrap'>1995</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Current management of Thalassemia Major (DNB 1996/2)15</td><td class='px-6 py-4'>511</td><td class='px-6 py-4 whitespace-nowrap'>1996</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Newer modalities in the management of ẞ Thalassemia Major (DNB 1999/2)10</td><td class='px-6 py-4'>511</td><td class='px-6 py-4 whitespace-nowrap'>1999</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Antenatal diagnosis of Thalassemia (DNB 1999/2)15</td><td class='px-6 py-4'>511</td><td class='px-6 py-4 whitespace-nowrap'>1999</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Genetic basis of Thalassemia syndromes (DNB 2002/1)15</td><td class='px-6 py-4'>511</td><td class='px-6 py-4 whitespace-nowrap'>2002</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>In relation to Thalassemia write a note on the following (DNB 2005/1)10 a. Alkali desaturation test b. NESTROFT test c. Peripheral smear d. SQUID-BLS e.BMD</td><td class='px-6 py-4'>511</td><td class='px-6 py-4 whitespace-nowrap'>2005</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Alpha Thalassemia (DNB 2007/1)10</td><td class='px-6 py-4'>511</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the antenatal management of a mother with an earlier child with thalasemia major (DNB 2007/2)10</td><td class='px-6 py-4'>511</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>List the causes of microcytic hypochromic anemia. Provide differentiating features between iron deficiency anaemia and beta thalassemia trait. Describe the management of thalassemia major (DNB 2011/1)3+3+4</td><td class='px-6 py-4'>511</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the long term complications of thalassemia major. How will you monitor for such complications in a child with thalassemia major? (DNB 2013/1)5+5</td><td class='px-6 py-4'>511</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe the foetal hemoglobins. Discuss the transfusion therapy for Thalassemia major and its long term follow up plan (DNB 2014/1)3+4+3</td><td class='px-6 py-4'>511</td><td class='px-6 py-4 whitespace-nowrap'>2014</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Recent concepts/advances for treatment/management of Thalassemia major in children (DNB 2014/2)5</td><td class='px-6 py-4'>511</td><td class='px-6 py-4 whitespace-nowrap'>2014</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Advances in treatment of Thalassemia major (DNB 2016/2)5</td><td class='px-6 py-4'>511</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Iron chelation therapy (DNB 2017/1)5</td><td class='px-6 py-4'>511</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Usual patterns in haemoglobin electrophoresis in beta thalassemia syndromes (DNB 2018/1)5</td><td class='px-6 py-4'>511</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Indication of splenectomy in thalassemia (DNB 2018/2)5</td><td class='px-6 py-4'>511</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Iron chelation therapy (DNB 2019/1)5</td><td class='px-6 py-4'>511</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Counselling of an antenatal mother who has a thalassemia major child (DNB 2019/2)4</td><td class='px-6 py-4'>511</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of transfusion in dependent thalassemia (DNB 2020/2)5</td><td class='px-6 py-4'>511</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Genetic counselling and antenatal diagnosis of thalassemia (DNB 2022/2)5</td><td class='px-6 py-4'>511</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Monitoring and management of iron overload in transfusion dependent thalassemia (DNB 2022/2)5</td><td class='px-6 py-4'>511</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Long term complications of multi-transfused thalassemia major (DCH 2024/1)5</td><td class='px-6 py-4'>511</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pathogenesis of anemia in G6PD deficiency (DNB 1999/1)15</td><td class='px-6 py-4'>512</td><td class='px-6 py-4 whitespace-nowrap'>1999</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>G6PD deficiency (DNB 1999/2)10</td><td class='px-6 py-4'>512</td><td class='px-6 py-4 whitespace-nowrap'>1999</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>3-year-old Child history of Jaundice since 2 months, H/O Exchange transfusion at D2. Discuss the differential diagnosis. Classify Hemolytic Anemia. Add a note on management of Intravascular hemolysis in G6PD deficiency (DNB 2005/1)4+4+2</td><td class='px-6 py-4'>512</td><td class='px-6 py-4 whitespace-nowrap'>2005</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Briefly outline normal erythropoiesis. Describe the diagnosis and treatment of G6PD deficiency (DNB 2007/2)10</td><td class='px-6 py-4'>512</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enlist the red blood cell metabolic enzyme pathways and the enzymes responsible for hemolysis. Discuss the pathogenesis involved in these hemolytic anemias (DNB 2011/1)3+7</td><td class='px-6 py-4'>512</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the etiology and management of Autoimmune Hemolytic Anemia (DNB 2009/1)3+7</td><td class='px-6 py-4'>513</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the etiology, pathogenesis and diagnostic workup of acute autoimmune hemolytic anemia (DNB 2010/2)3+3+4</td><td class='px-6 py-4'>513</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnosis and management of Autoimmune Hemolytic Anemia (DNB 2015/1)3</td><td class='px-6 py-4'>513</td><td class='px-6 py-4 whitespace-nowrap'>2015</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of Aplastic anemia (DNB 2016/1)5</td><td class='px-6 py-4'>517</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of Aplastic anemia (DNB 2019/1)5</td><td class='px-6 py-4'>517</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Fanconi anemia (DCH 2024/1)5</td><td class='px-6 py-4'>517</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Classify causes of acquired pancytopenia. Write Briefly about the management of acquired aplastic anemia (DNB 2009/1)3+7</td><td class='px-6 py-4'>518</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define pancytopenia. Enlist the causes and assessment of severity of aplastic anemia in children (DNB 2010/1)2+4+4</td><td class='px-6 py-4'>518</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define pancytopenia. Enumerate common causes in children. How will you assess severity of acquired anemia in children? (DNB 2011/2)2+3+5</td><td class='px-6 py-4'>518</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Evaluation of child with pancytopenia (DNB 2020/1)5</td><td class='px-6 py-4'>518</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Transfusion of Blood fractions (DNB 2000/1)10</td><td class='px-6 py-4'>519</td><td class='px-6 py-4 whitespace-nowrap'>2000</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Precautions to be taken while transfusing haemolytic child (DNB 2019/2)4</td><td class='px-6 py-4'>519</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Indications of Blood Component Therapy (DNB 2020/1)5</td><td class='px-6 py-4'>519</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate the indication of platelet transfusion in paediatrics (DNB 2019/1)5</td><td class='px-6 py-4'>520</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Platelet transfusion therapy (DNB 2024/1)4</td><td class='px-6 py-4'>520</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the method of extracting various blood components. What are the indications of usage of Fresh Frozen Plasma (FFP) and cryoprecipitate? (DNB 2009/2)5+5</td><td class='px-6 py-4'>522</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the inherent hazards of Blood Transfusion in children and the necessary measures to avoid and minimize them (DNB 2007/1)10</td><td class='px-6 py-4'>523</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss Briefly the risks associated with blood transfusion therapy (DNB 2013/2)10</td><td class='px-6 py-4'>523</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Transfusion associated hepatitis. Diagnosis and management (DNB 2017/1)5</td><td class='px-6 py-4'>523</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Complications of blood transfusion (DNB 2022/1)5</td><td class='px-6 py-4'>523</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Differentiate bleeding disorder from clotting disorder (DNB 2016/2)3</td><td class='px-6 py-4'>524</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Draw a diagrammatic representation of coagulation cascade (DNB 2017/1)5</td><td class='px-6 py-4'>524</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What are the components of haemostatic process? Outline the coagulation cascade (DNB 2019/1)5</td><td class='px-6 py-4'>524</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Role and function of platelets in physiology of haemostasis (DNB 2020/1)5</td><td class='px-6 py-4'>524</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Role of platelet in hemostasis (DNB 2022/2)5</td><td class='px-6 py-4'>524</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Coagulation Cascade (DNB 2023/2)5</td><td class='px-6 py-4'>524</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe coagulation pathway (DNB 2024/1)5</td><td class='px-6 py-4'>524</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Antenatal diagnosis and carrier detection of Hemophilia (DNB 1998/2)15</td><td class='px-6 py-4'>525</td><td class='px-6 py-4 whitespace-nowrap'>1998</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Explain coagulation cascade. A 4-year-old child with h/o recurrent epistaxis and gum bleeding. Discuss laboratory diagnosis and management of this condition. Add a note of differentiating a bleeding disorder from a coagulation disorder (DNB 2005/1)5+3+2</td><td class='px-6 py-4'>525</td><td class='px-6 py-4 whitespace-nowrap'>2005</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>A 5-year-old male child comes with a history of trivial fall and swelling of right knee. He has history of easy bruisability. Discuss the laboratory diagnosis and management of this child. Add a note on antenatal diagnosis and counselling (DNB 2006/1)10</td><td class='px-6 py-4'>525</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the various aspects of management of a child with Hemophilia A (DNB 2007/2)10</td><td class='px-6 py-4'>525</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>A 10-year-old boy with hemophilia A, weighing 30 kg has come with bleeding in both knee joints. Discuss Briefly the specific, supportive and prophylactic management of this child (DNB 2011/1)4+3+3</td><td class='px-6 py-4'>525</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Investigation and treatment of a 2-year-old boy presenting with spontaneous hemarthrosis (DNB 2016/2)10</td><td class='px-6 py-4'>525</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Factor replacement therapy in haemophilia (DNB 2017/1)5</td><td class='px-6 py-4'>525</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Specific treatment of mild to moderate bleeding in Haemophilia A (DNB 2018/1)5</td><td class='px-6 py-4'>525</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Advance in treatment of hemophilia (DNB 2019/1)5</td><td class='px-6 py-4'>525</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Prophylaxis program in haemophilia (DNB 2019/2)4</td><td class='px-6 py-4'>525</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Recent advances in management of Haemophilia (DNB 2021/2)5</td><td class='px-6 py-4'>525</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Oral drugs in management of hemophilia (DNB 2022/1)5</td><td class='px-6 py-4'>525</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the differential diagnosis in a 6-year-old child with easy bruisability. Enumerate relevant investigation for each differential diagnosis (DNB 2023/1)5+5</td><td class='px-6 py-4'>525</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of Hemophilia A (DNB 2023/2)5</td><td class='px-6 py-4'>525</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Recent advances in management of Hemophilia A (DNB 2024/2)5</td><td class='px-6 py-4'>525</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Von Willebrand disease (DNB 2020/1)5</td><td class='px-6 py-4'>526</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Hereditary prothrombotic state (DNB 2021/1)5</td><td class='px-6 py-4'>527</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pathophysiology of thrombophilia (DNB 2016/1)4</td><td class='px-6 py-4'>528</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Thrombotic disorders in children (DNB 2023/2)5</td><td class='px-6 py-4'>528</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>DIC (DNB 1996/2)15</td><td class='px-6 py-4'>532</td><td class='px-6 py-4 whitespace-nowrap'>1996</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the pathogenesis of disseminated intravascular coagulation (DIC) and relate it to the laboratory abnormalities observed in this entity (DNB 2008/1)10</td><td class='px-6 py-4'>532</td><td class='px-6 py-4 whitespace-nowrap'>2008</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagrammatically outline the Normal Coagulation Cascade. Outline diagnosis and management of disseminated Intravascular Coagulation (DIC) (DNB 2009/1)4+6</td><td class='px-6 py-4'>532</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Disseminated intravascular coagulation: a) Etiology b) Diagnosis c) Treatment (DCH 2024/2)3+3+4</td><td class='px-6 py-4'>532</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of Neonatal Thrombocytopenic Purpura (DNB 2000/1)15</td><td class='px-6 py-4'>533</td><td class='px-6 py-4 whitespace-nowrap'>2000</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Write differential diagnosis of a 5-year-old child with petechial rash with fever. How will you manage a child with idiopathic thrombocytopenic purpura (DNB 2004/2)4+6</td><td class='px-6 py-4'>533</td><td class='px-6 py-4 whitespace-nowrap'>2004</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Various treatment modalities in acute ITP (DNB 2006/1)10</td><td class='px-6 py-4'>533</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss etiopathogenesis, diagnosis and management of a Bleeding Neonate (DNB 2006/2)10</td><td class='px-6 py-4'>533</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Write in brief regarding the etiology and management of idiopathic thrombocytopenic purpura (ITP) (DNB 2011/1)4+6</td><td class='px-6 py-4'>533</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the treatment options for acute ITP in a 14-year-old girl child (DNB 2013/1)10</td><td class='px-6 py-4'>533</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>An 8-year-old girl has presented with epistaxis, bleeding gum and ecchymotic patches over trunk. Her platelet count is 20,000/cubic mm. Discuss the differential diagnosis with specific clinical investigative pointers. Plan the diagnostic work up for this child (DNB 2013/2)3+3+2+2</td><td class='px-6 py-4'>533</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of ITP (DNB 2017/1)5</td><td class='px-6 py-4'>533</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of chronic ITP (DNB 2018/2)5</td><td class='px-6 py-4'>533</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of 1st episode of ITP (DNB 2019/2)5</td><td class='px-6 py-4'>533</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the approach to neonate with thrombocytopenia with specific reference to causes and investigations (DNB 2019/2)6</td><td class='px-6 py-4'>533</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Immune Thrombocytopenic Purpura - Management Guidelines (DNB 2021/2)5</td><td class='px-6 py-4'>533</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Neonatal thrombocytopenia (DNB 2023/2)5</td><td class='px-6 py-4'>533</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of ITP in children (DCH 2024/1)5</td><td class='px-6 py-4'>533</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the management of recurrent ITP in a six year old child (DNB 2024/2)5</td><td class='px-6 py-4'>533</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Neonatal alloimmune thrombocytopenia (NAIT) (DNB 2024/2)5</td><td class='px-6 py-4'>533</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the functions of Spleen. Describe the indications and complication of splenectomy and post-operative management (DNB 2009/1)3+7</td><td class='px-6 py-4'>534</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe the functions of spleen. Describe clinical manifestations and management of asplenia/polysplenia (DNB 2010/1)4+3+3</td><td class='px-6 py-4'>534</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                </tbody>
+            </table>
+        </main>
+        
+        <div class="mt-8 p-6 bg-gray-50 rounded-2xl shadow-lg">
+            <h3 class="text-xl font-semibold mb-4 text-gray-700">Chapter Key</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-600 sm:columns-2 md:columns-3">
+                <li><b>495:</b> Development of the Hematopoietic System</li>
+                <li><b>496:</b> Anemias</li>
+                <li><b>497:</b> Congenital Hypoplastic Anemia (Diamond-Blackfan Anemia)</li>
+                <li><b>503:</b> Megaloblastic Anemias</li>
+                <li><b>504:</b> Iron-Deficiency Anemia</li>
+                <li><b>505:</b> Other Microcytic Anemias</li>
+                <li><b>507:</b> Hereditary Spherocytosis</li>
+                <li><b>511:</b> Hemoglobinopathies</li>
+                <li><b>512:</b> Enzymatic Defects</li>
+                <li><b>513:</b> Immune Hemolytic Anemias</li>
+                <li><b>517:</b> Inherited Bone Marrow Failure Syndromes with Pancytopenia</li>
+                <li><b>518:</b> The Acquired Pancytopenias</li>
+                <li><b>519:</b> Red Blood Cell Transfusions and Erythropoietin Therapy</li>
+                <li><b>520:</b> Platelet Transfusions</li>
+                <li><b>522:</b> Plasma Transfusions</li>
+                <li><b>523:</b> Risks of Blood Transfusions</li>
+                <li><b>524:</b> Hemostasis</li>
+                <li><b>525:</b> Hereditary Clotting Factor Deficiencies (Bleeding Disorders)</li>
+                <li><b>526:</b> Von Willebrand Disease</li>
+                <li><b>527:</b> Hereditary Predisposition to Thrombosis</li>
+                <li><b>528:</b> Thrombotic Disorders in Children</li>
+                <li><b>532:</b> Disseminated Intravascular Coagulation</li>
+                <li><b>533:</b> Platelet and Blood Vessel Disorders</li>
+                <li><b>534:</b> Anatomy and Function of the Spleen</li>
+            </ul>
+        </div>
+
+        <footer class="text-center mt-10 text-gray-500 text-sm">
+            <p>Made by Dr. Rubanbalaji | Updated till Oct 2024</p>
+        </footer>
+    </div>
+    <script>
+        function sortTable(columnIndex) {
+            const table = document.getElementById("questionsTable");
+            const tbody = table.tBodies[0];
+            const rows = Array.from(tbody.rows);
+            const header = table.tHead.rows[0].cells[columnIndex];
+            const isAsc = !header.classList.contains('sort-asc');
+
+            table.tHead.querySelectorAll('.sortable-header').forEach(th => {
+                th.classList.remove('sort-asc', 'sort-desc');
+            });
+
+            header.classList.add(isAsc ? 'sort-asc' : 'sort-desc');
+
+            rows.sort((a, b) => {
+                const aText = a.cells[columnIndex].textContent.trim();
+                const bText = b.cells[columnIndex].textContent.trim();
+
+                let aVal = aText;
+                let bVal = bText;
+
+                // For Chapter and Year columns, parse as numbers
+                if (columnIndex === 1 || columnIndex === 2) {
+                    aVal = parseInt(aText, 10);
+                    bVal = parseInt(bText, 10);
+                }
+
+                if (aVal < bVal) {
+                    return isAsc ? -1 : 1;
+                }
+                if (aVal > bVal) {
+                    return isAsc ? 1 : -1;
+                }
+                return 0;
+            });
+
+            tbody.innerHTML = "";
+            rows.forEach(row => tbody.appendChild(row));
+        }
+    </script>
+</body>
+</html>

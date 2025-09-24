@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part XV - Infectious Diseases | DNB Pediatrics Question Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .sortable-header {
+            cursor: pointer;
+            position: relative;
+        }
+        .sortable-header:hover {
+            background-color: #f0f4f8;
+        }
+        .sort-asc::after, .sort-desc::after {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .sort-asc::after {
+            content: ' ▲';
+        }
+        .sort-desc::after {
+            content: ' ▼';
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-600">Part XV - Infectious Diseases</h1>
+            <p class="text-lg text-gray-600 mt-2"><a href="index.html" class="text-blue-500 hover:underline">&larr; Back to Main Index</a></p>
+        </header>
+
+        <main class="bg-white p-6 md:p-8 rounded-2xl shadow-lg overflow-x-auto">
+            <table class="w-full divide-y divide-gray-200" id="questionsTable">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" style="width: 75%;" onclick="sortTable(0)">
+                            Question
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" onclick="sortTable(1)">
+                            Chapter
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" onclick="sortTable(2)">
+                            Year
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Passive immunity and its clinical application in paediatric disease (DNB 2023/1)5</td><td class='px-6 py-4'>215</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the approach to management of a 2-month old infant having fever without focus (DNB 2009/1)10</td><td class='px-6 py-4'>220</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss definition, aetiology & approach to investigation of PUO (DNB 2007/1)10</td><td class='px-6 py-4'>222</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate the common causes of pyrexia of unknown origin in a 5-year-old child. Discuss diagnostic approach to fever with rash (DNB 2011/2)4+6</td><td class='px-6 py-4'>222</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Differential diagnosis of fever with rash in children (DNB 2020/2)5</td><td class='px-6 py-4'>222</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Common differential diagnoses of fever with rash in a 5 year old child (DCH 2024/1)5</td><td class='px-6 py-4'>222</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Nosocomial Infections (DNB 2006/1)10</td><td class='px-6 py-4'>224</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define the role and principles of Antibiotic stewardship in inpatient and outpatient settings in pediatric practice (DNB 2020/1)5+5</td><td class='px-6 py-4'>226</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Antibiotic stewardship (DNB 2022/1)5</td><td class='px-6 py-4'>226</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Strategies for minimizing antibiotic abuse in hospitalized children (DNB 2022/2)5</td><td class='px-6 py-4'>226</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>A) Pathogenesis of toxic shock syndrome (TSS) B) Diagnostic criteria for TSS C) Differential diagnosis and management of TSS (DNB 2015/1)3+2+2+3</td><td class='px-6 py-4'>227</td><td class='px-6 py-4 whitespace-nowrap'>2015</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnosis and management of Staphylococcal Toxic shock syndrome (DNB 2017/2)5</td><td class='px-6 py-4'>227</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of Acute Rheumatic Fever (DNB 1993/2)10</td><td class='px-6 py-4'>229</td><td class='px-6 py-4 whitespace-nowrap'>1993</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Criteria for diagnosis of Rheumatic fever (DNB 2022/2)5</td><td class='px-6 py-4'>229</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Prophylaxis of Rheumatic fever (DNB 2022/2)5</td><td class='px-6 py-4'>229</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnostic criteria for rheumatic fever in children (DNB 2023/1)5</td><td class='px-6 py-4'>229</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Complications of diphtheria (DNB 2018/2)6</td><td class='px-6 py-4'>233</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diphtheritic myocarditis (DNB 2019/2)5</td><td class='px-6 py-4'>233</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss briefly the differential diagnosis and management of a 3-year-old unimmunized child presenting with fever and stridor for 3 days (DNB 2020/1)5+5</td><td class='px-6 py-4'>233</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Antitoxin Therapy in Diphtheria - Guidelines (DNB 2021/2)4</td><td class='px-6 py-4'>233</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pathogenesis and management of diphtheria (DNB 2023/2)5</td><td class='px-6 py-4'>233</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the treatment of a child with diphtheria. What are the complications of diphtheria? (DNB 2024/1)5</td><td class='px-6 py-4'>233</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss prevention and prophylaxis against meningococcal infection (DNB 2005)5+5</td><td class='px-6 py-4'>237</td><td class='px-6 py-4 whitespace-nowrap'>2005</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Prophylaxis of Meningococcemia (DNB 2006/1)10</td><td class='px-6 py-4'>237</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the etiology, pathogenesis and prevention of pertussis in chidren. Write the differences in efficacy, duration of protection and adverse events between whole cell and acellular pertussis vaccine (DNB 2014/1)6+4</td><td class='px-6 py-4'>243</td><td class='px-6 py-4 whitespace-nowrap'>2014</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Complications of Pertussis (DNB 2015/2)3</td><td class='px-6 py-4'>243</td><td class='px-6 py-4 whitespace-nowrap'>2015</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnosis and management of pertussis (DNB 2016/1)5</td><td class='px-6 py-4'>243</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management and complications of pertussis in infants (DNB 2021/1)5</td><td class='px-6 py-4'>243</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Treatment of typhoid fever (DNB 1993/1)10</td><td class='px-6 py-4'>244</td><td class='px-6 py-4 whitespace-nowrap'>1993</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Nontyphoidal salmonellosis (DNB 1995/2)15</td><td class='px-6 py-4'>244</td><td class='px-6 py-4 whitespace-nowrap'>1995</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of typhoid fever (DNB 1995/2)15</td><td class='px-6 py-4'>244</td><td class='px-6 py-4 whitespace-nowrap'>1995</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Interpretation of Widal test in immunized children (DNB 1998/2)10</td><td class='px-6 py-4'>244</td><td class='px-6 py-4 whitespace-nowrap'>1998</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define multidrug resistant (MDR) salmonella typhi (MDR - ST) and nalidixic acid resistant salmonella typhi (NARST). Discuss the mechanism of development of drug resistance for salmonella typhi (DNB 2008/1)10</td><td class='px-6 py-4'>244</td><td class='px-6 py-4 whitespace-nowrap'>2008</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnosis of enteric fever (DNB 2023/1)5</td><td class='px-6 py-4'>244</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the pathogenesis of E. coli diarrhea (DNB 1994/2)15</td><td class='px-6 py-4'>246</td><td class='px-6 py-4 whitespace-nowrap'>1994</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Classification of E coli and pathogenesis of Invasive Diarrhoea (DNB 1995/1)15</td><td class='px-6 py-4'>246</td><td class='px-6 py-4 whitespace-nowrap'>1995</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of Plague (DNB 1995/2)10</td><td class='px-6 py-4'>249</td><td class='px-6 py-4 whitespace-nowrap'>1995</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Failure in control of Tuberculosis (DNB 1993/1)15</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>1993</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Prevention and early detection of TB (DNB 1996/2)15</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>1996</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Short course chemotherapy for TB (DNB 1998/2)10</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>1998</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>DOTS chemotherapeutic management of Tuberculosis in National TB Control Programme (DNB 2000/1)15</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>2000</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnosis and management of a child with resistant TB (DNB 2002/1)15</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>2002</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>CNS changes in Tubercular meningitis (Pathological only) (DNB 2003/1)15</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>2003</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the pathogenesis, clinical symptomatology and diagnosis of NeuroTB (DNB 2006/1)10</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>How do you perform and interpret Mantoux Test. Enumerate 3 conditions each in which you can get a false positive and a false negative result (DNB 2006/1)10</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Newer diagnostic modalities for TB (DNB 2006/2)10</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>DOTS regimen and the problems involved in the implementation in childhood TB (DNB 2006/2)10</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What were the problems encountered in NTCP. Write the goals, strategies and essential components of RNTPC. Also discuss in brief categorization of patients and treatment protocols under RNTCP (DNB 2007/2)10</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>a) Describe the category based treatment in childhood TB b) Describe the pros and cons of intermittent therapy for tuberculosis c) What are the components of DOTS strategy as defined by WHO? (DNB 2009/2)3+3+4</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe clinical manifestations, diagnosis and management of Neurotuberculosis (DNB 2011/2)3+4+3</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe the flow chart for diagnosis of childhood tuberculosis under RNTCP. Write Briefly on DOT PLUS program (DNB 2012/1)6+4</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>2012</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the recent guidelines for diagnosis and management of childhood tuberculosis (DNB 2013/1)10</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe aetiopathogenesis, diagnosis and management of different types of neurotuberculosis (DNB 2013/2)3+4+3</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Clinical presentation, investigations and treatment of multidrug resistant TB (DNB 2014/2)3+2+5</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>2014</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>a) Define DOTS, DOTS agents and DOTS plus b) List at least 4 important components of DOTS c) Give the categorization of treatment strategy in DOTS (DNB 2015/1)3+2+5</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>2015</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>MDR and XDR tuberculosis treatment strategies (DNB 2016/1)3+3</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Investigations for confirming diagnosis in tuberculous meningitis (DNB 2018/1)5</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Recent advances in diagnosis of tuberculosis (DNB 2018/2)5</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>RNTCP program (DNB 2018/2)5</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Principles of newer diagnostic tests in TB (DNB 2019/2)5</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Role of CBNAAT (DNB 2019/1)5</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>MDR TB - Diagnosis and management (DNB 2021/2)6</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Interpretation of Mantoux test (DNB 2022/2)5</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Nucleic Acid Amplification Tests (NAAT) (DNB 2023/1)5</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Fixed Drugs Combination of antitubercular drugs under National Tuberculosis Elimination Programme (DNB 2023/1)5</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Laboratory diagnosis for pulmonary tuberculosis (DNB 2024/1)5</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Current guidelines on tuberculosis preventive treatment (DNB 2024/1)5</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Recent changes in treatment of Pediatric tuberculosis under NTEP (DNB 2024/1)5</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Role of Rifamycins in tuberculosis (DNB 2024/1)5</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Treatment of drug resistant tuberculosis (DNB 2024/2)6</td><td class='px-6 py-4'>261</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Radiological features and conrmatory laboratory tests for congenital syphilis (DNB 2007/1)10</td><td class='px-6 py-4'>264</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of a neonate born to VDRL positive mother (DNB 2023/1)5</td><td class='px-6 py-4'>264</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnosis and treatment of leptospirosis (DNB 2017/2)5</td><td class='px-6 py-4'>266</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Clinical presentation and diagnosis of mycoplasma pneumonia infection (DNB 2016/2)5</td><td class='px-6 py-4'>269</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnosis and treatment of Scrub Typhus (DNB 2018/1)5</td><td class='px-6 py-4'>275</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Laboratory findings and diagnosis of rickettsial infection (DNB 2018/2)5</td><td class='px-6 py-4'>275</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Ricketssial infection- when to suspect (DNB 2019/2)5</td><td class='px-6 py-4'>275</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Laboratory diagnosis and treatment of Scrub typhus (DNB 2024/1)5</td><td class='px-6 py-4'>275</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Scrub typhus: a) Clinical features b) Diagnosis c) Investigation d) Treatment (DCH 2024/2)2+2+2+4</td><td class='px-6 py-4'>275</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate invasive fungal diseases and its risk factors (DCH 2023/2)5</td><td class='px-6 py-4'>279</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Invasive fungal diseases management - Pharmacotherapy (DCH 2023/2)5</td><td class='px-6 py-4'>279</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnosis and treatment of SSPE (DNB 1995/2)10</td><td class='px-6 py-4'>293</td><td class='px-6 py-4 whitespace-nowrap'>1995</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnosis and prevention of Congenital Rubella Syndrome (DNB 2017/2)5</td><td class='px-6 py-4'>294</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pulse Polio Immunization (DNB 1996/1)15</td><td class='px-6 py-4'>296</td><td class='px-6 py-4 whitespace-nowrap'>1996</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pulse Polio programme (DNB 1998/1)15</td><td class='px-6 py-4'>296</td><td class='px-6 py-4 whitespace-nowrap'>1998</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>AFP Surveillance (DNB 1999/2)15</td><td class='px-6 py-4'>296</td><td class='px-6 py-4 whitespace-nowrap'>1999</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Approach to a child with AFP and components of AFP surveillance (DNB 2000/1)15</td><td class='px-6 py-4'>296</td><td class='px-6 py-4 whitespace-nowrap'>2000</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pulse Polio programme (DNB 2001/1)15</td><td class='px-6 py-4'>296</td><td class='px-6 py-4 whitespace-nowrap'>2001</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>AFP- Definition, Differential Diagnosis in details, how help in polio eradication (DNB 2003/2)15</td><td class='px-6 py-4'>296</td><td class='px-6 py-4 whitespace-nowrap'>2003</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the differential diagnosis and management of acute accid paralysis in a 2-year-old child (DNB 2004/2)5+5</td><td class='px-6 py-4'>296</td><td class='px-6 py-4 whitespace-nowrap'>2004</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What is AFP? Discuss the differential diagnosis and management of a child with AFP. Discuss AFP surveillance (DNB 2005/1)2+3+2+3</td><td class='px-6 py-4'>296</td><td class='px-6 py-4 whitespace-nowrap'>2005</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define criteria for declaring a country Polio free. What is the present status of wild polio virus transmission and strategies being used for its control in India? Elaborate on AFP surveillance (DNB 2006/1)5+5</td><td class='px-6 py-4'>296</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define AFP. Enlist the causes and investigations of a case of AFP (DNB 2006/1)10</td><td class='px-6 py-4'>296</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What is acute flaccid paralysis? Describe the differential diagnosis and management of a child with flaccid paralysis. Describe AFP surveillance (DNB 2009/2)2+2+4+2</td><td class='px-6 py-4'>296</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>a) Define polio eradication b) Polio eradication in india. c) Immunisation issues following polio eradication (DNB 2015/1)1+2+3</td><td class='px-6 py-4'>296</td><td class='px-6 py-4 whitespace-nowrap'>2015</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss differential diagnosis of acute flaccid paralysis in tabular format (DNB 2021/1)5</td><td class='px-6 py-4'>296</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Acute Flaccid Paralysis surveillance (DNB 2022/1)5</td><td class='px-6 py-4'>296</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate causes of acute flaccid paralysis (AFP) (DNB 2023/2)5</td><td class='px-6 py-4'>296</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Acute flaccid paralysis: a) Etiology b) Laboratory evaluation c) Management (DCH 2024/2)3+3+4</td><td class='px-6 py-4'>296</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Risk factors and clinical features of Hand-Foot-Mouth disease (DNB 2022/2)5</td><td class='px-6 py-4'>297</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of a child with Herpes simplex virus (HSV) encephalitis (DNB 2022/2)5</td><td class='px-6 py-4'>299</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of chickenpox in an adolescent (DNB 2021/1)5</td><td class='px-6 py-4'>300</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Roseola infantum (DNB 2015/2)3</td><td class='px-6 py-4'>303</td><td class='px-6 py-4 whitespace-nowrap'>2015</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Comment on clinical features, diagnosis and treatment of Swine u in children (DNB 2009/2)2+3+5</td><td class='px-6 py-4'>305</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>a) Virology and epidemiology of Swine Flu b) How is the disease categorized according to the government of India guidelines? c) Mention which children need to be immunized and who need to be given medication for the disease (DNB 2016/1+2+3+2+2)</td><td class='px-6 py-4'>305</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Current guidelines for management of H1N1 infection (DNB 2017/1)5</td><td class='px-6 py-4'>305</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>H1N1 infection-clinical features and management in children (DNB 2018/2)5</td><td class='px-6 py-4'>305</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Prevalence, clinical manifestations and management of Covid-19 infections in children (DNB 2020/1)2+3+5</td><td class='px-6 py-4'>311</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Prevention of COVID-19 infection (DNB 2020/2)5</td><td class='px-6 py-4'>311</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pediatric multisystem inflammatory syndrome (DNB 2020/2)5</td><td class='px-6 py-4'>311</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Classification and treatment of Multisystem Inflammatory Syndrome in Children (DNB 2021/1)5</td><td class='px-6 py-4'>311</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Psychosocial effects of COVID -19 on children (DNB 2021/1)5</td><td class='px-6 py-4'>311</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Neonate born to COVID positive mother - Approach (DNB 2021/2)5</td><td class='px-6 py-4'>311</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Paediatric COVID - Classification and management (DNB 2021/2)6</td><td class='px-6 py-4'>311</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Tabulate the differences in clinical and laboratory features of Kawasaki disease and MIS-C (DNB 2022/2)5</td><td class='px-6 py-4'>311</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe multiple inflammatory syndrome in children (DNB 2023/1)5</td><td class='px-6 py-4'>311</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Epidemiology, clinical features, prognosis and prevention of Japanese Encephalitis (DNB 2015/1)2+3+2+3</td><td class='px-6 py-4'>314</td><td class='px-6 py-4 whitespace-nowrap'>2015</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Clinical features and treatment of Chikungunya (DNB 2016/2)5</td><td class='px-6 py-4'>314</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the management of Dengue Shock Syndrome (DNB 1997/1)10</td><td class='px-6 py-4'>315</td><td class='px-6 py-4 whitespace-nowrap'>1997</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pathogenesis of bleeding and shock in Dengue fever (DNB 1998/2)10</td><td class='px-6 py-4'>315</td><td class='px-6 py-4 whitespace-nowrap'>1998</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Dengue Fever (DNB 2003/2)15</td><td class='px-6 py-4'>315</td><td class='px-6 py-4 whitespace-nowrap'>2003</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define DHF and DSS and outline the treatment of DSS (DNB 2005/1)10</td><td class='px-6 py-4'>315</td><td class='px-6 py-4 whitespace-nowrap'>2005</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnosis and management of DHF and DSS (DNB 2006/1)10</td><td class='px-6 py-4'>315</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the WHO criteria for diagnosis of dengue hemorrhagic fever. Draw an algorithm for volume replacement for a child with DHF and >20% increase in hematocrit (DNB 2009/1)3+7</td><td class='px-6 py-4'>315</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define DHF and DSS. How does DHF differ from dengue fever with hemorrhage? Describe treatment of DSS (DNB 2009/2)2+2+1+5</td><td class='px-6 py-4'>315</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Classify severity of dengue hemorrhagic fever. Write in brief the management of dengue shock syndrome (DNB 2011/1)4+6</td><td class='px-6 py-4'>315</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What are the fluid, metabolic and biochemical changes in a child with severe dengue? Discuss the underlying pathophysiology (DNB 2013/1)10</td><td class='px-6 py-4'>315</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define severe dengue and describe the WHO guidelines for its management. Enumerate the indications for transfusion in dengue (DNB 2014/1)2+6+2</td><td class='px-6 py-4'>315</td><td class='px-6 py-4 whitespace-nowrap'>2014</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define severe dengue. Describe the WHO guidelines for its management. Enumerate complications of Severe Dengue (DNB 2016/1)2+4+4</td><td class='px-6 py-4'>315</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Definition and treatment of Dengue Hemorrhagic fever (DNB 2016/1)3</td><td class='px-6 py-4'>315</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnostic lab tests for dengue fever (DNB 2018/1)4</td><td class='px-6 py-4'>315</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Fluid therapy in DHF (DNB 2019/1)5</td><td class='px-6 py-4'>315</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Fluid management in Dengue Shock Syndrome and its complications (DNB 2019/2)5</td><td class='px-6 py-4'>315</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pathophysiology of Dengue fever (DNB 2021/2)5</td><td class='px-6 py-4'>315</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Classification of dengue fever (DNB 2022/2)5</td><td class='px-6 py-4'>315</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of Dengue Shock Syndrome (DNB 2022/2)5</td><td class='px-6 py-4'>315</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Dengue and its classification (DCH 2023/2)5</td><td class='px-6 py-4'>315</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Severe dengue management in 15 kg child (DCH 2023/2)5</td><td class='px-6 py-4'>315</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of a 10-year-child with dengue shock (DNB 2024/1)5</td><td class='px-6 py-4'>315</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of Dengue Shock Syndrome (DCH 2024/1)5</td><td class='px-6 py-4'>315</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe the etiology, mode of transmission, clinical features and management of viral hemorrhagic fever in children (DNB 2012/1)2+2+3+3</td><td class='px-6 py-4'>317</td><td class='px-6 py-4 whitespace-nowrap'>2012</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Infants of HIV seropositive mothers (DNB 1995/1)15</td><td class='px-6 py-4'>322</td><td class='px-6 py-4 whitespace-nowrap'>1995</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>HIV and Pediatrics (DNB 1998/2)10</td><td class='px-6 py-4'>322</td><td class='px-6 py-4 whitespace-nowrap'>1998</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Prevention of HIV infection during childhood (DNB 2002/1)15</td><td class='px-6 py-4'>322</td><td class='px-6 py-4 whitespace-nowrap'>2002</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Post exposure HIV prophylaxis (DNB 2003/2)15</td><td class='px-6 py-4'>322</td><td class='px-6 py-4 whitespace-nowrap'>2003</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>An HIV positive mother has been admitted in labour. What will you do to prevent transmission of infection to the baby (DNB 2005/1)10</td><td class='px-6 py-4'>322</td><td class='px-6 py-4 whitespace-nowrap'>2005</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Factors involved in perinatal transmission of HIV infection and the various preventive measures (DNB 2006/1)10</td><td class='px-6 py-4'>322</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Clinical Presentations requiring screening for HIV (DNB 2007/1)5</td><td class='px-6 py-4'>322</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>HIV and TB (DNB 2007/1)5</td><td class='px-6 py-4'>322</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Prevention of Childhood AIDS (DNB 2007/2)10</td><td class='px-6 py-4'>322</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the risk factors for vertical transmission of HIV infection and methods to prevent parent to child transmission of HIV (DNB 2009/1)4+6</td><td class='px-6 py-4'>322</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline clinical and immunological criteria for starting anti-retroviral treatment (ART) in a HIV infected child. How will you monitor a child initiated on ART? (DNB 2009/2)6+4</td><td class='px-6 py-4'>322</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enlist the common opportunistic infections in HIV infected children. Describe the clinical features, diagnosis and management of herpes simplex infection in HIV infected children (DNB 2011/2)3+2+2+3</td><td class='px-6 py-4'>322</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the available strategies for prevention of mother to child transmission of HIV (DNB 2012/1)10</td><td class='px-6 py-4'>322</td><td class='px-6 py-4 whitespace-nowrap'>2012</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate opportunistic infections in HIV infected children. How will you treat and prevent pneumocystis jiroveci infection? (DNB 2012/1)5+3+2</td><td class='px-6 py-4'>322</td><td class='px-6 py-4 whitespace-nowrap'>2012</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Briefly discuss the pulmonary disorders seen in children with HIV/AIDS (DNB 2013/1)10</td><td class='px-6 py-4'>322</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the key issues in the management of an HIV exposed infant (DNB 2013/2)10</td><td class='px-6 py-4'>322</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>AIDS defining diseases in children (DNB 2016/2)</td><td class='px-6 py-4'>322</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Strategies to prevent mother to child transmission of HIV infection (DNB 2017/1) 5</td><td class='px-6 py-4'>322</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Treatment guidelines of neonate born to HIV positive mother (DNB 2018/2)5</td><td class='px-6 py-4'>322</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>WHO guidelines for breastfeeding in a baby born to HIV positive mother (DNB 2019/1)5</td><td class='px-6 py-4'>322</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Anti-retroviral therapy in children (DNB 2019/1)5</td><td class='px-6 py-4'>322</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Dry blood PCR for HIV/AIDS testing (DNB 2019/1)5</td><td class='px-6 py-4'>322</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Neonatal HIV - Modalities of management (DNB 2021/2)5</td><td class='px-6 py-4'>322</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Prevention of mother to child transmission of HIV infection (DCH 2024/1)5</td><td class='px-6 py-4'>322</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Role of cryptosporidium in causation of childhood diarrhea (DNB 2021/01)5</td><td class='px-6 py-4'>329</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Current therapy of Kala azar (DNB 2017/2)5</td><td class='px-6 py-4'>331</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define drug resistant malaria, what are the different types of drug resistance as per WHO criteria. Discuss the various management strategies of Drug resistant Malaria (DNB 1993/1)15</td><td class='px-6 py-4'>334</td><td class='px-6 py-4 whitespace-nowrap'>1993</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of Cerebral Malaria (DNB 1993/2)15</td><td class='px-6 py-4'>334</td><td class='px-6 py-4 whitespace-nowrap'>1993</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Malaria prophylaxis (DNB 1994/2)15</td><td class='px-6 py-4'>334</td><td class='px-6 py-4 whitespace-nowrap'>1994</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Drug resistant Malaria (DNB 2003/1)15</td><td class='px-6 py-4'>334</td><td class='px-6 py-4 whitespace-nowrap'>2003</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What are management guidelines of malaria under the national programme? How will you manage a case of cerebral malaria (DNB 2004/2)4+6</td><td class='px-6 py-4'>334</td><td class='px-6 py-4 whitespace-nowrap'>2004</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate manifestations of Severe Malaria and their management (DNB 2006/2)10</td><td class='px-6 py-4'>334</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>A 4-year-old girl presents with history of fever for 2 days associated with severe anemia, black colored urine and splenomegaly. Discuss the management of this patient (DNB 2008/2)10</td><td class='px-6 py-4'>334</td><td class='px-6 py-4 whitespace-nowrap'>2008</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe clinical manifestations of cerebral malaria. Enlist the differential diagnosis and investigations required. Write management of a case of cerebral malaria in high endemic area (DNB 2009/1)(2+3+5)</td><td class='px-6 py-4'>334</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define complicated malaria. Describe the management strategies of complicated malaria (DNB 2009/2)3+7</td><td class='px-6 py-4'>334</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Provide algorithms for case-detection and treatment for a child with fever, suspected to have malaria, as per National Vector Borne Disease Control Program (DNB 2010/2)5+5</td><td class='px-6 py-4'>334</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Write short notes on: Laboratory diagnosis of malaria (DNB 2011/2)5</td><td class='px-6 py-4'>334</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>List the WHO criteria to diagnose severe malaria. Discuss the management of a child with cerebral malaria (DNB 2013/1)4+6</td><td class='px-6 py-4'>334</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Newer antimalarial drugs (DNB 2015/1)4</td><td class='px-6 py-4'>334</td><td class='px-6 py-4 whitespace-nowrap'>2015</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Clinical features, diagnostic tests and management of severe malaria in children (DNB 2017/1)10</td><td class='px-6 py-4'>334</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Treatment of diagnosed cases of cerebral malaria (DNB 2018/1)5</td><td class='px-6 py-4'>334</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Recent National malarial treatment guidelines (DNB 2019/1)5</td><td class='px-6 py-4'>334</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Complications of severe falciparum malaria (DNB 2020/2)5</td><td class='px-6 py-4'>334</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of severe malaria (DCH 2024/1)5</td><td class='px-6 py-4'>334</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Life cycle of Ascaris lumbricoides (DNB 2022/2)5</td><td class='px-6 py-4'>337</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of worm infestation in children (DNB 2017/1)5</td><td class='px-6 py-4'>339</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Current management of Neurocysticercosis (DNB 1992/1)15</td><td class='px-6 py-4'>349</td><td class='px-6 py-4 whitespace-nowrap'>1992</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Brain CT findings in a case of Congenital toxoplasmosis and cysticercosis (DNB 1994/1)15</td><td class='px-6 py-4'>349</td><td class='px-6 py-4 whitespace-nowrap'>1994</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of neurocysticercosis (DNB 2016/2)3</td><td class='px-6 py-4'>349</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Treatment of Hydatid cyst in children (DNB 2022/2)5</td><td class='px-6 py-4'>350</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                </tbody>
+            </table>
+        </main>
+        
+        <div class="mt-8 p-6 bg-gray-50 rounded-2xl shadow-lg">
+            <h3 class="text-xl font-semibold mb-4 text-gray-700">Chapter Key</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-600 sm:columns-2 md:columns-3">
+                <li><b>215:</b> Immunization Practices</li>
+                <li><b>220:</b> Fever Without a Focus in the Neonate and Young Infant</li>
+                <li><b>222:</b> Fever of Unknown Origin</li>
+                <li><b>224:</b> Infection Associated with Medical Devices</li>
+                <li><b>226:</b> Antimicrobial Stewardship</li>
+                <li><b>227:</b> Staphylococcus</li>
+                <li><b>229:</b> Group A Streptococcus</li>
+                <li><b>233:</b> Diphtheria (Corynebacterium diphtheriae)</li>
+                <li><b>237:</b> Neisseria meningitidis (Meningococcus)</li>
+                <li><b>243:</b> Pertussis</li>
+                <li><b>244:</b> Salmonella</li>
+                <li><b>246:</b> Escherichia coli</li>
+                <li><b>249:</b> Yersinia</li>
+                <li><b>261:</b> Tuberculosis (Mycobacterium tuberculosis)</li>
+                <li><b>264:</b> Syphilis (Treponema pallidum)</li>
+                <li><b>266:</b> Leptospira</li>
+                <li><b>269:</b> Mycoplasma pneumonia</li>
+                <li><b>275:</b> Scrub Typhus (Orientia tsutsugamushi)</li>
+                <li><b>279:</b> Principles of Antifungal Therapy</li>
+                <li><b>293:</b> Measles</li>
+                <li><b>294:</b> Rubella</li>
+                <li><b>296:</b> Polioviruses</li>
+                <li><b>297:</b> Nonpolio Enteroviruses</li>
+                <li><b>299:</b> Herpes Simplex Virus</li>
+                <li><b>300:</b> Varicella-Zoster Virus</li>
+                <li><b>303:</b> Roseola (Human Herpesviruses 6 and 7)</li>
+                <li><b>305:</b> Influenza Viruses</li>
+                <li><b>311:</b> Coronaviruses</li>
+                <li><b>314:</b> Arboviral Infections</li>
+                <li><b>315:</b> Dengue Fever, Dengue Hemorrhagic Fever and Severe Dengue</li>
+                <li><b>317:</b> Ebola and Other Viral Hemorrhagic Fevers</li>
+                <li><b>322:</b> Human Immunodeficiency Virus and Acquired Immunodeficiency Syndrome</li>
+                <li><b>329:</b> Cryptosporidium, Cystoisospora, Cyclospora, and Microsporidia</li>
+                <li><b>331:</b> Leishmaniasis (Leishmania)</li>
+                <li><b>334:</b> Malaria (Plasmodium)</li>
+                <li><b>337:</b> Ascariasis (Ascaris lumbricoides)</li>
+                <li><b>339:</b> Trichuriasis (Trichuris trichiura)</li>
+                <li><b>349:</b> Cysticercosis</li>
+                <li><b>350:</b> Echinococcosis</li>
+            </ul>
+        </div>
+
+        <footer class="text-center mt-10 text-gray-500 text-sm">
+            <p>Made by Dr. Rubanbalaji | Updated till Oct 2024</p>
+        </footer>
+    </div>
+    <script>
+        function sortTable(columnIndex) {
+            const table = document.getElementById("questionsTable");
+            const tbody = table.tBodies[0];
+            const rows = Array.from(tbody.rows);
+            const header = table.tHead.rows[0].cells[columnIndex];
+            const isAsc = !header.classList.contains('sort-asc');
+
+            table.tHead.querySelectorAll('.sortable-header').forEach(th => {
+                th.classList.remove('sort-asc', 'sort-desc');
+            });
+
+            header.classList.add(isAsc ? 'sort-asc' : 'sort-desc');
+
+            rows.sort((a, b) => {
+                const aText = a.cells[columnIndex].textContent.trim();
+                const bText = b.cells[columnIndex].textContent.trim();
+
+                let aVal = aText;
+                let bVal = bText;
+
+                // For Chapter and Year columns, parse as numbers
+                if (columnIndex === 1 || columnIndex === 2) {
+                    aVal = parseInt(aText, 10);
+                    bVal = parseInt(bText, 10);
+                }
+
+                if (aVal < bVal) {
+                    return isAsc ? -1 : 1;
+                }
+                if (aVal > bVal) {
+                    return isAsc ? 1 : -1;
+                }
+                return 0;
+            });
+
+            tbody.innerHTML = "";
+            rows.forEach(row => tbody.appendChild(row));
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part XVII - The Respiratory System | DNB Pediatrics Question Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .sortable-header {
+            cursor: pointer;
+            position: relative;
+        }
+        .sortable-header:hover {
+            background-color: #f0f4f8;
+        }
+        .sort-asc::after, .sort-desc::after {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .sort-asc::after {
+            content: ' ▲';
+        }
+        .sort-desc::after {
+            content: ' ▼';
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-600">Part XVII - The Respiratory System</h1>
+            <p class="text-lg text-gray-600 mt-2"><a href="index.html" class="text-blue-500 hover:underline">&larr; Back to Main Index</a></p>
+        </header>
+
+        <main class="bg-white p-6 md:p-8 rounded-2xl shadow-lg overflow-x-auto">
+            <table class="w-full divide-y divide-gray-200" id="questionsTable">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" style="width: 75%;" onclick="sortTable(0)">
+                            Question
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" onclick="sortTable(1)">
+                            Chapter
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" onclick="sortTable(2)">
+                            Year
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the pulmonary function testing in children with emphasis on performance and interpretation of spirometry (DNB 2008/1)10</td><td class='px-6 py-4'>421</td><td class='px-6 py-4 whitespace-nowrap'>2008</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss Pulmonary Function Tests and their clinical utility (DNB 2013/2)7+3</td><td class='px-6 py-4'>421</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Name the steps in morphogenesis of respiratory system. Enumerate congenital lung malformations. Describe natural course of congenital cystic adenomatous malformations (DNB 2014/2)3+3+4</td><td class='px-6 py-4'>421</td><td class='px-6 py-4 whitespace-nowrap'>2014</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Give graphical picture and explanation of elastic volume-pressure relationship of lung and chest wall in children (DNB 2016/1)6</td><td class='px-6 py-4'>421</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>How would you distinguish restrictive versus obstructive lung disease based on PFT?(DNB 2016/1)4</td><td class='px-6 py-4'>421</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Calculation of alveolar arterial oxygen gradient and its role in diagnosis of lung diseases (DNB 2019/1)5</td><td class='px-6 py-4'>421</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Development of diaphragm, trachea and esophagus and types of TOF with diagrams (DNB 2020/2)4</td><td class='px-6 py-4'>421</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Development of diaphragm with applied aspects (DNB 2021/2)5</td><td class='px-6 py-4'>421</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe the development of diaphragm (DNB 2022/1)5</td><td class='px-6 py-4'>421</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Bronchoalveolar lavage (DNB 2023/2)5</td><td class='px-6 py-4'>421</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Recent understanding of SIDS (DNB 1994/1)15</td><td class='px-6 py-4'>423</td><td class='px-6 py-4 whitespace-nowrap'>1994</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Causes and treatment of epistaxis (DNB 2018/2)5</td><td class='px-6 py-4'>426</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the treatment of Nasal polyps in children (DNB 2014/1)3</td><td class='px-6 py-4'>427</td><td class='px-6 py-4 whitespace-nowrap'>2014</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnosis and management of acute sinusitis (DNB 2019/2)4</td><td class='px-6 py-4'>429</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Indications to use antibiotics in children with Upper Respiratory Infections (DNB 1997/1)10</td><td class='px-6 py-4'>430</td><td class='px-6 py-4 whitespace-nowrap'>1997</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnosis and management of a child with suspected streptococcal pharyngitis (DNB 2024/1)5</td><td class='px-6 py-4'>430</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of Acute Tonsillitis in children (DNB 1998/1)15</td><td class='px-6 py-4'>431</td><td class='px-6 py-4 whitespace-nowrap'>1998</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What are the clinical features and management of adenoid hypertrophy in children? (DCH 2024/1)5</td><td class='px-6 py-4'>431</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of Acute Stridor in a Preschool child (DNB 1993/1)15</td><td class='px-6 py-4'>433</td><td class='px-6 py-4 whitespace-nowrap'>1993</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>A 2-year-old child presents to the hospital with fever and Stridor of 12 hour duration. Discuss the diagnosis (DNB 1997/1)10</td><td class='px-6 py-4'>433</td><td class='px-6 py-4 whitespace-nowrap'>1997</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>List the common causes of stridor in children. How will you diagnose and manage a case of stridor? (DNB 2004/2)3+4+3</td><td class='px-6 py-4'>433</td><td class='px-6 py-4 whitespace-nowrap'>2004</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Clinical Evaluation and management of a child with stridor (DNB 2006/1)10</td><td class='px-6 py-4'>433</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>1-year-old child is brought with a history of sudden onset of respiratory distress and stridor of 2 days' duration. What is the differential diagnosis? Discuss the steps in the management of Viral Croup (DNB 2006/2)10</td><td class='px-6 py-4'>433</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the differential diagnosis and management of a 3-year-old girl with history of cough and cold, presenting with onset of noisy breathing, barking cough, hoarse voice and respiratory distress (DNB 2008/1)10</td><td class='px-6 py-4'>433</td><td class='px-6 py-4 whitespace-nowrap'>2008</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Differential diagnosis and management of acute stridor in a 2 years old child (DNB 2010/1)3+7</td><td class='px-6 py-4'>433</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>A 2-year-old boy presents with fever, change of voice and stridor for 2 days. Outline the differential diagnosis and management options (DNB 2012/1)6+4</td><td class='px-6 py-4'>433</td><td class='px-6 py-4 whitespace-nowrap'>2012</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of ALTB (DNB 2017/2)4</td><td class='px-6 py-4'>433</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Approach to child with upper airway obstruction (DNB 2020/2)5</td><td class='px-6 py-4'>433</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Acute stridor causes (DCH 2023/2)5</td><td class='px-6 py-4'>433</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of stridor (DCH 2023/2) 5</td><td class='px-6 py-4'>433</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnosis of Bronchial Foreign Body (DNB 1993/2)10</td><td class='px-6 py-4'>435</td><td class='px-6 py-4 whitespace-nowrap'>1993</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Course and prognosis of Acute Bronchiolitis (DNB 1998/2)10</td><td class='px-6 py-4'>439</td><td class='px-6 py-4 whitespace-nowrap'>1998</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define acute bronchiolitis. Describe its etiopathogenesis and characteristics features. Outline the essential steps in management of bronchiolitis (DNB 2010/2)2+2+2+4</td><td class='px-6 py-4'>439</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Recent advances in treatment of bronchiolitis (DNB 2018/2)5</td><td class='px-6 py-4'>439</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of recurrent/persistent wheezing in children (DNB 2018/2)5</td><td class='px-6 py-4'>439</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of bronchiolitis (DNB 2019/1)5</td><td class='px-6 py-4'>439</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of acute bronchiolitis (DNB 2022/2)5</td><td class='px-6 py-4'>439</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Detail the causes for localized emphysema of the lung. Describe the presentation and management of congenital lobar emphysema (DNB 2008/1)10</td><td class='px-6 py-4'>441</td><td class='px-6 py-4 whitespace-nowrap'>2008</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe the congenital malformations of the lungs. Discuss the diagnosis and management of these malformations (DNB 1996/2)25</td><td class='px-6 py-4'>444</td><td class='px-6 py-4 whitespace-nowrap'>1996</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Bronchogenic cysts (DNB 2018/2)5</td><td class='px-6 py-4'>444</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>List conditions predisposing children to Aspiration Lung injury. Mention clinical features and principles of management of Chronic Aspiration. Conditions predisposing children to aspiration lung injury (DNB 2007/2)10</td><td class='px-6 py-4'>447</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnosis and treatment of Bronchopulmonary aspergillosis (DNB 2018/1)5</td><td class='px-6 py-4'>448</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Treatment of Staphylococcal pneumonia (DNB 1993/1)10</td><td class='px-6 py-4'>449</td><td class='px-6 py-4 whitespace-nowrap'>1993</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss Briefly the Differential diagnosis and management of a case of Persistent Pneumonia in a 3 month old infant (DNB 1999/2)15</td><td class='px-6 py-4'>449</td><td class='px-6 py-4 whitespace-nowrap'>1999</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss differential diagnosis and management of a child with recurrent pneumonia (DNB 2011/2)4+6</td><td class='px-6 py-4'>449</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>WHO Classification of community acquired pneumonia in children less than 5 years of age (DNB 2018/1)5</td><td class='px-6 py-4'>449</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Causes and investigations for persistent pneumonia (DNB 2018/1)5</td><td class='px-6 py-4'>449</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Causes and investigations for persistent pneumonia (DNB 2019/2)5</td><td class='px-6 py-4'>449</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Approach to a child age 2 years with recurrent pneumonia (DNB 2024/1)5</td><td class='px-6 py-4'>449</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Classification and treatment of pneumonia under SAANS campaign (DCH 2024/1)5</td><td class='px-6 py-4'>449</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe the etiology, stages of evolution, clinical manifestations, diagnostic investigations and management of empyema thoracis (DNB 2011/1)1+2+2+2+3</td><td class='px-6 py-4'>451</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Clinical manifestations and management of Empyema in a child (DNB 2021/1)5</td><td class='px-6 py-4'>451</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pathophysiology and clinical features of Cystic Fibrosis (DNB 2006/1)10</td><td class='px-6 py-4'>454</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnostic work up of a child with cystic fibrosis (CF). Describe management of a child with CF (DNB 2014/2)4+6</td><td class='px-6 py-4'>454</td><td class='px-6 py-4 whitespace-nowrap'>2014</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline management of pulmonary involvement with cystic fibrosis (DNB 2015/2)5</td><td class='px-6 py-4'>454</td><td class='px-6 py-4 whitespace-nowrap'>2015</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnosis of cystic fibrosis (DNB 2018/2)5</td><td class='px-6 py-4'>454</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnosis and treatment of cystic fibrosis in children (DNB 2019/1)5</td><td class='px-6 py-4'>454</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Advances in management of Cystic Fibrosis (DNB 2022/1)5</td><td class='px-6 py-4'>454</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Newer drugs in the treatment of cystic fibrosis (DNB 2023/1)5</td><td class='px-6 py-4'>454</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Classification of Cystic Fibrosis Transmembrane Conductance Regulator (CFTR) mutations (DNB 2023/2)5</td><td class='px-6 py-4'>454</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Newer drugs in the treatment of cystic fibrosis (DNB 2023/2)5</td><td class='px-6 py-4'>454</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Cystic fibrosis: a) Genetics b) Clinical feature c) Management (DCH 2024/2)3+3+4</td><td class='px-6 py-4'>454</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe location, structure and function of cilia in respiratory tract. Discuss the clinical presentation and management of primary ciliary dyskinesia? (DNB 2011/2)3+7</td><td class='px-6 py-4'>455</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Primary ciliary dyskinesia - Diagnosis (DNB 2017/2)6</td><td class='px-6 py-4'>455</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define interstitial lung disease (ILD). Enlist pediatric ILDs. Write brief description of lymphocytic interstitial pneumonitis (LIP). Outline the treatment options for ILD in children (DNB 2008/1)10</td><td class='px-6 py-4'>456</td><td class='px-6 py-4 whitespace-nowrap'>2008</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the aetiology, pathogenesis, clinical presentation and management of a two months old child with chronic lung disease (DNB 2014/1)2+2+2+4</td><td class='px-6 py-4'>466</td><td class='px-6 py-4 whitespace-nowrap'>2014</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Central hypoventilation syndrome (DNB 2013/2)5</td><td class='px-6 py-4'>468</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                </tbody>
+            </table>
+        </main>
+        
+        <div class="mt-8 p-6 bg-gray-50 rounded-2xl shadow-lg">
+            <h3 class="text-xl font-semibold mb-4 text-gray-700">Chapter Key</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-600 sm:columns-2 md:columns-3">
+                <li><b>421:</b> Diagnostic Approach to Respiratory Disease</li>
+                <li><b>423:</b> Sudden Infant Death Syndrome</li>
+                <li><b>426:</b> Acquired Disorders of the Nose</li>
+                <li><b>427:</b> Nasal Polyps</li>
+                <li><b>429:</b> Sinusitis</li>
+                <li><b>430:</b> Acute Pharyngitis</li>
+                <li><b>431:</b> Tonsils and Adenoids</li>
+                <li><b>433:</b> Acute Inflammatory Upper Airway Obstruction</li>
+                <li><b>435:</b> Foreign Bodies in the Airway</li>
+                <li><b>439:</b> Wheezing, Bronchiolitis, and Bronchitis</li>
+                <li><b>441:</b> Emphysema and Overinflation</li>
+                <li><b>444:</b> Congenital Disorders of the Lung</li>
+                <li><b>447:</b> Chronic Recurrent Aspiration</li>
+                <li><b>448:</b> Immune and Inflammatory Lung Disease</li>
+                <li><b>449:</b> Community-Acquired Pneumonia</li>
+                <li><b>451:</b> Pleurisy, Pleural Effusions, and Empyema</li>
+                <li><b>454:</b> Cystic Fibrosis</li>
+                <li><b>455:</b> Primary Ciliary Dyskinesia</li>
+                <li><b>456:</b> Diffuse Lung Diseases in Childhood</li>
+                <li><b>466:</b> Bronchopulmonary Dysplasia</li>
+                <li><b>468:</b> Chronic Respiratory Insufficiency</li>
+            </ul>
+        </div>
+
+        <footer class="text-center mt-10 text-gray-500 text-sm">
+            <p>Made by Dr. Rubanbalaji | Updated till Oct 2024</p>
+        </footer>
+    </div>
+    <script>
+        function sortTable(columnIndex) {
+            const table = document.getElementById("questionsTable");
+            const tbody = table.tBodies[0];
+            const rows = Array.from(tbody.rows);
+            const header = table.tHead.rows[0].cells[columnIndex];
+            const isAsc = !header.classList.contains('sort-asc');
+
+            table.tHead.querySelectorAll('.sortable-header').forEach(th => {
+                th.classList.remove('sort-asc', 'sort-desc');
+            });
+
+            header.classList.add(isAsc ? 'sort-asc' : 'sort-desc');
+
+            rows.sort((a, b) => {
+                const aText = a.cells[columnIndex].textContent.trim();
+                const bText = b.cells[columnIndex].textContent.trim();
+
+                let aVal = aText;
+                let bVal = bText;
+
+                // For Chapter and Year columns, parse as numbers
+                if (columnIndex === 1 || columnIndex === 2) {
+                    aVal = parseInt(aText, 10);
+                    bVal = parseInt(bText, 10);
+                }
+
+                if (aVal < bVal) {
+                    return isAsc ? -1 : 1;
+                }
+                if (aVal > bVal) {
+                    return isAsc ? 1 : -1;
+                }
+                return 0;
+            });
+
+            tbody.innerHTML = "";
+            rows.forEach(row => tbody.appendChild(row));
+        }
+    </script>
+</body>
+</html>

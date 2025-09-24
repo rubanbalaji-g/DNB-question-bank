@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part V - Nutrition | DNB Pediatrics Question Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .sortable-header {
+            cursor: pointer;
+        }
+        .sortable-header:hover {
+            background-color: #f0f4f8;
+        }
+        .sort-asc::after {
+            content: ' ▲';
+        }
+        .sort-desc::after {
+            content: ' ▼';
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-600">Part V - Nutrition</h1>
+            <p class="text-lg text-gray-600 mt-2"><a href="index.html" class="text-blue-500 hover:underline">&larr; Back to Main Index</a></p>
+        </header>
+
+        <main class="bg-white p-6 md:p-8 rounded-2xl shadow-lg overflow-x-auto">
+            <table class="w-full table-fixed divide-y divide-gray-200" id="questionsTable">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header w-9/12" onclick="sortTable(0)">
+                            Question
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header w-2/12" onclick="sortTable(1)">
+                            Chapter
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header w-1/12" onclick="sortTable(2)">
+                            Year
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Hypervitaminosis in Children (DNB 1996/1)12</td><td class='px-6 py-4'>60</td><td class='px-6 py-4 whitespace-nowrap'>1996</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Daily nutritional requirements as recommended Daily Allowance (RDA) in infants and children (DNB 2010/1)5+5</td><td class='px-6 py-4'>60</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Metabolism of fat absorption along with role of MCT in nutrition (DNB 2003/1)15</td><td class='px-6 py-4'>61</td><td class='px-6 py-4 whitespace-nowrap'>2003</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What is Complementary Feeding? Discuss the feeding problems in first year of life (DNB 2005/1)5+5</td><td class='px-6 py-4'>61</td><td class='px-6 py-4 whitespace-nowrap'>2005</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>How would you assess the nutritional status of a child whose age is not known (DNB 2005/1)10</td><td class='px-6 py-4'>61</td><td class='px-6 py-4 whitespace-nowrap'>2005</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe the attributes of complementary feeding. What is the safe age of introduction of complementary feeding in your opinion - Justify. Describe some foods appropriate for complementary feeding (DNB 2008/2)10</td><td class='px-6 py-4'>61</td><td class='px-6 py-4 whitespace-nowrap'>2008</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define complementary feeding. Outline the attributes of complementary foods. Enumerate the Recommendations on complementary feeding, as per the National guidelines on Infant and Young Child Feeding (IYCF) (DNB 2010/2)2+2+6</td><td class='px-6 py-4'>61</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the nutritional support of a critically ill child. List the complications during management of such a child (DNB 2012/1)7+3</td><td class='px-6 py-4'>61</td><td class='px-6 py-4 whitespace-nowrap'>2012</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enteral feeding in the sick child (DNB 2014/1)4</td><td class='px-6 py-4'>61</td><td class='px-6 py-4 whitespace-nowrap'>2014</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Nutrition in a critically sick child (DNB 2020/1)5</td><td class='px-6 py-4'>61</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Dietary advice for a one year old child (DNB 2022/1)5</td><td class='px-6 py-4'>61</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Parameters of Infant and Young child feeding practices (IYCF) (DCH 2024/1)5</td><td class='px-6 py-4'>61</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Anti-infective properties of Human milk (DNB 1995/2)10</td><td class='px-6 py-4'>61</td><td class='px-6 py-4 whitespace-nowrap'>1995</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Differences in the composition of Milk secreted by mothers delivering Term and Preterm babies (DNB 1996/2)10</td><td class='px-6 py-4'>61</td><td class='px-6 py-4 whitespace-nowrap'>1996</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Bioactive factors in Human Milk (DNB 1998/1)15</td><td class='px-6 py-4'>61</td><td class='px-6 py-4 whitespace-nowrap'>1998</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the physiology of Breast Milk secretion and advantages of breast feeding with special reference to metabolic aspects. What are the causes of lactation failure (DNB 1999/1)25</td><td class='px-6 py-4'>61</td><td class='px-6 py-4 whitespace-nowrap'>1999</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enlist the problems of breastfeeding and outline the management of the same (DNB 2005/1)4+6</td><td class='px-6 py-4'>61</td><td class='px-6 py-4 whitespace-nowrap'>2005</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Explain the occurrence of low prevalence of Hypoglycemia and iron deficiency anemia in breast fed infants (DNB 2005/1)10</td><td class='px-6 py-4'>61</td><td class='px-6 py-4 whitespace-nowrap'>2005</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>How would you assess the adequacy of breast milk for a 2 months old baby? Enumerate 4 features of good attachment of a baby to the breast. What can be the problems with poor attachment (DNB 2006/1)10</td><td class='px-6 py-4'>61</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Compare the composition of human milk with cow's milk. Outline the difference in the milk composition of a mother with a premature neonate from that of a term neonate. Describe the immunological factors present in human milk (DNB 2008/2)10</td><td class='px-6 py-4'>61</td><td class='px-6 py-4 whitespace-nowrap'>2008</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Human milk banking. Criteria for donors, collection and storage (DNB 2017/1)3</td><td class='px-6 py-4'>61</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Nutritional composition of human milk (DNB 2021/1)5</td><td class='px-6 py-4'>61</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Physiology of lactation (DNB 2021/2)5</td><td class='px-6 py-4'>61</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What is human milk bank, enumerate its indications (DNB 2019/1)5</td><td class='px-6 py-4'>61</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Human milk banking (DNB 2019/2)5, (DNB 2021/1)5, (DNB 2022/2)5, (DNB 2023/1)5, (DCH 2024/1)5</td><td class='px-6 py-4'>61</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Breast Milk Banking (DNB 2020/1)5</td><td class='px-6 py-4'>61</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Importance of Human milk banking (DNB 2020/2)5</td><td class='px-6 py-4'>61</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Milk banking (DNB 2024/2)4</td><td class='px-6 py-4'>61</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>a) Clinical signs and symptoms of refeeding syndrome b) How will you manage such a case? (DNB 2015/2)7+3</td><td class='px-6 py-4'>63</td><td class='px-6 py-4 whitespace-nowrap'>2015</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Refeeding syndrome (DNB 2018/1)5, (DNB 2023/2)5</td><td class='px-6 py-4'>63</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Refeeding Syndrome: When to suspect? How to prevent it and its management (DNB 2024/2)3</td><td class='px-6 py-4'>63</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the influences of malnutrition on mental functions in relation to its onset, severity and type of functional losses with supportive advances (DNB 1993/1)25</td><td class='px-6 py-4'>64</td><td class='px-6 py-4 whitespace-nowrap'>1993</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Prevention of hypocalcaemia in PEM (DNB 1993/1)15</td><td class='px-6 py-4'>64</td><td class='px-6 py-4 whitespace-nowrap'>1993</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Biochemical changes in PEM (DNB 1996/2)10</td><td class='px-6 py-4'>64</td><td class='px-6 py-4 whitespace-nowrap'>1996</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Immunological changes that take place in PEM (DNB 1998/2)10</td><td class='px-6 py-4'>64</td><td class='px-6 py-4 whitespace-nowrap'>1998</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Age independent Anthropometric criteria for assessment of PEM (DNB 2006/1)5</td><td class='px-6 py-4'>64</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of a 4-year-old child with grade 4 PEM (DNB 2007/2)10</td><td class='px-6 py-4'>64</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the initial management (in first 48 hours) of a 2-year-old severely malnourished child (weight 5.5kg) who is cold to touch and has edema and poor peripheral pulses (DNB 2008/1)10</td><td class='px-6 py-4'>64</td><td class='px-6 py-4 whitespace-nowrap'>2008</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss biochemical and metabolic derangements in a child with severe malnutrition. Discuss factors associated with high mortality in severe PEM (DNB 2008/2)10</td><td class='px-6 py-4'>64</td><td class='px-6 py-4 whitespace-nowrap'>2008</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the 10 steps of management of severe malnutrition, as per WHO guidelines, in appropriate sequence (DNB 2010/2)10</td><td class='px-6 py-4'>64</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define 'Severe Acute Malnutrition (SAM)'. Outline the tools for its diagnosis in the community and discuss their merits/demerits (DNB 2012/1)2+4+4</td><td class='px-6 py-4'>64</td><td class='px-6 py-4 whitespace-nowrap'>2012</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enlist the clinical and anthropometric criteria for diagnosis of Severe Acute Malnutrition(SAM). Discuss the principles of management of SAM in an 18 months old baby who also has watery diarrhea (DNB 2013/1)3+7</td><td class='px-6 py-4'>64</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What are the different growth charts? Discuss the WHO growth chart. What is SAM (Severe Acute Malnutrition)? How do you manage a child with SAM? (DNB 2014/1)2+2+2+4</td><td class='px-6 py-4'>64</td><td class='px-6 py-4 whitespace-nowrap'>2014</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnostic and management of Moderate acute malnutrition in community (DNB 2017/2)5</td><td class='px-6 py-4'>64</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Reductive adaptation in SAM (DNB 2017/2)4</td><td class='px-6 py-4'>64</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of SAM (DNB 2017/1)5, (DNB 2016/2)10</td><td class='px-6 py-4'>64</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>a) What is Severe acute malnutrition (SAM) b) What are clinical signs of SAM? c) Management of SAM in a 1-year-old child weighing 5 kg (DNB 2019/1)2+2+6</td><td class='px-6 py-4'>64</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Nutritional recovery syndrome in SAM (DNB 2019/1)5</td><td class='px-6 py-4'>64</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Intergenerational cycle of malnutrition (DNB 2020/2)5</td><td class='px-6 py-4'>64</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pathogenesis of edematous malnutrition (DNB 2021/1)5</td><td class='px-6 py-4'>64</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Tabulate classification of malnutrition as per WHO criteria. Describe management of a 1-year old girl with severe acute malnutrition and acute diarrhea (DNB 2021/1)4+6</td><td class='px-6 py-4'>64</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Rehydration Solution for Malnourished Children (ReSoMal) (DNB 2021/2)5</td><td class='px-6 py-4'>64</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the management of 2 year old conscious child with Severe Acute Malnutrition having diarrhea with severe dehydration (DNB 2022/1)5</td><td class='px-6 py-4'>64</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Definition and epidemiology of double burden of malnutrition (DNB 2022/2)5</td><td class='px-6 py-4'>64</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Prevention and treatment of hypoglycemia in severe acute malnutrition (DNB 2022/2)5</td><td class='px-6 py-4'>64</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the 10 steps of management of SAM as per WHO guidelines (DNB 2023/1)7</td><td class='px-6 py-4'>64</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe F-75 diet (DNB 2023/1)3</td><td class='px-6 py-4'>64</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enlist the criteria for diagnosis of SAM in < 6months (DNB 2023/1)5</td><td class='px-6 py-4'>64</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pathophysiology of severe acute malnutrition (DNB 2023/2)5</td><td class='px-6 py-4'>64</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Principles of management of child with severe acute malnutrition (DCH 2024/1)5</td><td class='px-6 py-4'>64</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define severe acute malnutrition (SAM) (DNB 2024/2)2</td><td class='px-6 py-4'>64</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe management of SAM (DNB 2024/2)5</td><td class='px-6 py-4'>64</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Approach to a child with obesity (DNB 1999/1)15</td><td class='px-6 py-4'>65</td><td class='px-6 py-4 whitespace-nowrap'>1999</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define obesity in childhood. List the causes of obesity in children. Outline strategies for its prevention (DNB 2004/2)2+3+5</td><td class='px-6 py-4'>65</td><td class='px-6 py-4 whitespace-nowrap'>2004</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What is Obesity? Discuss the management in children (DNB 2005/1)3+7</td><td class='px-6 py-4'>65</td><td class='px-6 py-4 whitespace-nowrap'>2005</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Approach to a child with Obesity (DNB 2006/1)10, (DNB 2007/2)10</td><td class='px-6 py-4'>65</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the diagnostic measures and clinical manifestations of obesity. Enlist the differential diagnosis of childhood obesity (DNB 2009/2)2+3+5</td><td class='px-6 py-4'>65</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define syndrome X. Outline the diagnostic criteria and laboratory work up for obese children. (DNB 2010/1)2+3+5</td><td class='px-6 py-4'>65</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define obesity. List causes of obesity. Discuss approach to a child with obesity (DNB 2011/1)2+3+5</td><td class='px-6 py-4'>65</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>A 2-year-old toddler presents with a weight of 25 kg. Discuss the possible causes, evaluation and treatment for this child (DNB 2014/1)3+4+3</td><td class='px-6 py-4'>65</td><td class='px-6 py-4 whitespace-nowrap'>2014</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Comorbidities associated with childhood obesity (DNB 2017/2)5</td><td class='px-6 py-4'>65</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Complications of Paediatric obesity (DNB 2017/1)5</td><td class='px-6 py-4'>65</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define obesity. Enumerate causes and management of childhood obesity (DNB 2016/2)3+3+4</td><td class='px-6 py-4'>65</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Syndromes associated with obesity [DNB 2018/2]5</td><td class='px-6 py-4'>65</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Prevention of obesity in children (DNB 2020/1)5</td><td class='px-6 py-4'>65</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Prevention of overweight and obesity in adolescents (DNB 2020/2)5</td><td class='px-6 py-4'>65</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Evaluation of a child with obesity (DNB 2021/1)5</td><td class='px-6 py-4'>65</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe briefly complications of obesity (DNB 2024/2)5</td><td class='px-6 py-4'>65</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Hazards and virtues of Vitamin A in Pediatric practice (DNB 1996/2)10</td><td class='px-6 py-4'>66</td><td class='px-6 py-4 whitespace-nowrap'>1996</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Vitamin A supplementation (DNB 2007/1)5</td><td class='px-6 py-4'>66</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate functions of vitamin A in human body. Tabulate the WHO classification of vitamin A deficiency. Outline the treatment schedule for managing Xerophthalmia in children (DNB 2010/2)2+3+5</td><td class='px-6 py-4'>66</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe WHO classification of eye manifestation of vitamin A deficiency. Discuss prevention & management of Vitamin A deficiency in children (DNB 2014/2)4+6</td><td class='px-6 py-4'>66</td><td class='px-6 py-4 whitespace-nowrap'>2014</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Hypervitaminosis A (DNB 2016/1)4, (DNB 2016/2)3</td><td class='px-6 py-4'>66</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Prevention of Vitamin A deficiency (DNB 2021/1)5</td><td class='px-6 py-4'>66</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Vitamin A deficiency - Classification and preventive measures (DNB 2021/2)5</td><td class='px-6 py-4'>66</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the etiopathogenesis, clinical features, diagnosis and management of cobalamine deficiency (DNB 2012/1)2+3+1+4</td><td class='px-6 py-4'>67</td><td class='px-6 py-4 whitespace-nowrap'>2012</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pathophysiology of Vitamin B12 and Folate deficiency (DNB 2020/1)5</td><td class='px-6 py-4'>67</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Write clinical features, management and long term outcome of B12 deficiency in children (DNB 2022/1)5</td><td class='px-6 py-4'>67</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Treatment of Vitamin B12 deficiency in children (DNB 2022/02)3</td><td class='px-6 py-4'>67</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Clinical features of thiamine deficiency in infants (DNB 2022/02)3</td><td class='px-6 py-4'>67</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Role of Folate in body metabolism (DNB 2023/1)5</td><td class='px-6 py-4'>67</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate the clinical features, diagnosis and treatment of Folate deficiency (DNB 2023/1)5</td><td class='px-6 py-4'>67</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Vitamin B1 deficiency (DNB 2023/2)5</td><td class='px-6 py-4'>67</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Inborn errors of metabolism related to B12 deficiency (DNB 2024/1)5</td><td class='px-6 py-4'>67</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Scurvy- radiological changes. How are they produced? What is the role of Blood Level of Vitamin C in the diagnosis (DNB 2005/1)10</td><td class='px-6 py-4'>68</td><td class='px-6 py-4 whitespace-nowrap'>2005</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnosis of Scurvy (DNB 2017/2)4</td><td class='px-6 py-4'>68</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enlist the causes of vitamin C deficiency and radiological findings in vitamin C deficiency (DNB 2024/1)5</td><td class='px-6 py-4'>68</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pathophysiology of scurvy (DNB 2024/2)3</td><td class='px-6 py-4'>68</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Clinical manifestations of Rickets (DNB 1993/2)10</td><td class='px-6 py-4'>69</td><td class='px-6 py-4 whitespace-nowrap'>1993</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Vitamin D Resistant Rickets (DNB 1996/2)12</td><td class='px-6 py-4'>69</td><td class='px-6 py-4 whitespace-nowrap'>1996</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Renal Rickets (DNB 1997/2)15</td><td class='px-6 py-4'>69</td><td class='px-6 py-4 whitespace-nowrap'>1997</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Functions of vitamin D (DNB 1998/2)10</td><td class='px-6 py-4'>69</td><td class='px-6 py-4 whitespace-nowrap'>1998</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Resistant Rickets (DNB 2000/1)15</td><td class='px-6 py-4'>69</td><td class='px-6 py-4 whitespace-nowrap'>2000</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the metabolism and function of Vitamin D in human body. Describe in detail the etiology and pathological changes in rickets (DNB 1999/2)25</td><td class='px-6 py-4'>69</td><td class='px-6 py-4 whitespace-nowrap'>1999</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What are the causes of non-nutritional rickets? How will you manage such a child? (DNB 2004/2)3+7</td><td class='px-6 py-4'>69</td><td class='px-6 py-4 whitespace-nowrap'>2004</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Classify the various causes of rickets and outline how to differentiate them (DNB 2005/1)5+5</td><td class='px-6 py-4'>69</td><td class='px-6 py-4 whitespace-nowrap'>2005</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnostic approach to a child with resistant rickets (DNB 2006/1)10</td><td class='px-6 py-4'>69</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Resistant Rickets (DNB 2006/2)10</td><td class='px-6 py-4'>69</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss calcium and vitamin D metabolism. Outline an approach to a case of Resistant Rickets (DNB 2007/1)10</td><td class='px-6 py-4'>69</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the pathophysiological basis of clinical and radiological manifestations of nutritional rickets (DNB 2009/1)10</td><td class='px-6 py-4'>69</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe vitamin D metabolism. Describe diagnostic approach to a 3-year-old child with rickets who has shown no response to treatment with 6 lakhs IU of Vitamin D (DNB 2009/2)4+6</td><td class='px-6 py-4'>69</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the clinical features, radiological changes, diagnosis and treatment of nutritional Vitamin D deficiency rickets (DNB 2010/2)2+2+2+4</td><td class='px-6 py-4'>69</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Write in brief the role of vitamin D in health and disease in children. Outline the management of Vitamin D deficiency disorder (DNB 2012/1)6+4</td><td class='px-6 py-4'>69</td><td class='px-6 py-4 whitespace-nowrap'>2012</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Hypervitaminosis D (DNB 2016/1)4, (DNB 2016/2)3</td><td class='px-6 py-4'>69</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>a. Outline the physiology of vitamin D b. Diagnosis and treatment of vitamin D Dependent Rickets (DNB 2016/1)3+3+4</td><td class='px-6 py-4'>69</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Treatment and prevention of Vitamin D Deficiency rickets (DNB 2017/2)6</td><td class='px-6 py-4'>69</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the steps involved in synthesis of Vitamin D (DNB 2016/2)5</td><td class='px-6 py-4'>69</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>7-year-old boy comes with deformities suggestive of rickets. What are the possible causes? Enumerate the investigations for resistant rickets and treatment of hypophosphatemic rickets (DNB 2016/2)5</td><td class='px-6 py-4'>69</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Physical, metabolic properties and food sources of Vitamin D (DNB 2018/2)5</td><td class='px-6 py-4'>69</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Medical management of Nutritional rickets (DNB 2019/1) 5</td><td class='px-6 py-4'>69</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Treatment of nutritional rickets (DNB 2020/02)5</td><td class='px-6 py-4'>69</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Vitamin D supplementation - Why, when, how? (DNB 2020/01)5</td><td class='px-6 py-4'>69</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Role of vitamin D in children beyond bone health (DNB 2021/01)5</td><td class='px-6 py-4'>69</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe the investigations and treatment of nutritional rickets (DNB 2023/01)5</td><td class='px-6 py-4'>69</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Rickets and its classification (DCH 2023/2)5</td><td class='px-6 py-4'>69</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of Refractory rickets (DCH 2023/2)5</td><td class='px-6 py-4'>69</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Advantages and disadvantages of daily low dose treatment and Stoss therapy for rickets (DNB 2024/1)5</td><td class='px-6 py-4'>69</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pathophysiology of rickets (DNB 2024/2)3</td><td class='px-6 py-4'>69</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Vitamin D: a) Metabolism b) Features of renal rickets c) Complications of excess vitamin D (DCH 2024/2)3+3+4</td><td class='px-6 py-4'>69</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate the functions and therapeutic uses of Vitamin E (DNB 1998/1)15</td><td class='px-6 py-4'>70</td><td class='px-6 py-4 whitespace-nowrap'>1998</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Vitamin E and its role in human nutrition (DNB 1992/2)15</td><td class='px-6 py-4'>70</td><td class='px-6 py-4 whitespace-nowrap'>1992</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Name the micronutrients required for various body functions. Discuss Briefly their dietary sources and the effects of deficiency of mineral micronutrients (trace elements) (DNB 2011/2)3+2+5</td><td class='px-6 py-4'>72</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Role of micronutrient in Pediatric health and diseases (DNB 2016/1)5</td><td class='px-6 py-4'>72</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Cutaneous manifestations of nutritional deficiencies (DNB 2017/2)6</td><td class='px-6 py-4'>72</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>List micronutrients in diet and methods for prevention of their deficiency (DNB 2018/2)5</td><td class='px-6 py-4'>72</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Hidden Hunger in children (DNB 2019/2)5</td><td class='px-6 py-4'>72</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the role of the following in health and diseases a) Copper b) Zinc c) Magnesium (DNB 2020/2)3+4+3</td><td class='px-6 py-4'>72</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Role of Zn, Cu and Mg in nutrition and disease (DNB 2023/01)5</td><td class='px-6 py-4'>72</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What are the dietary sources of copper? What are the diseases associated with abnormal copper metabolism? Describe investigation., clinical features and treatment of any one of them (DNB 2009/2)1+2+7</td><td class='px-6 py-4'>72</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Relevance of Zinc in human nutrition (DNB 1992/1)15</td><td class='px-6 py-4'>72</td><td class='px-6 py-4 whitespace-nowrap'>1992</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Role of Zinc in health and diseases of children (DNB 1997/1)10</td><td class='px-6 py-4'>72</td><td class='px-6 py-4 whitespace-nowrap'>1997</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Effects of Zinc supplementation in persistent diarrhoea (DNB 1998/2)10</td><td class='px-6 py-4'>72</td><td class='px-6 py-4 whitespace-nowrap'>1998</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Give dietary requirements of Zinc in children and discuss its role in childhood immunity and infections (DNB 2007/1)10</td><td class='px-6 py-4'>72</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Write short notes on: Zinc supplementation - when and how? (DNB 2011/2)5</td><td class='px-6 py-4'>72</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Physiological function of Zinc in body with special reference to immunity (DNB 2017/1)5</td><td class='px-6 py-4'>72</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Role of Zinc in treatment of pediatric diarrhea (DNB 2017/1)2</td><td class='px-6 py-4'>72</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Clinical features of acrodermatitis enteropathica (DNB 2017/2)5, (DNB 2018/2)5</td><td class='px-6 py-4'>72</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of Acrodermatitis enteropathica (DNB 2024/1)5</td><td class='px-6 py-4'>72</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Prevention of lodine deficiency (DNB 1995/1)15</td><td class='px-6 py-4'>72</td><td class='px-6 py-4 whitespace-nowrap'>1995</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Prevention of Fluoride toxicity (DNB 1995/1)15</td><td class='px-6 py-4'>72</td><td class='px-6 py-4 whitespace-nowrap'>1995</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Fluoride and disease (DNB 2016/1)2</td><td class='px-6 py-4'>72</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                </tbody>
+            </table>
+        </main>
+        
+        <div class="mt-8 p-6 bg-gray-50 rounded-2xl shadow-lg">
+            <h3 class="text-xl font-semibold mb-4 text-gray-700">Chapter Key</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-600">
+                <li><b>60:</b> Nutritional Requirements</li>
+                <li><b>61:</b> Feeding Healthy Infants, Children, and Adolescents</li>
+                <li><b>63:</b> Refeeding Syndrome</li>
+                <li><b>64:</b> Malnutrition</li>
+                <li><b>65:</b> Overweight and Obesity</li>
+                <li><b>66:</b> Vitamin A Deficiencies and Excess</li>
+                <li><b>67:</b> Vitamin B Complex Deficiencies and Excess</li>
+                <li><b>68:</b> Vitamin C (Ascorbic Acid) Deficiency and Excess</li>
+                <li><b>69:</b> Vitamin D Deficiency (Rickets) and Excess</li>
+                <li><b>70:</b> Vitamin E Deficiency</li>
+                <li><b>72:</b> Micronutrient Mineral Deficiencies</li>
+            </ul>
+        </div>
+
+        <footer class="text-center mt-10 text-gray-500 text-sm">
+            <p>Made by Dr. Rubanbalaji | Updated till Oct 2024</p>
+        </footer>
+    </div>
+    <script>
+        function sortTable(columnIndex) {
+            const table = document.getElementById("questionsTable");
+            const tbody = table.tBodies[0];
+            const rows = Array.from(tbody.rows);
+            const header = table.tHead.rows[0].cells[columnIndex];
+            const isAsc = !header.classList.contains('sort-asc');
+
+            table.tHead.querySelectorAll('.sortable-header').forEach(th => {
+                th.classList.remove('sort-asc', 'sort-desc');
+            });
+
+            header.classList.toggle('sort-asc', isAsc);
+            header.classList.toggle('sort-desc', !isAsc);
+
+            rows.sort((a, b) => {
+                const aText = a.cells[columnIndex].textContent.trim();
+                const bText = b.cells[columnIndex].textContent.trim();
+
+                if (columnIndex === 1 || columnIndex === 2) {
+                    return isAsc ? (parseInt(aText) - parseInt(bText)) : (parseInt(bText) - parseInt(aText));
+                }
+
+                return isAsc ? aText.localeCompare(bText) : bText.localeCompare(aText);
+            });
+
+            tbody.innerHTML = "";
+            rows.forEach(row => tbody.appendChild(row));
+        }
+    </script>
+</body>
+</html>

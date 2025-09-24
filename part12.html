@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part XII - Immunology | DNB Pediatrics Question Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .sortable-header { cursor: pointer; }
+        .sortable-header:hover { background-color: #f0f4f8; }
+        .sort-asc::after { content: ' ▲'; }
+        .sort-desc::after { content: ' ▼'; }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-600">Part XII - Immunology</h1>
+            <p class="text-lg text-gray-600 mt-2"><a href="index.html" class="text-blue-500 hover:underline">&larr; Back to Main Index</a></p>
+        </header>
+
+        <main class="bg-white p-6 md:p-8 rounded-2xl shadow-lg overflow-x-auto">
+            <table class="w-full table-auto divide-y divide-gray-200" id="questionsTable">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-9/12">Question</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header w-2/12" onclick="sortTable(1)">Chapter</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header w-1/12" onclick="sortTable(2)">Year</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    <!-- Chapter 164 -->
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Prenatal Diagnosis of Primary Immunodeficiency diseases (DNB 1994/2)10</td><td class='px-6 py-4'>164</td><td class='px-6 py-4 whitespace-nowrap'>1994</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Approach to a child with suspected immune dysfunction (DNB 2006/1)10</td><td class='px-6 py-4'>164</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Investigations for suspected immunodeficiency (DNB 2018/2)5</td><td class='px-6 py-4'>164</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss CBC and ESR in evaluation of child with suspected immunodeficiency (DNB 2019/2)6</td><td class='px-6 py-4'>164</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Approach to diagnosis and management of a child with suspected immune deficiency (DNB 2020/1)5</td><td class='px-6 py-4'>164</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Primary Immunodeficiency - Management (DNB 2021/2)5</td><td class='px-6 py-4'>164</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Approach to a suspected primary immunodeficiency disorder (DNB 2023/1)5</td><td class='px-6 py-4'>164</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Screening for primary immunodeficiency (DNB 2024/2)5</td><td class='px-6 py-4'>164</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <!-- Chapter 165 -->
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Laboratory investigation of child suspected to have T-cell immunity Disorder (DNB 1993/1)15</td><td class='px-6 py-4'>165</td><td class='px-6 py-4 whitespace-nowrap'>1993</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Wiscott-Aldrich Syndrome (DNB 2016/1)</td><td class='px-6 py-4'>165</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of SCID (DNB 2017/2)5</td><td class='px-6 py-4'>165</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Severe Combined Immunodeficiency (DNB 2022/1)5</td><td class='px-6 py-4'>165</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Clinical features suggestive of T-cell defect (DNB 2022/2)5</td><td class='px-6 py-4'>165</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Laboratory evaluation of suspected T-cell defect (DNB 2022/2)5</td><td class='px-6 py-4'>165</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnosis and treatment of severe combined immunodeficiency (SCID) (DNB 2023/2)5</td><td class='px-6 py-4'>165</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Hyper IgE syndrome (DNB 2018/1)5, (DNB 2024/1)5</td><td class='px-6 py-4'>165</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <!-- Chapter 166 -->
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enlist the humoral immunodeficiency disorders. Outline the diagnostic approach and treatment (DNB 2010/1)4+6</td><td class='px-6 py-4'>166</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss various components of primary immune deficiency, their clinical characteristics and investigations of a suspected predominant B-cell defect (DNB 2013/2)2+3+5</td><td class='px-6 py-4'>166</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>X linked Agammaglobulinemia (DNB 2018/2)5</td><td class='px-6 py-4'>166</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Bruton's agammaglobulinemia (DNB 2024/2)5</td><td class='px-6 py-4'>166</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Clinical features and laboratory findings in primary B cell immunodeficiency (DNB 2023/1)5</td><td class='px-6 py-4'>166</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <!-- Chapter 170 -->
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Numerate functions of the Phagocytes and Briefly describe defects of their functions (DNB 2009/1)4+6</td><td class='px-6 py-4'>170</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the characteristic features of primary immunodeficiency. Write in detail about pathogenesis and clinical features of chronic granulomatous disease (DNB 2011/1)4+3+3</td><td class='px-6 py-4'>170</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Chronic granulomatous disease (DNB 2021/2)5</td><td class='px-6 py-4'>170</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <!-- Chapter 171 -->
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define febrile neutropenia and describe the treatment and care of a child with febrile neutropenia (DNB 2008/1)10</td><td class='px-6 py-4'>171</td><td class='px-6 py-4 whitespace-nowrap'>2008</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Febrile neutopenia- Definition and management (DNB 2015/2)1+4</td><td class='px-6 py-4'>171</td><td class='px-6 py-4 whitespace-nowrap'>2015</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Febrile neutropenia (DNB 2020/1)5</td><td class='px-6 py-4'>171</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <!-- Chapter 174 -->
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pathogenesis, clinical features and diagnostic criteria of autoimmune lymphoproliferative syndrome (DNB 2014/2)4+3+3</td><td class='px-6 py-4'>174</td><td class='px-6 py-4 whitespace-nowrap'>2014</td></tr>
+                    <!-- Chapter 177 -->
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe the risks and benefits of bone marrow transplantation in children (DNB 1994/2)15</td><td class='px-6 py-4'>177</td><td class='px-6 py-4 whitespace-nowrap'>1994</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Bone marrow transplantation for children (DNB 2006/1)10</td><td class='px-6 py-4'>177</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate the methods of harvesting/ storing stem cells. Outline the indications of stem cell therapy. Discuss in brief the patient preparation required for stem cell therapy. Enlist important potential complications of stem cell therapy (DNB 2011/1)2+3+3+2</td><td class='px-6 py-4'>177</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the indications for stem cell transplantation therapy in children. What is its rationale and sources for stem cells? (DNB 2013/2)5+3+2</td><td class='px-6 py-4'>177</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Stem cell therapy (DNB 2014/2)5</td><td class='px-6 py-4'>177</td><td class='px-6 py-4 whitespace-nowrap'>2014</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Principles of stem cell therapy (DNB 2018/2)5</td><td class='px-6 py-4'>177</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Hematopoetic stem cell transplant (HSCT) (DNB 2019/2)4</td><td class='px-6 py-4'>177</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Bone marrow transplant - Indications and complications (DNB 2021/2)5</td><td class='px-6 py-4'>177</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Hemopoietic stem cell transplantation (DNB 2024/2)5</td><td class='px-6 py-4'>177</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <!-- Chapter 179 -->
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Graft versus host disease (DNB 1999/1)15</td><td class='px-6 py-4'>179</td><td class='px-6 py-4 whitespace-nowrap'>1999</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss pathogenesis of Graft Versus Host Diseases (GVHD) Discuss clinical manifestations, staging and grading and management of acute GVHD (DNB 2013/2)2+3+2+3</td><td class='px-6 py-4'>179</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What is the pathogenesis of graft vs host disease? What are its clinical manifestations? What measures can be taken to prevent it in case of stem cell transplantation? (DNB 2015/2)4+3+3</td><td class='px-6 py-4'>179</td><td class='px-6 py-4 whitespace-nowrap'>2015</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Graft vs Host Disease (DNB 2016/1)4</td><td class='px-6 py-4'>179</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                </tbody>
+            </table>
+        </main>
+
+        <div class="mt-8 p-6 bg-gray-50 rounded-2xl shadow-lg">
+            <h3 class="text-xl font-semibold mb-4 text-gray-700">Chapter Key</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-600 grid grid-cols-1 sm:grid-cols-2">
+                <li><b>164:</b> Orientation to the Consideration of Inborn Errors of Immunity</li>
+                <li><b>165:</b> T-Cell and Combined Deficiencies</li>
+                <li><b>166:</b> B-Cell and Antibody Deficiencies</li>
+                <li><b>170:</b> Disorders of Phagocyte Function</li>
+                <li><b>171:</b> Leukopenia</li>
+                <li><b>174:</b> Immune Dysregulation</li>
+                <li><b>177:</b> Principles and Clinical Indications of Hematopoietic Stem Cell Transplantation</li>
+                <li><b>179:</b> Graft-Versus-Host Disease, Rejection and Venoocclusive Disease</li>
+            </ul>
+        </div>
+
+        <footer class="text-center mt-10 text-gray-500 text-sm">
+            <p>Made by Dr. Rubanbalaji | Updated till Oct 2024</p>
+        </footer>
+    </div>
+
+    <script>
+        function sortTable(columnIndex) {
+            const table = document.getElementById("questionsTable");
+            const tbody = table.tBodies[0];
+            const rows = Array.from(tbody.rows);
+            const header = table.tHead.rows[0].cells[columnIndex];
+            const isAsc = !header.classList.contains('sort-asc');
+
+            table.tHead.querySelectorAll('.sortable-header').forEach(th => {
+                th.classList.remove('sort-asc', 'sort-desc');
+            });
+
+            header.classList.toggle('sort-asc', isAsc);
+            header.classList.toggle('sort-desc', !isAsc);
+
+            rows.sort((a, b) => {
+                const aText = a.cells[columnIndex].textContent.trim();
+                const bText = b.cells[columnIndex].textContent.trim();
+
+                if (columnIndex === 1 || columnIndex === 2) { 
+                    const aNum = parseInt(aText);
+                    const bNum = parseInt(bText);
+                    if (isAsc) return aNum - bNum;
+                    return bNum - aNum;
+                }
+                return isAsc ? aText.localeCompare(bText) : bText.localeCompare(aText);
+            });
+
+            while (tbody.firstChild) {
+                tbody.removeChild(tbody.firstChild);
+            }
+
+            rows.forEach(row => tbody.appendChild(row));
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part VIII - Human Genetics | DNB Pediatrics Question Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .sortable-header { cursor: pointer; }
+        .sortable-header:hover { background-color: #f0f4f8; }
+        .sort-asc::after { content: ' ▲'; }
+        .sort-desc::after { content: ' ▼'; }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-600">Part VIII - Human Genetics</h1>
+            <p class="text-lg text-gray-600 mt-2"><a href="index.html" class="text-blue-500 hover:underline">&larr; Back to Main Index</a></p>
+        </header>
+
+        <main class="bg-white p-6 md:p-8 rounded-2xl shadow-lg overflow-x-auto">
+            <table class="w-full table-auto divide-y divide-gray-200" id="questionsTable">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-9/12">Question</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header w-2/12" onclick="sortTable(1)">Chapter</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header w-1/12" onclick="sortTable(2)">Year</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    <!-- Chapter 96 -->
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What are mutations? Describe their consequences (DNB 2010/1)5+5</td><td class='px-6 py-4'>96</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <!-- Chapter 97 -->
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What are mitochondrial genes? How are they transmitted? Briefly discuss diseases transmitted by them? (DNB 2011/2)2+2+6</td><td class='px-6 py-4'>97</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate classic and non-classic forms of genetic inheritance. Discuss in brief the characteristics of autosomal recessive inheritance. Illustrate with a pedigree chart (DNB 2013/1)5+3+2,(DNB 2013/2)2+2+6</td><td class='px-6 py-4'>97</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe the symbols used in pedigree chart. Draw pedigree charts over 4 generations depicting a) X-linked dominant disease b) X-linked recessive disease (DNB 2016/1)4+3+3</td><td class='px-6 py-4'>97</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Draw pedigree chart for autosomal dominant inheritance pattern of non-consanguinous parents (DNB 2018/1)5</td><td class='px-6 py-4'>97</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Patterns of genetic inheritance (DNB 2018/2)5</td><td class='px-6 py-4'>97</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagrammatically illustrate principles of mode of inheritance of genetic disorders (DNB 2019/2)6</td><td class='px-6 py-4'>97</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Briefly describe the important attributes of various patterns of genetic inheritance (DNB 2020/2)6</td><td class='px-6 py-4'>97</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pedigree chart and patterns of inheritance (DNB 2023/1)5</td><td class='px-6 py-4'>97</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Modes of inheritance (DCH 2023/2)5</td><td class='px-6 py-4'>97</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <!-- Chapter 98 -->
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Briefly discuss the principles of genetic counselling. Outline the counselling of a family with a child with Down's syndrome (DNB 2004/2) 5+5</td><td class='px-6 py-4'>98</td><td class='px-6 py-4 whitespace-nowrap'>2004</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Gene Therapy in Children (DNB 2006/1)10</td><td class='px-6 py-4'>98</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Gene therapy (DNB 2007/1)5</td><td class='px-6 py-4'>98</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Primary and secondary prevention of genetic disorders (DNB 2016/1)5+5</td><td class='px-6 py-4'>98</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Principles of gene therapy (DNB 2020/2)5, (DNB 2023/1)5</td><td class='px-6 py-4'>98</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Gene therapy (DNB 2023/2)5</td><td class='px-6 py-4'>98</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>CRISPR gene editing technology for child health (DNB 2021/1)5</td><td class='px-6 py-4'>98</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Next-generation sequencing and its indications (DNB 2021/1)5</td><td class='px-6 py-4'>98</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Indication of Next Generation Sequencing in pediatric hemato-oncology (DNB 2022/1)5</td><td class='px-6 py-4'>98</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enzyme Replacement Therapy (DNB 2021/2)5, (DNB 2023/2)5, (DNB 2024/2)5</td><td class='px-6 py-4'>98</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Clinical Exome sequencing (DNB 2022/2)5</td><td class='px-6 py-4'>98</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Indications of genetic counselling (DNB 2023/2)5</td><td class='px-6 py-4'>98</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <!-- Chapter 99 -->
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define translocation. Write the inheritance pattern for translocations. Describe clinical features of any one translocation disorder (DNB 2016/1)6</td><td class='px-6 py-4'>99</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the genotypic and phenotypic features of Turner's syndrome (DNB 2011/1)4+6</td><td class='px-6 py-4'>99</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Disorders of Genetic imprinting (DNB 2022/2)5</td><td class='px-6 py-4'>99</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Genomic imprinting (DCH 2023/2)5</td><td class='px-6 py-4'>99</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <!-- Chapter 100 -->
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Dysmorphic child (DNB 1994/2)15</td><td class='px-6 py-4'>100</td><td class='px-6 py-4 whitespace-nowrap'>1994</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Classification of birth defects (DNB 2022/1)5</td><td class='px-6 py-4'>100</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <!-- Chapter 101 -->
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define craniosynostosis and its types. Name specic syndromes associated with craniosynostosis. Describe the clinical characteristics of common types of craniosynostosis (DNB 2013/2)3+3+4</td><td class='px-6 py-4'>101</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Craniosynostosis (DNB 2020/2)5</td><td class='px-6 py-4'>101</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                </tbody>
+            </table>
+        </main>
+
+        <div class="mt-8 p-6 bg-gray-50 rounded-2xl shadow-lg">
+            <h3 class="text-xl font-semibold mb-4 text-gray-700">Chapter Key</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-600">
+                <li><b>96:</b> Principles of Human Genetics</li>
+                <li><b>97:</b> Patterns of Genetic Transmission</li>
+                <li><b>98:</b> Integration of genetics into pediatric practice</li>
+                <li><b>99:</b> Chromosome Disorders</li>
+                <li><b>100:</b> Dysmorphology, Phenotyping, and Sequences</li>
+                <li><b>101:</b> Signaling Pathway Disorders</li>
+            </ul>
+        </div>
+
+        <footer class="text-center mt-10 text-gray-500 text-sm">
+            <p>Made by Dr. Rubanbalaji | Updated till Oct 2024</p>
+        </footer>
+    </div>
+
+    <script>
+        function sortTable(columnIndex) {
+            const table = document.getElementById("questionsTable");
+            const tbody = table.tBodies[0];
+            const rows = Array.from(tbody.rows);
+            const header = table.tHead.rows[0].cells[columnIndex];
+            const isAsc = !header.classList.contains('sort-asc');
+
+            table.tHead.querySelectorAll('.sortable-header').forEach(th => {
+                th.classList.remove('sort-asc', 'sort-desc');
+            });
+
+            header.classList.toggle('sort-asc', isAsc);
+            header.classList.toggle('sort-desc', !isAsc);
+
+            rows.sort((a, b) => {
+                const aText = a.cells[columnIndex].textContent.trim();
+                const bText = b.cells[columnIndex].textContent.trim();
+
+                if (columnIndex === 1 || columnIndex === 2) { 
+                    const aNum = parseInt(aText);
+                    const bNum = parseInt(bText);
+                    if (isAsc) return aNum - bNum;
+                    return bNum - aNum;
+                }
+                return isAsc ? aText.localeCompare(bText) : bText.localeCompare(aText);
+            });
+
+            while (tbody.firstChild) {
+                tbody.removeChild(tbody.firstChild);
+            }
+
+            rows.forEach(row => tbody.appendChild(row));
+        }
+    </script>
+
+</body>
+</html>
