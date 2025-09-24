@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part XXVIII - The Ear | DNB Pediatrics Question Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .sortable-header {
+            cursor: pointer;
+            position: relative;
+        }
+        .sortable-header:hover {
+            background-color: #f0f4f8;
+        }
+        .sort-asc::after, .sort-desc::after {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .sort-asc::after {
+            content: ' ▲';
+        }
+        .sort-desc::after {
+            content: ' ▼';
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-600">Part XXVIII - The Ear</h1>
+            <p class="text-lg text-gray-600 mt-2"><a href="index.html" class="text-blue-500 hover:underline">&larr; Back to Main Index</a></p>
+        </header>
+
+        <main class="bg-white p-6 md:p-8 rounded-2xl shadow-lg overflow-x-auto">
+            <table class="w-full divide-y divide-gray-200" id="questionsTable">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" style="width: 75%;" onclick="sortTable(0)">
+                            Question
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" onclick="sortTable(1)">
+                            Chapter
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" onclick="sortTable(2)">
+                            Year
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Audiological Evaluation - Indications and modalities (DNB 2021/2)5</td><td class='px-6 py-4'>676</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline development of normal hearing in children. List causes of Hearing impairment in a 1 year old child and its diagnostic approach (DNB 2007/2)10</td><td class='px-6 py-4'>677</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe the types of hearing loss in children. Enumerate the causes of hearing loss in children (DNB 2010/2)4+6</td><td class='px-6 py-4'>677</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe the etiopathogenesis and clinical features in a 3 year old child with hearing impairment. What are the laboratory tests for assessment of such a child? (DNB 2012/1)3+3+4</td><td class='px-6 py-4'>677</td><td class='px-6 py-4 whitespace-nowrap'>2012</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate the causes of congenital deafness. Discuss Universal Neonatal Hearing Screening (DNB 2014/1)3+7</td><td class='px-6 py-4'>677</td><td class='px-6 py-4 whitespace-nowrap'>2014</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate various causes of childhood deafness. Investigation and management algorithm of childhood deafness (DNB 2016/2)10</td><td class='px-6 py-4'>677</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pediatric cochlear implant (DNB 2018/2)5</td><td class='px-6 py-4'>677</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Screening and diagnosis of hearing loss (DNB 2019/1)5</td><td class='px-6 py-4'>677</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Universal newborn hearing screening (DNB 2021/1)5</td><td class='px-6 py-4'>677</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Hearing assessment screening in children (DNB 2022/1)5</td><td class='px-6 py-4'>677</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate the causes of deafness in an infant (DCH 2024/1)5</td><td class='px-6 py-4'>677</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Hearing screening (DNB 2024/2)5</td><td class='px-6 py-4'>677</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Recurrent Acute Otitis Media in children (DNB 2007/1)10</td><td class='px-6 py-4'>680</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the etiopathogenesis of acute suppurative otitis media. Discuss in brief the treatment and complications of acute suppurative otitis media (ASOM) in children (DNB 2011/1)3+4+3</td><td class='px-6 py-4'>680</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of acute otitis media (DNB 2014/2)5</td><td class='px-6 py-4'>680</td><td class='px-6 py-4 whitespace-nowrap'>2014</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Treatment of acute otitis media (DNB 2017/1)5</td><td class='px-6 py-4'>680</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Acute suppurative otitis media (DCH 2024/1)5</td><td class='px-6 py-4'>680</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnosis and management of otitis media with effusion (DNB 2024/1)5</td><td class='px-6 py-4'>680</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Investigations and treatment of childhood vertigo (DNB 2018/2)5</td><td class='px-6 py-4'>682</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                </tbody>
+            </table>
+        </main>
+        
+        <div class="mt-8 p-6 bg-gray-50 rounded-2xl shadow-lg">
+            <h3 class="text-xl font-semibold mb-4 text-gray-700">Chapter Key</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-600">
+                <li><b>676:</b> General Considerations and Evaluation of the Ear</li>
+                <li><b>677:</b> Hearing Loss</li>
+                <li><b>680:</b> Otitis Media</li>
+                <li><b>682:</b> The Inner Ear and Diseases of the Bony Labyrinth</li>
+            </ul>
+        </div>
+
+        <footer class="text-center mt-10 text-gray-500 text-sm">
+            <p>Made by Dr. Rubanbalaji | Updated till Oct 2024</p>
+        </footer>
+    </div>
+    <script>
+        function sortTable(columnIndex) {
+            const table = document.getElementById("questionsTable");
+            const tbody = table.tBodies[0];
+            const rows = Array.from(tbody.rows);
+            const header = table.tHead.rows[0].cells[columnIndex];
+            const isAsc = !header.classList.contains('sort-asc');
+
+            table.tHead.querySelectorAll('.sortable-header').forEach(th => {
+                th.classList.remove('sort-asc', 'sort-desc');
+            });
+
+            header.classList.add(isAsc ? 'sort-asc' : 'sort-desc');
+
+            rows.sort((a, b) => {
+                const aText = a.cells[columnIndex].textContent.trim();
+                const bText = b.cells[columnIndex].textContent.trim();
+
+                let aVal = aText;
+                let bVal = bText;
+
+                if (columnIndex === 1 || columnIndex === 2) {
+                    aVal = parseInt(aText, 10);
+                    bVal = parseInt(bText, 10);
+                }
+
+                if (aVal < bVal) {
+                    return isAsc ? -1 : 1;
+                }
+                if (aVal > bVal) {
+                    return isAsc ? 1 : -1;
+                }
+                return 0;
+            });
+
+            tbody.innerHTML = "";
+            rows.forEach(row => tbody.appendChild(row));
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part XXXII - Environmental Health | DNB Pediatrics Question Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .sortable-header {
+            cursor: pointer;
+            position: relative;
+        }
+        .sortable-header:hover {
+            background-color: #f0f4f8;
+        }
+        .sort-asc::after, .sort-desc::after {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .sort-asc::after {
+            content: ' ▲';
+        }
+        .sort-desc::after {
+            content: ' ▼';
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-600">Part XXXII - Environmental Health</h1>
+            <p class="text-lg text-gray-600 mt-2"><a href="index.html" class="text-blue-500 hover:underline">&larr; Back to Main Index</a></p>
+        </header>
+
+        <main class="bg-white p-6 md:p-8 rounded-2xl shadow-lg overflow-x-auto">
+            <table class="w-full divide-y divide-gray-200" id="questionsTable">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" style="width: 75%;" onclick="sortTable(0)">
+                            Question
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" onclick="sortTable(1)">
+                            Chapter
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" onclick="sortTable(2)">
+                            Year
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Adverse effects of Environmental pollution in children (DNB 1996/1)15</td><td class='px-6 py-4'>757</td><td class='px-6 py-4 whitespace-nowrap'>1996</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate various air pollutants and discuss their effects on health of children (DNB 2009/1)3+7</td><td class='px-6 py-4'>757</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Occupational and environment risks to the fetus (DNB 2006/1)5</td><td class='px-6 py-4'>758</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Radiation sickness (DNB 2016/1)3</td><td class='px-6 py-4'>758</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Why children are vulnerable to chemical pollutants? what are the chemical pollutants in environment and their effects? what are the hazards of environmental tobacco smoke in children? (DNB 2014/2)3+4+3</td><td class='px-6 py-4'>759</td><td class='px-6 py-4 whitespace-nowrap'>2014</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Steps and management of severe iron poisoning in children (DNB 2006/1)10</td><td class='px-6 py-4'>760</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate clinical features of iron poisoning and describe its management (DNB 2009/2)3+7</td><td class='px-6 py-4'>760</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Write the sources, clinical features, prevention and treatment of Mercury poisoning (DNB 2013/2)5</td><td class='px-6 py-4'>760</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of a child with ingestion of many tablets of ferrous sulphate (DNB 2021/1)5</td><td class='px-6 py-4'>760</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Lead Toxicity in children (DNB 1995/1)10</td><td class='px-6 py-4'>761</td><td class='px-6 py-4 whitespace-nowrap'>1995</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of Lead Poisoning and organo-phosphorous poisoning (DNB 2007/2)10</td><td class='px-6 py-4'>761</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate sources of lead poisoning. Outline the mechanism of toxicity and clinical features of lead poisoning (DNB 2010/2)3+3+4</td><td class='px-6 py-4'>761</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Write the sources, clinical features, prevention and treatment of Lead poisoning (DNB 2013/2)5</td><td class='px-6 py-4'>761</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnosis and management of lead poisoning (DNB 2015/1)4</td><td class='px-6 py-4'>761</td><td class='px-6 py-4 whitespace-nowrap'>2015</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Lead poisoning (DNB 2016/1)5</td><td class='px-6 py-4'>761</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnosis of lead poisoning (DNB 2021/1)5</td><td class='px-6 py-4'>761</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Bioterrorism (DNB 2016/1)3</td><td class='px-6 py-4'>763</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the management of dog bite in a four-year-old child (DNB 2010/2)10</td><td class='px-6 py-4'>765</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>How do you classify dog bites? Discuss its management (DNB 2013/2)4+6</td><td class='px-6 py-4'>765</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Dog bite in children - Guidelines in Management (DNB 2021/2)5</td><td class='px-6 py-4'>765</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline management of dog bite in a 4-year-old child (DNB 2023/1)5</td><td class='px-6 py-4'>765</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>How will you manage acute anaphylaxis following a bee sting in a ten-year-old boy (DNB 2006/1)10</td><td class='px-6 py-4'>768</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe the pathogenesis, clinical features and management of scorpion sting (DNB 2013/1)3+3+4</td><td class='px-6 py-4'>768</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pathophysiology and management of Scorpion Bite (DNB 2016/1)5</td><td class='px-6 py-4'>768</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Clinical manifestations of Scorpion sting envenomation (DNB 2017/1)5</td><td class='px-6 py-4'>768</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Bee and wasp sting (DNB 2019/2)3</td><td class='px-6 py-4'>768</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Scorpion sting (DNB 2019/2)3</td><td class='px-6 py-4'>768</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of scorpion sting (DNB 2020/1)5, (DNB 2020/2)5</td><td class='px-6 py-4'>768</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe management of scorpion bite (DNB 2023/1)5</td><td class='px-6 py-4'>768</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of scorpion envenomation (DNB 2024/1)5</td><td class='px-6 py-4'>768</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>An 8-year-old child is bitten by a snake while playing in the field. Discuss the different types of pathological changes the patient can go through. How do you grade the severity of envenomation and discuss the management? (DNB 2008/2)10</td><td class='px-6 py-4'>768</td><td class='px-6 py-4 whitespace-nowrap'>2008</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the pre-hospital and hospital management of a 10-year-old boy bitten by a poisonous snake (DNB 2009/1)10</td><td class='px-6 py-4'>768</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>A 4-year-old child has been bitten on his foot by a snake. How is a poisonous snake identified? Discuss the management of this child (DNB 2014/1)3+7</td><td class='px-6 py-4'>768</td><td class='px-6 py-4 whitespace-nowrap'>2014</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Clinical manifestations and management of viper bite (DNB 2016/1)5</td><td class='px-6 py-4'>768</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Snake bite poisoning - Clinical features (DNB 2018/2)5</td><td class='px-6 py-4'>768</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of snake bite (DCH 2024/1)5</td><td class='px-6 py-4'>768</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                </tbody>
+            </table>
+        </main>
+        
+        <div class="mt-8 p-6 bg-gray-50 rounded-2xl shadow-lg">
+            <h3 class="text-xl font-semibold mb-4 text-gray-700">Chapter Key</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-600 sm:columns-2 md:columns-3">
+                <li><b>757:</b> Overview of Environmental Health and Children</li>
+                <li><b>758:</b> Biologic Effects of Ionizing Radiation on Children</li>
+                <li><b>759:</b> Chemical Pollutants</li>
+                <li><b>760:</b> Heavy Metal Intoxication</li>
+                <li><b>761:</b> Lead Poisoning</li>
+                <li><b>763:</b> Biological and Chemical Terrorism</li>
+                <li><b>765:</b> Animal and Human Bites</li>
+                <li><b>768:</b> Envenomations</li>
+            </ul>
+        </div>
+
+        <footer class="text-center mt-10 text-gray-500 text-sm">
+            <p>Made by Dr. Rubanbalaji | Updated till Oct 2024</p>
+        </footer>
+    </div>
+    <script>
+        function sortTable(columnIndex) {
+            const table = document.getElementById("questionsTable");
+            const tbody = table.tBodies[0];
+            const rows = Array.from(tbody.rows);
+            const header = table.tHead.rows[0].cells[columnIndex];
+            const isAsc = !header.classList.contains('sort-asc');
+
+            table.tHead.querySelectorAll('.sortable-header').forEach(th => {
+                th.classList.remove('sort-asc', 'sort-desc');
+            });
+
+            header.classList.add(isAsc ? 'sort-asc' : 'sort-desc');
+
+            rows.sort((a, b) => {
+                const aText = a.cells[columnIndex].textContent.trim();
+                const bText = b.cells[columnIndex].textContent.trim();
+
+                let aVal = aText;
+                let bVal = bText;
+
+                if (columnIndex === 1 || columnIndex === 2) {
+                    aVal = parseInt(aText, 10);
+                    bVal = parseInt(bText, 10);
+                }
+
+                if (aVal < bVal) {
+                    return isAsc ? -1 : 1;
+                }
+                if (aVal > bVal) {
+                    return isAsc ? 1 : -1;
+                }
+                return 0;
+            });
+
+            tbody.innerHTML = "";
+            rows.forEach(row => tbody.appendChild(row));
+        }
+    </script>
+</body>
+</html>

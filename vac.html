@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccinology Questions | DNB Pediatrics Question Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .sortable-header {
+            cursor: pointer;
+            position: relative;
+        }
+        .sortable-header:hover {
+            background-color: #f0f4f8;
+        }
+        .sort-asc::after, .sort-desc::after {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .sort-asc::after {
+            content: ' ▲';
+        }
+        .sort-desc::after {
+            content: ' ▼';
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-600">Vaccinology Questions</h1>
+            <p class="text-lg text-gray-600 mt-2"><a href="index.html" class="text-blue-500 hover:underline">&larr; Back to Main Index</a></p>
+        </header>
+
+        <main class="bg-white p-6 md:p-8 rounded-2xl shadow-lg overflow-x-auto">
+            <table class="w-full divide-y divide-gray-200" id="questionsTable">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" style="width: 75%;" onclick="sortTable(0)">
+                            Question
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" onclick="sortTable(1)">
+                            Category
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" onclick="sortTable(2)">
+                            Year
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate all the diseases against which vaccines are currently available (DNB 1993/2)15</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>1993</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Immunization schedule basis in child suffering from AIDS (DNB 1994/1)15</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>1994</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Live vaccines used in pediatric age group (DNB 1995/1)10</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>1995</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Adverse reactions that may occur following use of vaccines included in the National Immunization Schedule in India (DNB 1995/2)10</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>1995</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe briefly various adverse reactions following vaccinations and discuss their management (DNB 1997/2)25</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>1997</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Combination vaccine (DNB 1999/2)10, (DNB 2003/1)15</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>1999</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Cold Chain (DNB 2000/1)15, (DNB 2014/2)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2000</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Vaccine Vial Monitor (DNB 2004/1)15</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2004</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe the criteria or conditions to be considered for approving a 'newer' vaccine in an immunization program of a developing country (DNB 2008/1)10, (DNB 2013/2)10</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2008</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Tabulate the various newer vaccines available to prevent respiratory disease in children, with their types, dosage schedule, route, important side effects and efficacy (DNB 2011/2)10</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Define the following: (DNB 2013/1)2X5 a. Herd immunity b. Herd effect c. Vaccine immunogenicity d. Vaccine efficacy; and e. Vaccine effectiveness</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Salient differences between the National and IAP immunization schedule (DNB 2013/1)(5)</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Conjugate vaccines (DNB 2015/1)3, (DNB 2021/1)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2015</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pentavalent vaccines (DNB 2016/2)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Adolescent vaccination (DNB 2017/1)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Immunization in immunosuppressed children (DNB 2018/1)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Adolescence immunization (DNB 2018/2)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Classification of AEFI (DNB 2019/1)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Combined vaccines (DNB 2019/1)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Components of cold chain for immunisation in a hospital setting and its monitoring (DNB 2019/1)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Different immunisation campaigns in India and their role in improving immunization coverage (DNB 2019/2)6</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Future vaccines (DNB 2019/2)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Immunization in adolescents (DNB 2020/2)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Vaccine Hesitancy (DNB 2020/2)5, (DNB 2022/1)5, (DNB 2022/2)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Assessment of causality in Adverse Events Following Immunization (DNB 2021/1)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Vaccination in children with cancer on chemotherapy (DNB 2021/1)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Dengue vaccines (DNB 2021/1)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Types of Adverse Events Following Immunization (DNB 2021/2)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Malaria vaccines (DNB 2021/2)4</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>National immunization schedule (DNB 2022/1)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Adverse events following immunization (DCH 2024/1)5</td><td class='px-6 py-4'>General</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Write briefly about different types of vaccine against rabies. Discuss various schedules of pre and post-exposure prophylaxis for rabies (DNB 2012/1)5+5</td><td class='px-6 py-4'>Rabies Vaccine</td><td class='px-6 py-4 whitespace-nowrap'>2012</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Anti-rabies vaccine - Different schedules, advantages of each schedule (DNB 2019/2)5</td><td class='px-6 py-4'>Rabies Vaccine</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Post exposure prophylaxis for dog bite (DNB 2020/1)5</td><td class='px-6 py-4'>Rabies Vaccine</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Monoclonal Antibodies in post exposure prophylaxis of Rabies (DNB 2021/1)5</td><td class='px-6 py-4'>Rabies Vaccine</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Rabies post-exposure prophylaxis (DCH 2024/1)5</td><td class='px-6 py-4'>Rabies Vaccine</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Varicella vaccine (DNB 2000/1)15</td><td class='px-6 py-4'>Varicella Vaccine</td><td class='px-6 py-4 whitespace-nowrap'>2000</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Complications of measles vaccination and management (DNB 1994/2)15</td><td class='px-6 py-4'>Measles Vaccine</td><td class='px-6 py-4 whitespace-nowrap'>1994</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>MR vaccine (DNB 2023/2)5</td><td class='px-6 py-4'>Measles Vaccine</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>H.Influenza B vaccine (DNB 1998/2)15</td><td class='px-6 py-4'>Hib Vaccine</td><td class='px-6 py-4 whitespace-nowrap'>1998</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Tabulate the following details with regards to Rotavirus vaccine, HIB vaccine and Pneumococcal vaccine: (DNB 2009/2)10 a) Type of vaccine b) Dose c) Route d) Appropriate age of vaccination e) Justification of its usage f) Side effect and g) Drawback</td><td class='px-6 py-4'>Hib Vaccine</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Typhoid Vaccines (DNB 1997/1)15, (DNB 2019/1)5</td><td class='px-6 py-4'>Typhoid Vaccine</td><td class='px-6 py-4 whitespace-nowrap'>1997</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Typhoid conjugate vaccine (DNB 2020/1)5</td><td class='px-6 py-4'>Typhoid Vaccine</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Hepatitis B immunization (DNB 1993/2)10</td><td class='px-6 py-4'>Hepatitis B Vaccine</td><td class='px-6 py-4 whitespace-nowrap'>1993</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Hepatitis B vaccine (DNB 1996/1)5, (DNB 1997/1)10</td><td class='px-6 py-4'>Hepatitis B Vaccine</td><td class='px-6 py-4 whitespace-nowrap'>1996</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pneumococcal vaccine (DNB 1996/2)15</td><td class='px-6 py-4'>Pneumococcal Vaccine</td><td class='px-6 py-4 whitespace-nowrap'>1996</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pneumococcal vaccine (DNB 2017/2)5, (DNB 2022/2)5, (DNB 2024/2)5</td><td class='px-6 py-4'>Pneumococcal Vaccine</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Influenza Type B vaccine (DNB 1998/1)15</td><td class='px-6 py-4'>Influenza Vaccine</td><td class='px-6 py-4 whitespace-nowrap'>1998</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Current status of post-DPT vaccine encephalopathy (DNB 1993/1)15</td><td class='px-6 py-4'>DPT Vaccine</td><td class='px-6 py-4 whitespace-nowrap'>1993</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the aetiology, pathogenesis and prevention of pertussis in children. Write the differences in efficacy, duration of protection and adverse effects between whole cell and acellular pertussis vaccine (DNB 2014/1)6+4</td><td class='px-6 py-4'>DPT Vaccine</td><td class='px-6 py-4 whitespace-nowrap'>2014</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Difference between acellular and whole cell pertussis vaccine (DNB 2023/1)5</td><td class='px-6 py-4'>DPT Vaccine</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Status of Polio vaccines (DNB 1993/1)15</td><td class='px-6 py-4'>Polio Vaccine</td><td class='px-6 py-4 whitespace-nowrap'>1993</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the current role, advantages and disadvantages of OPV and IPV in control and eradication of poliomyelitis in India (DNB 2011/1)4+6</td><td class='px-6 py-4'>Polio Vaccine</td><td class='px-6 py-4 whitespace-nowrap'>2011</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What is inactivated polio vaccine (IPV). What are the advantages and disadvantages of IPV over OPV? What is the schedule of IPV as recommended by IAP (DNB 2014/2)3+5+2</td><td class='px-6 py-4'>Polio Vaccine</td><td class='px-6 py-4 whitespace-nowrap'>2014</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>VAPP (Vaccine Associated Paralytic Poliomyelitis) (DNB 2016/1)5</td><td class='px-6 py-4'>Polio Vaccine</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Injectable polio vaccination schedules (DNB 2024/1)5</td><td class='px-6 py-4'>Polio Vaccine</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Utility and controversy of HPV Vaccine (DNB 2010/1)5+5</td><td class='px-6 py-4'>HPV Vaccine</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>HPV vaccine (DNB 2015/1)4</td><td class='px-6 py-4'>HPV Vaccine</td><td class='px-6 py-4 whitespace-nowrap'>2015</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>HPV vaccine-current status (DNB 2018/2)5</td><td class='px-6 py-4'>HPV Vaccine</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Rota virus vaccine (DNB 2015/1)3</td><td class='px-6 py-4'>Rota Virus Vaccine</td><td class='px-6 py-4 whitespace-nowrap'>2015</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Rota virus vaccine- schedule, dosage, side effects (DNB 2017/1)5</td><td class='px-6 py-4'>Rota Virus Vaccine</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                </tbody>
+            </table>
+        </main>
+        
+        <div class="mt-8 p-6 bg-gray-50 rounded-2xl shadow-lg">
+            <h3 class="text-xl font-semibold mb-4 text-gray-700">Category Key</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-600 sm:columns-2 md:columns-3">
+                <li><b>General</b></li>
+                <li><b>Rabies Vaccine</b></li>
+                <li><b>Varicella Vaccine</b></li>
+                <li><b>Measles Vaccine</b></li>
+                <li><b>Hib Vaccine</b></li>
+                <li><b>Typhoid Vaccine</b></li>
+                <li><b>Hepatitis B Vaccine</b></li>
+                <li><b>Pneumococcal Vaccine</b></li>
+                <li><b>Influenza Vaccine</b></li>
+                <li><b>DPT Vaccine</b></li>
+                <li><b>Polio Vaccine</b></li>
+                <li><b>HPV Vaccine</b></li>
+                <li><b>Rota Virus Vaccine</b></li>
+            </ul>
+        </div>
+
+        <footer class="text-center mt-10 text-gray-500 text-sm">
+            <p>Made by Dr. Rubanbalaji | Updated till Oct 2024</p>
+        </footer>
+    </div>
+    <script>
+        function sortTable(columnIndex) {
+            const table = document.getElementById("questionsTable");
+            const tbody = table.tBodies[0];
+            const rows = Array.from(tbody.rows);
+            const header = table.tHead.rows[0].cells[columnIndex];
+            const isAsc = !header.classList.contains('sort-asc');
+
+            table.tHead.querySelectorAll('.sortable-header').forEach(th => {
+                th.classList.remove('sort-asc', 'sort-desc');
+            });
+
+            header.classList.add(isAsc ? 'sort-asc' : 'sort-desc');
+
+            rows.sort((a, b) => {
+                const aText = a.cells[columnIndex].textContent.trim();
+                const bText = b.cells[columnIndex].textContent.trim();
+
+                if (columnIndex === 2) { // Year column
+                    return isAsc ? aText.localeCompare(bText) : bText.localeCompare(aText);
+                }
+                
+                return isAsc ? aText.localeCompare(bText) : bText.localeCompare(aText);
+
+            });
+
+            tbody.innerHTML = "";
+            rows.forEach(row => tbody.appendChild(row));
+        }
+    </script>
+</body>
+</html>

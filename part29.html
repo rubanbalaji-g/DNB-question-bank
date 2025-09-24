@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part XXIX - The Skin | DNB Pediatrics Question Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .sortable-header {
+            cursor: pointer;
+            position: relative;
+        }
+        .sortable-header:hover {
+            background-color: #f0f4f8;
+        }
+        .sort-asc::after, .sort-desc::after {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .sort-asc::after {
+            content: ' ▲';
+        }
+        .sort-desc::after {
+            content: ' ▼';
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-600">Part XXIX - The Skin</h1>
+            <p class="text-lg text-gray-600 mt-2"><a href="index.html" class="text-blue-500 hover:underline">&larr; Back to Main Index</a></p>
+        </header>
+
+        <main class="bg-white p-6 md:p-8 rounded-2xl shadow-lg overflow-x-auto">
+            <table class="w-full divide-y divide-gray-200" id="questionsTable">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" style="width: 75%;" onclick="sortTable(0)">
+                            Question
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" onclick="sortTable(1)">
+                            Chapter
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" onclick="sortTable(2)">
+                            Year
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Clinical conditions associated with Maculopapular rashes in children and their differential diagnosis (DNB 1995/1)10</td><td class='px-6 py-4'>686</td><td class='px-6 py-4 whitespace-nowrap'>1995</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnosis and management of a 2-year-old child with Petechial skin rash (DNB 1998/1)15</td><td class='px-6 py-4'>686</td><td class='px-6 py-4 whitespace-nowrap'>1998</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Maculopapular rash (DNB 2015/1)5</td><td class='px-6 py-4'>686</td><td class='px-6 py-4 whitespace-nowrap'>2015</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Approach to case of exanthematous fever in a 14-month old child (DNB 2018/1)5</td><td class='px-6 py-4'>686</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Bullous skin eruptions in newborn babies (DNB 1995/2)15</td><td class='px-6 py-4'>688</td><td class='px-6 py-4 whitespace-nowrap'>1995</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate the causes of persistent fever which are not due to infection. Describe the clinical presentation of ectodermal dysplasias (DNB 2008/1)10</td><td class='px-6 py-4'>690</td><td class='px-6 py-4 whitespace-nowrap'>2008</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>New developments in management of Vascular Nevi and scabies in children (DNB 1993/1)10</td><td class='px-6 py-4'>692</td><td class='px-6 py-4 whitespace-nowrap'>1993</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Outline the characteristic clinical features of 'erythema multiforme' and 'Steven - Johnson syndrome'. Enumerate the principles of management of Steven - Johnson syndrome (DNB 2010/2)4+3+3</td><td class='px-6 py-4'>695</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss briefly etiology, clinical features and management of Steven Johnson syndrome (DNB 2013/2)3+3+4</td><td class='px-6 py-4'>695</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Etiology, clinical features and management of Steven Johnson Syndrome (DNB 2014/2)3+2+5</td><td class='px-6 py-4'>695</td><td class='px-6 py-4 whitespace-nowrap'>2014</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Stevens-Johnson syndrome (DNB 2023/2)5</td><td class='px-6 py-4'>695</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Seborrheic Dematitis in children (DNB 2007/1)10</td><td class='px-6 py-4'>696</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss in brief etiopathogenesis, clinical features and treatment of seborrheic dermatitis in a neonate (DNB 2013/1)3+4+3</td><td class='px-6 py-4'>696</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Contact dermatitis (DNB 2021/1)5</td><td class='px-6 py-4'>696</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Erythema Nodosum (DNB 1999/2)10</td><td class='px-6 py-4'>701</td><td class='px-6 py-4 whitespace-nowrap'>1999</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Trichotillomania (DNB 2018/2)3</td><td class='px-6 py-4'>703</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the treatment of the following: Scabies (DNB 2014/1)4</td><td class='px-6 py-4'>709</td><td class='px-6 py-4 whitespace-nowrap'>2014</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of scabies in children (DNB 2017/1)4</td><td class='px-6 py-4'>709</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pediculosis (DNB 2019/2)5</td><td class='px-6 py-4'>709</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Clinical features and management of scabies in children (DNB 2020/1)5</td><td class='px-6 py-4'>709</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Diagnosis and treatment of scabies (DCH 2024/1)5</td><td class='px-6 py-4'>709</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Review the etiology and management of adolescent acne. What are the psychological complications in children (DNB 2006/1)10</td><td class='px-6 py-4'>710</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Acne in adolescence (DNB 2016/2)5</td><td class='px-6 py-4'>710</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Treatment of acne vulgaris (DNB 2023/2)5</td><td class='px-6 py-4'>710</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                </tbody>
+            </table>
+        </main>
+        
+        <div class="mt-8 p-6 bg-gray-50 rounded-2xl shadow-lg">
+            <h3 class="text-xl font-semibold mb-4 text-gray-700">Chapter Key</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-600 sm:columns-2 md:columns-3">
+                <li><b>686:</b> Dermatologic Evaluation of the Patient</li>
+                <li><b>688:</b> Dermatologic Diseases of the Neonate</li>
+                <li><b>690:</b> Ectodermal Dysplasias</li>
+                <li><b>692:</b> Cutaneous Nevi</li>
+                <li><b>695:</b> Vesiculobullous Disorders</li>
+                <li><b>696:</b> Eczematous Disorders</li>
+                <li><b>701:</b> Diseases of Subcutaneous Tissue</li>
+                <li><b>703:</b> Disorders of Hair</li>
+                <li><b>709:</b> Arthropod Bites and Infestations</li>
+                <li><b>710:</b> Acne</li>
+            </ul>
+        </div>
+
+        <footer class="text-center mt-10 text-gray-500 text-sm">
+            <p>Made by Dr. Rubanbalaji | Updated till Oct 2024</p>
+        </footer>
+    </div>
+    <script>
+        function sortTable(columnIndex) {
+            const table = document.getElementById("questionsTable");
+            const tbody = table.tBodies[0];
+            const rows = Array.from(tbody.rows);
+            const header = table.tHead.rows[0].cells[columnIndex];
+            const isAsc = !header.classList.contains('sort-asc');
+
+            table.tHead.querySelectorAll('.sortable-header').forEach(th => {
+                th.classList.remove('sort-asc', 'sort-desc');
+            });
+
+            header.classList.add(isAsc ? 'sort-asc' : 'sort-desc');
+
+            rows.sort((a, b) => {
+                const aText = a.cells[columnIndex].textContent.trim();
+                const bText = b.cells[columnIndex].textContent.trim();
+
+                let aVal = aText;
+                let bVal = bText;
+
+                if (columnIndex === 1 || columnIndex === 2) {
+                    aVal = parseInt(aText, 10);
+                    bVal = parseInt(bText, 10);
+                }
+
+                if (aVal < bVal) {
+                    return isAsc ? -1 : 1;
+                }
+                if (aVal > bVal) {
+                    return isAsc ? 1 : -1;
+                }
+                return 0;
+            });
+
+            tbody.innerHTML = "";
+            rows.forEach(row => tbody.appendChild(row));
+        }
+    </script>
+</body>
+</html>

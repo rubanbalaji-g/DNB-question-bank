@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part XXVII - Disorders of the Eye | DNB Pediatrics Question Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .sortable-header {
+            cursor: pointer;
+            position: relative;
+        }
+        .sortable-header:hover {
+            background-color: #f0f4f8;
+        }
+        .sort-asc::after, .sort-desc::after {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .sort-asc::after {
+            content: ' ▲';
+        }
+        .sort-desc::after {
+            content: ' ▼';
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-600">Part XXVII - Disorders of the Eye</h1>
+            <p class="text-lg text-gray-600 mt-2"><a href="index.html" class="text-blue-500 hover:underline">&larr; Back to Main Index</a></p>
+        </header>
+
+        <main class="bg-white p-6 md:p-8 rounded-2xl shadow-lg overflow-x-auto">
+            <table class="w-full divide-y divide-gray-200" id="questionsTable">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" style="width: 75%;" onclick="sortTable(0)">
+                            Question
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" onclick="sortTable(1)">
+                            Chapter
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" onclick="sortTable(2)">
+                            Year
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe the characteristic changes observed in fundus examination of a child with i) Chronic Hypertension ii) Acute Lymphoblastic leukemia iii) Long standing diabetes mellitus (DNB 2010/2)4+3+3</td><td class='px-6 py-4'>659</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe various age appropriate tests for checking visual acuity in children & limitations (DNB 2013/2)10</td><td class='px-6 py-4'>659</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>A) Enlist the acquired eye diseases in children B) Common causes, clinical features and management of acquired eye diseases in children (DNB 2015/1)2+2+3+3</td><td class='px-6 py-4'>659</td><td class='px-6 py-4 whitespace-nowrap'>2015</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>What are the common causes of Blindness in children? Discuss steps to prevent Blindness in this group (DNB 2005/1)3+7</td><td class='px-6 py-4'>661</td><td class='px-6 py-4 whitespace-nowrap'>2005</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Evaluation and management of an infant with squint (DNB 1995/2)15</td><td class='px-6 py-4'>663</td><td class='px-6 py-4 whitespace-nowrap'>1995</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of a neonate with watering of eyes (DNB 2022/2)3</td><td class='px-6 py-4'>665</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Ophthalmia neonatorum (DNB 2022/1)5</td><td class='px-6 py-4'>666</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Congenital cataract (DNB 2016/1)4, (DNB 2016/2)5</td><td class='px-6 py-4'>668</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Congenital cataract - diagnosis and management (DNB 2017/1)5</td><td class='px-6 py-4'>668</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Congenital cataract: causes and prevention (DNB 2020/1)5</td><td class='px-6 py-4'>668</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>ROP (DNB 2007/1)10, (DNB 2016/1)5</td><td class='px-6 py-4'>670</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Screening guidelines for ROP in India (DNB 2017/2)5</td><td class='px-6 py-4'>670</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Treatment modalities for ROP (DNB 2017/1)4</td><td class='px-6 py-4'>670</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Screening, classification and prevention of retinopathy of prematurity (DNB 2018/1)5</td><td class='px-6 py-4'>670</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>ROP screening (DNB 2019/2)5</td><td class='px-6 py-4'>670</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Prevention of Retinopathy of Prematurity (ROP) (DNB 2020/1)5</td><td class='px-6 py-4'>670</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Retinopathy of prematurity and its grading (DNB 2023/1)5</td><td class='px-6 py-4'>670</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>ROP and its staging (DCH 2023/2)5</td><td class='px-6 py-4'>670</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>ROP management (DCH 2023/2)5</td><td class='px-6 py-4'>670</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pathophysiology, screening and severity of retinopathy of prematurity (ROP) (DNB 2024/2)5</td><td class='px-6 py-4'>670</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of ROP (DNB 2024/2)5</td><td class='px-6 py-4'>670</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Proptosis (DNB 1994)15</td><td class='px-6 py-4'>673</td><td class='px-6 py-4 whitespace-nowrap'>1994</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of perforating ocular trauma in a toddler (DNB 2021/1)5</td><td class='px-6 py-4'>675</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Emergency management of a child with penetrating ocular trauma (DNB 2024/1)5</td><td class='px-6 py-4'>675</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Opthalmic findings in IEM (DNB 2019/1)5</td><td class='px-6 py-4'>Misc</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Ocular manifestations of systemic diseases (DNB 2021/2)5</td><td class='px-6 py-4'>Misc</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Importance of fundus examination in children in clinical practice (DNB 2020/2)5</td><td class='px-6 py-4'>Misc</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                </tbody>
+            </table>
+        </main>
+        
+        <div class="mt-8 p-6 bg-gray-50 rounded-2xl shadow-lg">
+            <h3 class="text-xl font-semibold mb-4 text-gray-700">Chapter Key</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-600 sm:columns-2 md:columns-3">
+                <li><b>659:</b> Examination of the Eye</li>
+                <li><b>661:</b> Disorders of Vision</li>
+                <li><b>663:</b> Disorders of Eye Movement and Alignment</li>
+                <li><b>665:</b> Disorders of the Lacrimal System</li>
+                <li><b>666:</b> Disorders of the Conjunctiva</li>
+                <li><b>668:</b> Abnormalities of the Lens</li>
+                <li><b>670:</b> Disorders of the Retina and Vitreous</li>
+                <li><b>673:</b> Orbital Abnormalities</li>
+                <li><b>675:</b> Injuries to the Eye</li>
+                <li><b>Misc:</b> Miscellaneous</li>
+            </ul>
+        </div>
+
+        <footer class="text-center mt-10 text-gray-500 text-sm">
+            <p>Made by Dr. Rubanbalaji | Updated till Oct 2024</p>
+        </footer>
+    </div>
+    <script>
+        function sortTable(columnIndex) {
+            const table = document.getElementById("questionsTable");
+            const tbody = table.tBodies[0];
+            const rows = Array.from(tbody.rows);
+            const header = table.tHead.rows[0].cells[columnIndex];
+            const isAsc = !header.classList.contains('sort-asc');
+
+            table.tHead.querySelectorAll('.sortable-header').forEach(th => {
+                th.classList.remove('sort-asc', 'sort-desc');
+            });
+
+            header.classList.add(isAsc ? 'sort-asc' : 'sort-desc');
+
+            rows.sort((a, b) => {
+                const aText = a.cells[columnIndex].textContent.trim();
+                const bText = b.cells[columnIndex].textContent.trim();
+
+                let aVal = aText;
+                let bVal = bText;
+
+                if (columnIndex === 2) { // Sort by Year
+                    aVal = parseInt(aText, 10);
+                    bVal = parseInt(bText, 10);
+                } else if (columnIndex === 1 && aText !== 'Misc' && bText !== 'Misc') { // Sort by Chapter
+                     aVal = parseInt(aText, 10);
+                     bVal = parseInt(bText, 10);
+                }
+
+
+                if (aVal < bVal) {
+                    return isAsc ? -1 : 1;
+                }
+                if (aVal > bVal) {
+                    return isAsc ? 1 : -1;
+                }
+                return 0;
+            });
+
+            tbody.innerHTML = "";
+            rows.forEach(row => tbody.appendChild(row));
+        }
+    </script>
+</body>
+</html>

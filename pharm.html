@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacology Questions | DNB Pediatrics Question Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .sortable-header {
+            cursor: pointer;
+            position: relative;
+        }
+        .sortable-header:hover {
+            background-color: #f0f4f8;
+        }
+        .sort-asc::after, .sort-desc::after {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .sort-asc::after {
+            content: ' ▲';
+        }
+        .sort-desc::after {
+            content: ' ▼';
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-600">Pharmacology Questions</h1>
+            <p class="text-lg text-gray-600 mt-2"><a href="index.html" class="text-blue-500 hover:underline">&larr; Back to Main Index</a></p>
+        </header>
+
+        <main class="bg-white p-6 md:p-8 rounded-2xl shadow-lg overflow-x-auto">
+            <table class="w-full divide-y divide-gray-200" id="questionsTable">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" style="width: 75%;" onclick="sortTable(0)">
+                            Question
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" onclick="sortTable(1)">
+                            Category
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider sortable-header" onclick="sortTable(2)">
+                            Year
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Indications for using IV immunoglobulin in children (DNB 1997/1)10</td><td class='px-6 py-4'>Immunoglobulin</td><td class='px-6 py-4 whitespace-nowrap'>1997</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Role of IVIG in pediatric practice (DNB 2000/1)15</td><td class='px-6 py-4'>Immunoglobulin</td><td class='px-6 py-4 whitespace-nowrap'>2000</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Indications for use of IV Immunoglobulin in Pediatric Practice (DNB 2006/1)10</td><td class='px-6 py-4'>Immunoglobulin</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Briefly outline the uses for IV immunoglobulin (IVIG) in children (DNB 2007/2)10</td><td class='px-6 py-4'>Immunoglobulin</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enlist the common indications for the use of IVIG. Describe the mechanism of action, doses and its side effects (DNB 2010/1)3+3+2+2</td><td class='px-6 py-4'>Immunoglobulin</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe in brief the diseases in which IVIG is used for treatment. Write the dosage, administration and side effects of IVIG (DNB 2010/2) 5+2+1+2</td><td class='px-6 py-4'>Immunoglobulin</td><td class='px-6 py-4 whitespace-nowrap'>2010</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss indications and plausible mechanisms of action of intravenous immunoglobulin therapy in various pediatric disorders (DNB 2013/2)10</td><td class='px-6 py-4'>Immunoglobulin</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Indication, mode of action and side effects of IVIG in Paediatric practice (DNB 2016/2)5, (DNB 2017/1)10, (DNB 2019/1)5</td><td class='px-6 py-4'>Immunoglobulin</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Indications of IVIG therapy in pediatric practice (DNB 2020/2)5</td><td class='px-6 py-4'>Immunoglobulin</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Intramuscular immunoglobulin (DNB 2023/2)5</td><td class='px-6 py-4'>Immunoglobulin</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Clinical importance of Interferon (DNB 1998/2)10</td><td class='px-6 py-4'>Interferon</td><td class='px-6 py-4 whitespace-nowrap'>1998</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pegylated interferons (DNB 2016/2)5</td><td class='px-6 py-4'>Interferon</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Physiological basis and therapeutic basis of NO (DNB 1998/2)10</td><td class='px-6 py-4'>Nitric Oxide</td><td class='px-6 py-4 whitespace-nowrap'>1998</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Clinical use of NO (DNB 2003/2)15</td><td class='px-6 py-4'>Nitric Oxide</td><td class='px-6 py-4 whitespace-nowrap'>2003</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Inhaled Nitric Oxide Therapy - Therapeutics (DNB 2021/2)5</td><td class='px-6 py-4'>Nitric Oxide</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Oral chelating agents (DNB 1994/2)15</td><td class='px-6 py-4'>Chelating Agents</td><td class='px-6 py-4 whitespace-nowrap'>1994</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Iron chelation therapy (DNB 2000/1)5, (DNB 2006/1)5</td><td class='px-6 py-4'>Chelating Agents</td><td class='px-6 py-4 whitespace-nowrap'>2000</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Iron chelating agents in Pediatric practice (DNB 2020/1)5</td><td class='px-6 py-4'>Chelating Agents</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe various mechanisms for development of Drug Resistance by bacterial pathogens against antibiotics. What factors are known to enhance drug resistance? Enumerate Anti Staphylococcal agents (DNB 1993/1)25</td><td class='px-6 py-4'>Antibiotics</td><td class='px-6 py-4 whitespace-nowrap'>1993</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Cephalosporins (DNB 1994/1)15</td><td class='px-6 py-4'>Antibiotics</td><td class='px-6 py-4 whitespace-nowrap'>1994</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate pediatric conditions in which Erythromycin is the drug of choice (DNB 1997/1)10</td><td class='px-6 py-4'>Antibiotics</td><td class='px-6 py-4 whitespace-nowrap'>1997</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Mechanism of Drug resistance (DNB 1997/1)15</td><td class='px-6 py-4'>Antibiotics</td><td class='px-6 py-4 whitespace-nowrap'>1997</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Early detection of Chloramphenicol toxicity (DNB 2003/1)15</td><td class='px-6 py-4'>Antibiotics</td><td class='px-6 py-4 whitespace-nowrap'>2003</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Third generation cephalosporins (DNB 2003/1)15</td><td class='px-6 py-4'>Antibiotics</td><td class='px-6 py-4 whitespace-nowrap'>2003</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Aztreonam (DNB 2003/2)15</td><td class='px-6 py-4'>Antibiotics</td><td class='px-6 py-4 whitespace-nowrap'>2003</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Discuss the basis for development of antibiotic resistance. Outline the steps for prevention of antibiotic resistance (DNB 2004/2)5+5</td><td class='px-6 py-4'>Antibiotics</td><td class='px-6 py-4 whitespace-nowrap'>2004</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Management of infections by organisms producing extended spectrum beta lactamase (DNB 2006/1)10</td><td class='px-6 py-4'>Antibiotics</td><td class='px-6 py-4 whitespace-nowrap'>2006</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Principles of rational antibiotic therapy (DNB 2017/2)5</td><td class='px-6 py-4'>Antibiotics</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Mechanisms of antibiotic resistance (DNB 2017/1)5</td><td class='px-6 py-4'>Antibiotics</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Mechanisms of antibiotic resistance (DNB 2020/1)5</td><td class='px-6 py-4'>Antibiotics</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Oral imipenems and antimicrobial resistance (DNB 2024/1)5</td><td class='px-6 py-4'>Antibiotics</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Describe the antifungals available for systemic use in India with their dosage, route and duration of therapy for treatment of a) systemic candidiasis b) Invasive aspergillosis (DNB 2009/2)5+5</td><td class='px-6 py-4'>Antifungals</td><td class='px-6 py-4 whitespace-nowrap'>2009</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Antiviral drugs (DNB 1999/1)15</td><td class='px-6 py-4'>Antiviral Drugs</td><td class='px-6 py-4 whitespace-nowrap'>1999</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Direct acting antivirals for Hepatitis C in children (DNB 2022/2)5</td><td class='px-6 py-4'>Antiviral Drugs</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Bronchodilators (DNB 1994/2)15</td><td class='px-6 py-4'>Bronchodilators</td><td class='px-6 py-4 whitespace-nowrap'>1994</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Recombinant Human Erythropoietin (DNB 1994/2)15</td><td class='px-6 py-4'>Erythropoietin</td><td class='px-6 py-4 whitespace-nowrap'>1994</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Therapeutic uses of Erythropoietin (DNB 2024/2)5</td><td class='px-6 py-4'>Erythropoietin</td><td class='px-6 py-4 whitespace-nowrap'>2024</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Mechanism of action, therapeutic dose, and adverse effects in children of low molecular weight heparins (DNB 2016/1)5</td><td class='px-6 py-4'>Low Molecular Weight Heparins</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Mechanism of action, therapeutic dose, and adverse effects in children of magnesium sulphate (DNB 2016/1)5</td><td class='px-6 py-4'>Magnesium Sulphate</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Enumerate newer drugs for treatment of Epilepsy with their uses (DNB 2002/1)15</td><td class='px-6 py-4'>Antiepileptics</td><td class='px-6 py-4 whitespace-nowrap'>2002</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Indications for the therapeutic use of newer anticonvulsants in childhood seizure states and their potential adverse effects (DNB 2007/1)10</td><td class='px-6 py-4'>Antiepileptics</td><td class='px-6 py-4 whitespace-nowrap'>2007</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Newer antiepileptic drugs (DNB 2013/1)5, (DNB 2015/1)4 (DNB 2015/2)5</td><td class='px-6 py-4'>Antiepileptics</td><td class='px-6 py-4 whitespace-nowrap'>2013</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Tabulate the mechanism of action, dosage, indications and side effects of the following a. Zonisamide b. Rufinamide c. Stiripentol d. Levetiracetam e. Lacosamide (DNB 2015/2)2x5</td><td class='px-6 py-4'>Antiepileptics</td><td class='px-6 py-4 whitespace-nowrap'>2015</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Newer antiepileptic drugs. Write the name, dosage and salient adverse effects in tabular form (DNB 2017/2)5</td><td class='px-6 py-4'>Antiepileptics</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Current status of newer anti-epileptic drugs (DNB 2017/1)4</td><td class='px-6 py-4'>Antiepileptics</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Mechanism of action of valproate as an anti-epileptic drug (DNB 2018/1)5</td><td class='px-6 py-4'>Antiepileptics</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Mechanisms of supraventricular tachycardia and mode of action of adenosine in supraventricular tachycardia (DNB 2018/1)5</td><td class='px-6 py-4'>Anti-arrhythmics</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Infliximab (DNB 2016/2)</td><td class='px-6 py-4'>Miscellaneous</td><td class='px-6 py-4 whitespace-nowrap'>2016</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Aerosol therapy for respiratory disorders (DNB 2017/1) 5</td><td class='px-6 py-4'>Miscellaneous</td><td class='px-6 py-4 whitespace-nowrap'>2017</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Anti-cytokine drugs and their indication (DNB 2018/2)5</td><td class='px-6 py-4'>Miscellaneous</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Haematopoetic growth factors (DNB 2018/2)5</td><td class='px-6 py-4'>Miscellaneous</td><td class='px-6 py-4 whitespace-nowrap'>2018</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Rituximab - mode of action, indication and adverse effects (DNB 2019/2)6</td><td class='px-6 py-4'>Miscellaneous</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Role of sildenafil citrate in new born practise (DNB 2019/1)5</td><td class='px-6 py-4'>Miscellaneous</td><td class='px-6 py-4 whitespace-nowrap'>2019</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Drug surveillance (DNB 2020/2)5</td><td class='px-6 py-4'>Miscellaneous</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Immunomodulators in pediatric patients (DNB 2020/2)5</td><td class='px-6 py-4'>Miscellaneous</td><td class='px-6 py-4 whitespace-nowrap'>2020</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Risk of acid suppression medications (DNB 2021/1)5</td><td class='px-6 py-4'>Miscellaneous</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Pharmacokinetics of Acetaminophen (DNB 2021/2)5</td><td class='px-6 py-4'>Miscellaneous</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Monoclonal antibody use in paediatric practice (DNB 2021/2)5</td><td class='px-6 py-4'>Miscellaneous</td><td class='px-6 py-4 whitespace-nowrap'>2021</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Rituximab (DNB 2022/1)5</td><td class='px-6 py-4'>Miscellaneous</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Antihelminthic drugs (DNB 2022/1)5</td><td class='px-6 py-4'>Miscellaneous</td><td class='px-6 py-4 whitespace-nowrap'>2022</td></tr>
+                    <tr><td class='px-6 py-4 whitespace-normal break-words'>Indications of Rituximab in pediatric diseases (DNB 2023/1)5</td><td class='px-6 py-4'>Miscellaneous</td><td class='px-6 py-4 whitespace-nowrap'>2023</td></tr>
+                </tbody>
+            </table>
+        </main>
+        
+        <div class="mt-8 p-6 bg-gray-50 rounded-2xl shadow-lg">
+            <h3 class="text-xl font-semibold mb-4 text-gray-700">Category Key</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-600 sm:columns-2 md:columns-3">
+                <li><b>Immunoglobulin</b></li>
+                <li><b>Interferon</b></li>
+                <li><b>Nitric Oxide</b></li>
+                <li><b>Chelating Agents</b></li>
+                <li><b>Antibiotics</b></li>
+                <li><b>Antifungals</b></li>
+                <li><b>Antiviral Drugs</b></li>
+                <li><b>Bronchodilators</b></li>
+                <li><b>Erythropoietin</b></li>
+                <li><b>Low Molecular Weight Heparins</b></li>
+                <li><b>Magnesium Sulphate</b></li>
+                <li><b>Antiepileptics</b></li>
+                <li><b>Anti-arrhythmics</b></li>
+                <li><b>Miscellaneous</b></li>
+            </ul>
+        </div>
+
+        <footer class="text-center mt-10 text-gray-500 text-sm">
+            <p>Made by Dr. Rubanbalaji | Updated till Oct 2024</p>
+        </footer>
+    </div>
+    <script>
+        function sortTable(columnIndex) {
+            const table = document.getElementById("questionsTable");
+            const tbody = table.tBodies[0];
+            const rows = Array.from(tbody.rows);
+            const header = table.tHead.rows[0].cells[columnIndex];
+            const isAsc = !header.classList.contains('sort-asc');
+
+            table.tHead.querySelectorAll('.sortable-header').forEach(th => {
+                th.classList.remove('sort-asc', 'sort-desc');
+            });
+
+            header.classList.add(isAsc ? 'sort-asc' : 'sort-desc');
+
+            rows.sort((a, b) => {
+                const aText = a.cells[columnIndex].textContent.trim();
+                const bText = b.cells[columnIndex].textContent.trim();
+
+                if (columnIndex === 2) { // Year column
+                    return isAsc ? aText.localeCompare(bText) : bText.localeCompare(aText);
+                }
+                
+                return isAsc ? aText.localeCompare(bText) : bText.localeCompare(aText);
+
+            });
+
+            tbody.innerHTML = "";
+            rows.forEach(row => tbody.appendChild(row));
+        }
+    </script>
+</body>
+</html>
